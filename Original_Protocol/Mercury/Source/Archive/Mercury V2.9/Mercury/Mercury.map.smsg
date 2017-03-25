@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at SPI.v(85): object "SPI_clock" differs only in case from object "spi_clock" in the same scope
+Info (10281): Verilog HDL Declaration information at Mercury.v(317): object "spc" differs only in case from object "SPC" in the same scope

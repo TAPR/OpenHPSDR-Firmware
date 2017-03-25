@@ -1,0 +1,167 @@
+Flow report for Hermes
+Mon Jan 19 19:18:06 2015
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Mon Jan 19 19:17:32 2015      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; Hermes                                     ;
+; Top-level Entity Name              ; Hermes                                     ;
+; Family                             ; Cyclone III                                ;
+; Device                             ; EP3C40Q240C8                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 36,720 / 39,600 ( 93 % )                   ;
+;     Total combinational functions  ; 31,217 / 39,600 ( 79 % )                   ;
+;     Dedicated logic registers      ; 26,020 / 39,600 ( 66 % )                   ;
+; Total registers                    ; 26020                                      ;
+; Total pins                         ; 119 / 129 ( 92 % )                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 983,456 / 1,161,216 ( 85 % )               ;
+; Embedded Multiplier 9-bit elements ; 222 / 252 ( 88 % )                         ;
+; Total PLLs                         ; 4 / 4 ( 100 % )                            ;
++------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 01/19/2015 19:06:45 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Hermes              ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-----------------------------------------+---------------------------------------+---------------+-------------+------------+
+; Assignment Name                         ; Value                                 ; Default Value ; Entity Name ; Section Id ;
++-----------------------------------------+---------------------------------------+---------------+-------------+------------+
+; ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP     ; On                                    ; Off           ; --          ; --         ;
+; ALLOW_POWER_UP_DONT_CARE                ; Off                                   ; On            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                   ; 694449418451.142166560407276          ; --            ; --          ; --         ;
+; CYCLONEII_OPTIMIZATION_TECHNIQUE        ; Speed                                 ; Balanced      ; --          ; --         ;
+; ENABLE_BENEFICIAL_SKEW_OPTIMIZATION     ; On                                    ; Off           ; --          ; --         ;
+; FITTER_EFFORT                           ; Standard Fit                          ; Auto Fit      ; --          ; --         ;
+; IP_TOOL_NAME                            ; ROM: 1-PORT                           ; --            ; --          ; --         ;
+; IP_TOOL_NAME                            ; RAM: 2-PORT                           ; --            ; --          ; --         ;
+; IP_TOOL_NAME                            ; ALTPLL                                ; --            ; --          ; --         ;
+; IP_TOOL_NAME                            ; ALTPLL                                ; --            ; --          ; --         ;
+; IP_TOOL_NAME                            ; FIFO                                  ; --            ; --          ; --         ;
+; IP_TOOL_NAME                            ; FIFO                                  ; --            ; --          ; --         ;
+; IP_TOOL_NAME                            ; LPM_MULT                              ; --            ; --          ; --         ;
+; IP_TOOL_NAME                            ; ALTSQRT                               ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                         ; 13.1                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                         ; 13.1                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                         ; 13.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                         ; 9.1                                   ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                         ; 11.1                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                         ; 11.1                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                         ; 13.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                         ; 13.0                                  ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP                  ; 85                                    ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP                  ; 0                                     ; --            ; --          ; --         ;
+; MISC_FILE                               ; Hermes.dpf                            ; --            ; --          ; --         ;
+; MISC_FILE                               ; PLL_IF.ppf                            ; --            ; --          ; --         ;
+; MISC_FILE                               ; PLL_clocks.bsf                        ; --            ; --          ; --         ;
+; MISC_FILE                               ; PLL_clocks.ppf                        ; --            ; --          ; --         ;
+; NUM_PARALLEL_PROCESSORS                 ; All                                   ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS          ; Half Signal Swing                     ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS          ; Half Signal Swing                     ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS         ; Half Vccio                            ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS         ; Half Vccio                            ; --            ; --          ; --         ;
+; PARTITION_COLOR                         ; 16764057                              ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL     ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE                  ; SOURCE                                ; --            ; --          ; Top        ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC          ; On                                    ; Off           ; --          ; --         ;
+; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ; On                                    ; Off           ; --          ; --         ;
+; PHYSICAL_SYNTHESIS_REGISTER_RETIMING    ; On                                    ; Off           ; --          ; --         ;
+; POWER_BOARD_THERMAL_MODEL               ; None (CONSERVATIVE)                   ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION           ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --         ;
+; ROUTER_CLOCKING_TOPOLOGY_ANALYSIS       ; On                                    ; Off           ; --          ; --         ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL        ; MAXIMUM                               ; Normal        ; --          ; --         ;
+; SEARCH_PATH                             ; Documents/Hermes/Hermes_v1.8/         ; --            ; --          ; --         ;
+; SEARCH_PATH                             ; Hermes_v1.9/                          ; --            ; --          ; --         ;
+; SEARCH_PATH                             ; 100% timing met_v4.7/                 ; --            ; --          ; --         ;
+; SEARCH_PATH                             ; Polyphase_FIR/                        ; --            ; --          ; --         ;
+; SMART_RECOMPILE                         ; On                                    ; Off           ; --          ; --         ;
+; STATE_MACHINE_PROCESSING                ; User-Encoded                          ; Auto          ; --          ; --         ;
+; SYNTH_TIMING_DRIVEN_SYNTHESIS           ; On                                    ; Off           ; --          ; --         ;
+; VERILOG_INPUT_VERSION                   ; SystemVerilog_2005                    ; Verilog_2001  ; --          ; --         ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES       ; Off                                   ; --            ; --          ; --         ;
++-----------------------------------------+---------------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:02:58     ; 1.0                     ; 1173 MB             ; 00:02:57                           ;
+; Fitter                    ; 00:07:19     ; 2.1                     ; 1904 MB             ; 00:12:40                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 614 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:30     ; 1.4                     ; 1141 MB             ; 00:00:44                           ;
+; Total                     ; 00:10:52     ; --                      ; --                  ; 00:16:26                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; Shack-PC-2       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Shack-PC-2       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Shack-PC-2       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Shack-PC-2       ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Hermes -c Hermes
+quartus_fit --read_settings_files=off --write_settings_files=off Hermes -c Hermes
+quartus_asm --read_settings_files=off --write_settings_files=off Hermes -c Hermes
+quartus_sta Hermes -c Hermes
+
+
+

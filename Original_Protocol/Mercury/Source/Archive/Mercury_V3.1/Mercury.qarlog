@@ -1,0 +1,68 @@
+Quartus II Archive log --	C:/HPSDR/trunk/Mercury_V3.1/Mercury.qarlog
+
+Archive:	C:/HPSDR/trunk/Mercury_V3.1/Mercury.qar
+Date:		Wed Nov 09 19:49:39 2011
+Quartus II		11.0 Build 208 07/03/2011 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/HPSDR/trunk/Mercury_V3.1/C10_PLL.ppf
+C:/HPSDR/trunk/Mercury_V3.1/C10_PLL.qip
+C:/HPSDR/trunk/Mercury_V3.1/C10_PLL.v
+C:/HPSDR/trunk/Mercury_V3.1/C122_PLL.ppf
+C:/HPSDR/trunk/Mercury_V3.1/C122_PLL.qip
+C:/HPSDR/trunk/Mercury_V3.1/C122_PLL.v
+C:/HPSDR/trunk/Mercury_V3.1/CC_decoder.v
+C:/HPSDR/trunk/Mercury_V3.1/FIFO.v
+C:/HPSDR/trunk/Mercury_V3.1/HPF_select.v
+C:/HPSDR/trunk/Mercury_V3.1/LPF_select.v
+C:/HPSDR/trunk/Mercury_V3.1/Mercury.qpf
+C:/HPSDR/trunk/Mercury_V3.1/Mercury.qsf
+C:/HPSDR/trunk/Mercury_V3.1/Mercury.stp
+C:/HPSDR/trunk/Mercury_V3.1/Mercury.v
+C:/HPSDR/trunk/Mercury_V3.1/Mercury.vwf
+C:/HPSDR/trunk/Mercury_V3.1/Mercury_assignment_defaults.qdf
+C:/HPSDR/trunk/Mercury_V3.1/NWire_rcv.stp
+C:/HPSDR/trunk/Mercury_V3.1/SPI.v
+C:/HPSDR/trunk/Mercury_V3.1/SP_fifo.bsf
+C:/HPSDR/trunk/Mercury_V3.1/SP_fifo.qip
+C:/HPSDR/trunk/Mercury_V3.1/SP_fifo.v
+C:/HPSDR/trunk/Mercury_V3.1/SP_fifo_bb.v
+C:/HPSDR/trunk/Mercury_V3.1/SP_fifo_inst.v
+C:/HPSDR/trunk/Mercury_V3.1/TestModeChecker.v
+C:/HPSDR/trunk/Mercury_V3.1/assignment_defaults.qdf
+C:/HPSDR/trunk/Mercury_V3.1/cic.v
+C:/HPSDR/trunk/Mercury_V3.1/cic_comb.v
+C:/HPSDR/trunk/Mercury_V3.1/cic_integrator.v
+C:/HPSDR/trunk/Mercury_V3.1/common/I2S_xmit.v
+C:/HPSDR/trunk/Mercury_V3.1/common/NWire_rcv.v
+C:/HPSDR/trunk/Mercury_V3.1/common/NWire_xmit.v
+C:/HPSDR/trunk/Mercury_V3.1/common/clk_div.v
+C:/HPSDR/trunk/Mercury_V3.1/common/clk_lrclk_gen.v
+C:/HPSDR/trunk/Mercury_V3.1/cordic.v
+C:/HPSDR/trunk/Mercury_V3.1/fir.v
+C:/HPSDR/trunk/Mercury_V3.1/fir_coeffs.v
+C:/HPSDR/trunk/Mercury_V3.1/fir_coeffs_rom.hex
+C:/HPSDR/trunk/Mercury_V3.1/fir_coeffs_rom.v
+C:/HPSDR/trunk/Mercury_V3.1/fir_mac.v
+C:/HPSDR/trunk/Mercury_V3.1/fir_shiftreg.qip
+C:/HPSDR/trunk/Mercury_V3.1/fir_shiftreg.v
+C:/HPSDR/trunk/Mercury_V3.1/incremental_db/compiled_partitions/Mercury.db_info
+C:/HPSDR/trunk/Mercury_V3.1/mac.v
+C:/HPSDR/trunk/Mercury_V3.1/memcic.v
+C:/HPSDR/trunk/Mercury_V3.1/memcic_ram.v
+C:/HPSDR/trunk/Mercury_V3.1/memreceiver.v
+C:/HPSDR/trunk/Mercury_V3.1/mult_24Sx24S.v
+C:/HPSDR/trunk/Mercury_V3.1/oddClockDiv.v
+C:/HPSDR/trunk/Mercury_V3.1/receiver.v
+C:/HPSDR/trunk/Mercury_V3.1/sp_xmit_ctrl.v
+C:/HPSDR/trunk/Mercury_V3.1/spectrum.stp
+C:/HPSDR/trunk/Mercury_V3.1/varcic.v
+C:/HPSDR/trunk/VK6APH/Mercury/megafunctions/altdpram.inc
+C:/HPSDR/trunk/VK6APH/Mercury/megafunctions/cbx.lst
+C:/HPSDR/trunk/VK6APH/Mercury/megafunctions/lpm_add_sub.inc
+C:/HPSDR/trunk/VK6APH/Mercury/megafunctions/lpm_compare.inc
+C:/HPSDR/trunk/VK6APH/Mercury/megafunctions/lpm_counter.inc
+	======= Total: 57 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

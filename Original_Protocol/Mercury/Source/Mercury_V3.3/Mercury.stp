@@ -1,0 +1,1154 @@
+<session jtag_chain="ByteBlasterMV [LPT1]" jtag_device="@1: EP3C25 (0x020F30DD)" sof_file="" top_level_entity="Mercury">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2009/08/12 16:21:18  #0">
+      <clock name="C122_clk" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="C122_DFS0" tap_mode="classic" type="register"/>
+          <wire name="C122_DFS1" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[11]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[12]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[13]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[14]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[15]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[16]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[17]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[18]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[19]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[20]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[21]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[22]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[23]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[24]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[25]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[26]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[27]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[28]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[29]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[30]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[31]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[9]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[11]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[12]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[13]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[14]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[15]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[16]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[17]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[18]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[19]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[20]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[21]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[22]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[23]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[24]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[25]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[26]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[27]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[28]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[29]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[30]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[31]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[9]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[11]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[12]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[13]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[14]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[15]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[16]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[17]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[18]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[19]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[20]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[21]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[22]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[23]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[24]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[25]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[26]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[27]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[28]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[29]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[30]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[31]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[9]" tap_mode="classic" type="register"/>
+          <wire name="CC" tap_mode="classic" type="input pin"/>
+          <wire name="I2S_xmit:LR|CBfall" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|CBrise" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_HI" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_LO" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WH" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WL" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|bit_count[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[16]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[17]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[18]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[19]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[20]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[21]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[22]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[23]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[24]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[25]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[26]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[27]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[28]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[29]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[30]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[31]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|lrclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|obit" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|outbit" tap_mode="classic" type="combinatorial"/>
+          <wire name="MDOUT" tap_mode="classic" type="output pin"/>
+          <wire name="RAND" tap_mode="classic" type="output pin"/>
+          <wire name="SCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_BCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCIN" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCOUT" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_MCLK" tap_mode="classic" type="output pin"/>
+          <wire name="clock_select[1]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[2]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[0]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[10]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[11]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[12]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[13]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[14]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[15]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[16]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[17]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[18]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[19]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[1]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[20]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[21]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[22]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[23]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[2]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[4]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[5]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[6]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[7]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[8]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[9]" tap_mode="classic" type="register"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="C122_DFS0" tap_mode="classic" type="register"/>
+          <wire name="C122_DFS1" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[11]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[12]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[13]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[14]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[15]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[16]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[17]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[18]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[19]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[20]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[21]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[22]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[23]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[24]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[25]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[26]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[27]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[28]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[29]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[30]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[31]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[9]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[11]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[12]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[13]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[14]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[15]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[16]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[17]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[18]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[19]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[20]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[21]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[22]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[23]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[24]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[25]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[26]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[27]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[28]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[29]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[30]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[31]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[9]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[11]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[12]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[13]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[14]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[15]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[16]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[17]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[18]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[19]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[20]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[21]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[22]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[23]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[24]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[25]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[26]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[27]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[28]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[29]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[30]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[31]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[9]" tap_mode="classic" type="register"/>
+          <wire name="CC" tap_mode="classic" type="input pin"/>
+          <wire name="I2S_xmit:LR|CBfall" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|CBrise" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_HI" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_LO" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WH" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WL" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|bit_count[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[16]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[17]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[18]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[19]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[20]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[21]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[22]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[23]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[24]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[25]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[26]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[27]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[28]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[29]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[30]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[31]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|lrclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|obit" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|outbit" tap_mode="classic" type="combinatorial"/>
+          <wire name="MDOUT" tap_mode="classic" type="output pin"/>
+          <wire name="RAND" tap_mode="classic" type="output pin"/>
+          <wire name="SCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_BCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCIN" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCOUT" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_MCLK" tap_mode="classic" type="output pin"/>
+          <wire name="clock_select[1]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[2]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[0]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[10]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[11]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[12]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[13]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[14]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[15]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[16]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[17]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[18]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[19]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[1]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[20]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[21]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[22]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[23]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[2]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[4]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[5]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[6]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[7]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[8]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[9]" tap_mode="classic" type="register"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="C122_DFS0" tap_mode="classic" type="register"/>
+          <wire name="C122_DFS1" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[11]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[12]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[13]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[14]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[15]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[16]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[17]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[18]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[19]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[20]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[21]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[22]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[23]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[24]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[25]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[26]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[27]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[28]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[29]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[30]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[31]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_frequency_HZ[9]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[11]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[12]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[13]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[14]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[15]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[16]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[17]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[18]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[19]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[20]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[21]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[22]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[23]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[24]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[25]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[26]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[27]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[28]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[29]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[30]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[31]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_last_freq[9]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_rst_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[0]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[10]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[11]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[12]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[13]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[14]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[15]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[16]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[17]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[18]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[19]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[1]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[20]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[21]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[22]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[23]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[24]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[25]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[26]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[27]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[28]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[29]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[2]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[30]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[31]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[3]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[4]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[5]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[6]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[7]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[8]" tap_mode="classic" type="register"/>
+          <wire name="C122_sync_phase_word[9]" tap_mode="classic" type="register"/>
+          <wire name="CC" tap_mode="classic" type="input pin"/>
+          <wire name="I2S_xmit:LR|CBfall" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|CBrise" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_HI" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_LO" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WH" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WL" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|bit_count[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[16]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[17]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[18]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[19]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[20]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[21]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[22]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[23]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[24]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[25]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[26]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[27]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[28]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[29]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[30]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[31]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|lrclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|obit" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|outbit" tap_mode="classic" type="combinatorial"/>
+          <wire name="MDOUT" tap_mode="classic" type="output pin"/>
+          <wire name="RAND" tap_mode="classic" type="output pin"/>
+          <wire name="SCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_BCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCIN" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCOUT" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_MCLK" tap_mode="classic" type="output pin"/>
+          <wire name="clock_select[1]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[2]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[0]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[10]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[11]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[12]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[13]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[14]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[15]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[16]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[17]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[18]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[19]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[1]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[20]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[21]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[22]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[23]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[2]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[4]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[5]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[6]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[7]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[8]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[9]" tap_mode="classic" type="register"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="CC"/>
+          <net is_signal_inverted="no" name="SCLK"/>
+          <net is_signal_inverted="no" name="TLV320_BCLK"/>
+          <net is_signal_inverted="no" name="TLV320_LRCIN"/>
+          <net is_signal_inverted="no" name="TLV320_LRCOUT"/>
+          <net is_signal_inverted="no" name="TLV320_MCLK"/>
+          <bus is_signal_inverted="no" link="all" name="tlv_timeout" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="tlv_timeout[0]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[1]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[2]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[3]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[4]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[5]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[6]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[7]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[8]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[9]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[10]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[11]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[12]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[13]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[14]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[15]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[16]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[17]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[18]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[19]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[20]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[21]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[22]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[23]"/>
+          </bus>
+          <net is_signal_inverted="no" name="MDOUT"/>
+          <bus is_signal_inverted="no" link="all" name="clock_select" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="clock_select[1]"/>
+            <net is_signal_inverted="no" name="clock_select[2]"/>
+            <net is_signal_inverted="no" name="clock_select[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|CBrise"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|CBfall"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_IDLE"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_WH"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_LR_LO"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_WL"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_LR_HI"/>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|bit_count" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|last_data" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[15]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[16]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[17]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[18]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[19]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[20]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[21]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[22]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[23]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[24]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[25]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[26]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[27]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[28]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[29]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[30]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|lrclk"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|obit"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|outbit"/>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|data" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="RAND"/>
+          <bus is_signal_inverted="no" link="all" name="C122_frequency_HZ" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="C122_frequency_HZ[0]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[1]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[2]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[3]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[4]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[5]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[6]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[7]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[8]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[9]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[10]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[11]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[12]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[13]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[14]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[15]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[16]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[17]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[18]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[19]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[20]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[21]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[22]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[23]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[24]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[25]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[26]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[27]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[28]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[29]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[30]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="C122_DFS0"/>
+          <net is_signal_inverted="no" name="C122_DFS1"/>
+          <bus is_signal_inverted="no" link="all" name="C122_last_freq" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="C122_last_freq[0]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[1]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[2]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[3]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[4]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[5]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[6]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[7]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[8]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[9]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[10]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[11]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[12]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[13]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[14]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[15]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[16]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[17]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[18]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[19]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[20]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[21]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[22]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[23]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[24]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[25]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[26]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[27]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[28]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[29]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[30]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="C122_rst"/>
+          <bus is_signal_inverted="no" link="all" name="C122_rst_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="C122_rst_cnt[0]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[1]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[2]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[3]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[4]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[5]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[6]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[7]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[8]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[9]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[10]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="C122_sync_phase_word" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="C122_sync_phase_word[0]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[1]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[2]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[3]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[4]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[5]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[6]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[7]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[8]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[9]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[10]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[11]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[12]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[13]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[14]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[15]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[16]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[17]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[18]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[19]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[20]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[21]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[22]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[23]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[24]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[25]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[26]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[27]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[28]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[29]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[30]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[31]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="CC"/>
+          <net is_signal_inverted="no" name="MDOUT"/>
+          <net is_signal_inverted="no" name="SCLK"/>
+          <net is_signal_inverted="no" name="TLV320_BCLK"/>
+          <net is_signal_inverted="no" name="TLV320_LRCIN"/>
+          <net is_signal_inverted="no" name="TLV320_LRCOUT"/>
+          <net is_signal_inverted="no" name="TLV320_MCLK"/>
+          <bus is_signal_inverted="no" link="all" name="tlv_timeout" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="tlv_timeout[0]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[1]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[2]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[3]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[4]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[5]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[6]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[7]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[8]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[9]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[10]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[11]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[12]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[13]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[14]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[15]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[16]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[17]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[18]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[19]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[20]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[21]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[22]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[23]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="clock_select" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="clock_select[1]"/>
+            <net is_signal_inverted="no" name="clock_select[2]"/>
+            <net is_signal_inverted="no" name="clock_select[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|CBfall"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|CBrise"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_IDLE"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_LR_HI"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_LR_LO"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_WH"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_WL"/>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|bit_count" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|lrclk"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|obit"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|outbit"/>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|data" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|last_data" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[15]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[16]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[17]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[18]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[19]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[20]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[21]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[22]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[23]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[24]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[25]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[26]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[27]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[28]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[29]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[30]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="RAND"/>
+          <bus is_signal_inverted="no" link="all" name="C122_frequency_HZ" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="C122_frequency_HZ[0]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[1]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[2]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[3]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[4]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[5]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[6]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[7]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[8]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[9]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[10]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[11]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[12]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[13]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[14]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[15]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[16]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[17]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[18]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[19]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[20]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[21]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[22]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[23]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[24]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[25]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[26]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[27]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[28]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[29]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[30]"/>
+            <net is_signal_inverted="no" name="C122_frequency_HZ[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="C122_DFS0"/>
+          <net is_signal_inverted="no" name="C122_DFS1"/>
+          <bus is_signal_inverted="no" link="all" name="C122_last_freq" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="C122_last_freq[0]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[1]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[2]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[3]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[4]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[5]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[6]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[7]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[8]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[9]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[10]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[11]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[12]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[13]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[14]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[15]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[16]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[17]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[18]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[19]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[20]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[21]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[22]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[23]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[24]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[25]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[26]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[27]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[28]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[29]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[30]"/>
+            <net is_signal_inverted="no" name="C122_last_freq[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="C122_rst"/>
+          <bus is_signal_inverted="no" link="all" name="C122_rst_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="C122_rst_cnt[0]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[1]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[2]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[3]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[4]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[5]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[6]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[7]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[8]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[9]"/>
+            <net is_signal_inverted="no" name="C122_rst_cnt[10]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="C122_sync_phase_word" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="C122_sync_phase_word[0]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[1]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[2]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[3]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[4]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[5]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[6]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[7]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[8]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[9]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[10]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[11]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[12]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[13]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[14]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[15]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[16]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[17]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[18]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[19]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[20]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[21]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[22]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[23]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[24]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[25]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[26]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[27]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[28]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[29]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[30]"/>
+            <net is_signal_inverted="no" name="C122_sync_phase_word[31]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger CRC="89F6672A" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2009/08/12 16:21:18  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            
+            <pwr_up_transitional>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2009/08/12 19:39:40  #0" power_up_mode="false" sample_depth="128" trigger_position="16">100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101100000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000000001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101010000111111000000100010100100000011001010100000000000101000000000000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101000000001001010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101100000111111000000100010100100000011001010100000000000101000000001000010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000000111111000000100010100100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100011111000000100010100100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101010100011111000000100010100100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101100100001110000000110001010100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100001110000000110001010100000011001010100000000000101001000000111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101010100001110000000110001010100000011001010100000000000101001000000110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001111010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001110010000000110100010000000000100100000010001000000000000100101001000000100010000000000001001010001000000000111101110100111001000010011011101000100010110000000011000101100000011001010100000000000101001000001111010000000110100010000000000</data>
+          <extradata>1111111111111111T111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="21"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="7"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="130944"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="column width" size="23" value="34,34,235,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,10"/>
+    <multi attribute="window position" size="9" value="1221,799,398,76,0,50,82,0,0"/>
+  </global_info>
+</session>

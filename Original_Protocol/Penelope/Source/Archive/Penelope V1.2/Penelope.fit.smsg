@@ -1,0 +1,2 @@
+Warning: Found 49 output pins without output pin load capacitance assignment
+Warning: Following 4 pins have nothing, GND, or VCC driving datain port -- changes to this connectivity may change fitting results

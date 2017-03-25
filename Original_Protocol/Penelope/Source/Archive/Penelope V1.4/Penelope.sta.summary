@@ -1,0 +1,93 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'C122_clk'
+Slack : -0.396
+TNS   : -1.293
+
+Type  : Slow Model Setup '_10MHZ'
+Slack : 96.551
+TNS   : 0.000
+
+Type  : Slow Model Setup 'clk_lrclk_gen:clrgen|BCLK'
+Slack : 320.253
+TNS   : 0.000
+
+Type  : Slow Model Hold 'C122_clk'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Hold '_10MHZ'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Hold 'clk_lrclk_gen:clrgen|BCLK'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'C122_clk'
+Slack : 4.038
+TNS   : 0.000
+
+Type  : Slow Model Removal 'C122_clk'
+Slack : 3.834
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'C122_clk'
+Slack : 1.300
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width '_10MHZ'
+Slack : 48.758
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk_lrclk_gen:clrgen|BCLK'
+Slack : 161.518
+TNS   : 0.000
+
+Type  : Fast Model Setup 'C122_clk'
+Slack : 3.197
+TNS   : 0.000
+
+Type  : Fast Model Setup '_10MHZ'
+Slack : 98.854
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clk_lrclk_gen:clrgen|BCLK'
+Slack : 323.880
+TNS   : 0.000
+
+Type  : Fast Model Hold 'C122_clk'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold '_10MHZ'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clk_lrclk_gen:clrgen|BCLK'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'C122_clk'
+Slack : 6.351
+TNS   : 0.000
+
+Type  : Fast Model Removal 'C122_clk'
+Slack : 1.667
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'C122_clk'
+Slack : 2.050
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width '_10MHZ'
+Slack : 49.000
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk_lrclk_gen:clrgen|BCLK'
+Slack : 161.760
+TNS   : 0.000
+
+------------------------------------------------------------

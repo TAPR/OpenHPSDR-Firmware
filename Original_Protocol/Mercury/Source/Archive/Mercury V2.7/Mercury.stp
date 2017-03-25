@@ -1,0 +1,1527 @@
+<session jtag_chain="ByteBlasterMV [LPT1]" jtag_device="@1: EP3C25 (0x020F30DD)" sof_file="" top_level_entity="Mercury">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2009/03/24 18:21:41  #0">
+      <clock name="C122_clk" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="C13" tap_mode="classic" type="output pin"/>
+          <wire name="CC" tap_mode="classic" type="input pin"/>
+          <wire name="DFS0" tap_mode="classic" type="input pin"/>
+          <wire name="DFS1" tap_mode="classic" type="input pin"/>
+          <wire name="I2S_xmit:LR|CBfall" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|CBrise" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_HI" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_LO" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WH" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WL" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|bit_count[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[16]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[17]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[18]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[19]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[20]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[21]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[22]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[23]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[24]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[25]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[26]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[27]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[28]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[29]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[30]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[31]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|left_sample[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|lrclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|obit" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|outbit" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|xmit_done" tap_mode="classic" type="combinatorial"/>
+          <wire name="MDOUT" tap_mode="classic" type="output pin"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q1" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q23" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q4" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_LOW" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_WAIT" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dout" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|iack" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[25]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[26]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[27]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[28]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[29]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[30]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[31]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[32]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[33]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[34]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[35]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[36]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[37]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[38]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[39]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[40]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[41]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[42]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[43]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[44]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[45]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[46]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[47]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|irdy" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|xack" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[32]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[33]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[34]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[35]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[36]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[37]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[38]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[39]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[40]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[41]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[42]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[43]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[44]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[45]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[46]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[47]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xrdy" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xreq" tap_mode="classic" type="combinatorial"/>
+          <wire name="RAND" tap_mode="classic" type="output pin"/>
+          <wire name="SCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_BCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCIN" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCOUT" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_MCLK" tap_mode="classic" type="output pin"/>
+          <wire name="cgen_rst" tap_mode="classic" type="register"/>
+          <wire name="clock_select[1]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[2]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[0]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[10]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[11]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[12]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[13]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[14]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[15]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[16]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[17]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[18]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[19]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[1]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[20]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[21]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[22]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[23]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[2]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[4]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[5]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[6]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[7]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[8]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[9]" tap_mode="classic" type="register"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="C13" tap_mode="classic" type="output pin"/>
+          <wire name="CC" tap_mode="classic" type="input pin"/>
+          <wire name="DFS0" tap_mode="classic" type="input pin"/>
+          <wire name="DFS1" tap_mode="classic" type="input pin"/>
+          <wire name="I2S_xmit:LR|CBfall" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|CBrise" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_HI" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_LO" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WH" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WL" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|bit_count[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[16]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[17]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[18]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[19]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[20]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[21]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[22]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[23]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[24]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[25]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[26]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[27]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[28]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[29]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[30]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[31]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|left_sample[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|lrclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|obit" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|outbit" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|xmit_done" tap_mode="classic" type="combinatorial"/>
+          <wire name="MDOUT" tap_mode="classic" type="output pin"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q1" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q23" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q4" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_LOW" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_WAIT" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dout" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|iack" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[25]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[26]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[27]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[28]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[29]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[30]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[31]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[32]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[33]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[34]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[35]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[36]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[37]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[38]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[39]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[40]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[41]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[42]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[43]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[44]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[45]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[46]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[47]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|irdy" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|xack" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[32]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[33]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[34]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[35]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[36]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[37]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[38]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[39]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[40]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[41]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[42]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[43]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[44]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[45]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[46]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[47]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xrdy" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xreq" tap_mode="classic" type="combinatorial"/>
+          <wire name="RAND" tap_mode="classic" type="output pin"/>
+          <wire name="SCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_BCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCIN" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCOUT" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_MCLK" tap_mode="classic" type="output pin"/>
+          <wire name="cgen_rst" tap_mode="classic" type="register"/>
+          <wire name="clock_select[1]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[2]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[0]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[10]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[11]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[12]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[13]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[14]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[15]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[16]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[17]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[18]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[19]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[1]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[20]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[21]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[22]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[23]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[2]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[4]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[5]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[6]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[7]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[8]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[9]" tap_mode="classic" type="register"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="C13" tap_mode="classic" type="output pin"/>
+          <wire name="CC" tap_mode="classic" type="input pin"/>
+          <wire name="DFS0" tap_mode="classic" type="input pin"/>
+          <wire name="DFS1" tap_mode="classic" type="input pin"/>
+          <wire name="I2S_xmit:LR|CBfall" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|CBrise" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_HI" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_LR_LO" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WH" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|TLV_state.TLV_WL" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|bit_count[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|bit_count[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[0]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[10]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[11]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[12]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[13]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[14]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[15]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[16]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[17]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[18]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[19]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[1]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[20]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[21]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[22]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[23]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[24]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[25]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[26]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[27]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[28]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[29]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[2]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[30]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[31]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[3]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[4]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[5]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[6]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[7]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[8]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|last_data[9]" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|left_sample[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|left_sample[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|lrclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|obit" tap_mode="classic" type="register"/>
+          <wire name="I2S_xmit:LR|outbit" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|right_sample[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="I2S_xmit:LR|xmit_done" tap_mode="classic" type="combinatorial"/>
+          <wire name="MDOUT" tap_mode="classic" type="output pin"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q1" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q23" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q4" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_LOW" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|NW_state.NW_WAIT" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|bcnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|data_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dly_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|dout" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|iack" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[25]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[26]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[27]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[28]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[29]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[30]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[31]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[32]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[33]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[34]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[35]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[36]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[37]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[38]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[39]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[40]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[41]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[42]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[43]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[44]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[45]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[46]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[47]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|id[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|irdy" tap_mode="classic" type="register"/>
+          <wire name="NWire_xmit:MDIQ|xack" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[32]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[33]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[34]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[35]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[36]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[37]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[38]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[39]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[40]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[41]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[42]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[43]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[44]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[45]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[46]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[47]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xdata[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xrdy" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_xmit:MDIQ|xreq" tap_mode="classic" type="combinatorial"/>
+          <wire name="RAND" tap_mode="classic" type="output pin"/>
+          <wire name="SCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_BCLK" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCIN" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_LRCOUT" tap_mode="classic" type="output pin"/>
+          <wire name="TLV320_MCLK" tap_mode="classic" type="output pin"/>
+          <wire name="cgen_rst" tap_mode="classic" type="register"/>
+          <wire name="clock_select[1]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[2]" tap_mode="classic" type="register"/>
+          <wire name="clock_select[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[0]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[10]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[11]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[12]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[13]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[14]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[15]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[16]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[17]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[18]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[19]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[1]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[20]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[21]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[22]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[23]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[2]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[3]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[4]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[5]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[6]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[7]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[8]" tap_mode="classic" type="register"/>
+          <wire name="tlv_timeout[9]" tap_mode="classic" type="register"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="CC"/>
+          <net is_signal_inverted="no" name="DFS0"/>
+          <net is_signal_inverted="no" name="DFS1"/>
+          <net is_signal_inverted="no" name="SCLK"/>
+          <net is_signal_inverted="no" name="TLV320_BCLK"/>
+          <net is_signal_inverted="no" name="TLV320_LRCIN"/>
+          <net is_signal_inverted="no" name="TLV320_LRCOUT"/>
+          <net is_signal_inverted="no" name="TLV320_MCLK"/>
+          <bus is_signal_inverted="no" link="all" name="tlv_timeout" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="tlv_timeout[0]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[1]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[2]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[3]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[4]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[5]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[6]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[7]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[8]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[9]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[10]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[11]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[12]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[13]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[14]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[15]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[16]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[17]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[18]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[19]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[20]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[21]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[22]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[23]"/>
+          </bus>
+          <net is_signal_inverted="no" name="MDOUT"/>
+          <bus is_signal_inverted="no" link="all" name="clock_select" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="clock_select[1]"/>
+            <net is_signal_inverted="no" name="clock_select[2]"/>
+            <net is_signal_inverted="no" name="clock_select[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="cgen_rst"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_IDLE"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_WAIT"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q1"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q23"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q4"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_LOW"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_xmit:MDIQ|bcnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[4]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[5]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dout"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_xmit:MDIQ|data_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[4]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[5]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_xmit:MDIQ|dly_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[4]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[5]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[6]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[7]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[8]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[9]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[10]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[11]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[12]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[13]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[14]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[15]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[16]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[17]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[18]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[19]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[20]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[21]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[22]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[23]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[24]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_xmit:MDIQ|id" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[0]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[1]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[2]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[3]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[4]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[5]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[6]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[7]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[8]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[9]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[10]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[11]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[12]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[13]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[14]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[15]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[16]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[17]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[18]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[19]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[20]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[21]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[22]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[23]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[24]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[25]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[26]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[27]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[28]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[29]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[30]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[31]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[32]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[33]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[34]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[35]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[36]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[37]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[38]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[39]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[40]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[41]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[42]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[43]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[44]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[45]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[46]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[47]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|iack"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xack"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|irdy"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xrdy"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xreq"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_xmit:MDIQ|xdata" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[0]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[1]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[2]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[3]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[4]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[5]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[6]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[7]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[8]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[9]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[10]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[11]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[12]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[13]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[14]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[15]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[16]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[17]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[18]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[19]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[20]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[21]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[22]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[23]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[24]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[25]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[26]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[27]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[28]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[29]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[30]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[31]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[32]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[33]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[34]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[35]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[36]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[37]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[38]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[39]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[40]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[41]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[42]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[43]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[44]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[45]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[46]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[47]"/>
+          </bus>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|CBrise"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|CBfall"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_IDLE"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_WH"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_LR_LO"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_WL"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_LR_HI"/>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|bit_count" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|left_sample" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|right_sample" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|last_data" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[15]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[16]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[17]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[18]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[19]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[20]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[21]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[22]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[23]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[24]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[25]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[26]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[27]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[28]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[29]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[30]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|lrclk"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|obit"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|outbit"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|xmit_done"/>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|data" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="RAND"/>
+          <net is_signal_inverted="no" name="C13"/>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="CC"/>
+          <net is_signal_inverted="no" name="DFS0"/>
+          <net is_signal_inverted="no" name="DFS1"/>
+          <net is_signal_inverted="no" name="MDOUT"/>
+          <net is_signal_inverted="no" name="SCLK"/>
+          <net is_signal_inverted="no" name="TLV320_BCLK"/>
+          <net is_signal_inverted="no" name="TLV320_LRCIN"/>
+          <net is_signal_inverted="no" name="TLV320_LRCOUT"/>
+          <net is_signal_inverted="no" name="TLV320_MCLK"/>
+          <bus is_signal_inverted="no" link="all" name="tlv_timeout" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="tlv_timeout[0]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[1]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[2]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[3]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[4]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[5]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[6]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[7]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[8]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[9]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[10]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[11]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[12]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[13]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[14]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[15]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[16]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[17]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[18]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[19]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[20]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[21]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[22]"/>
+            <net is_signal_inverted="no" name="tlv_timeout[23]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="clock_select" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="clock_select[1]"/>
+            <net is_signal_inverted="no" name="clock_select[2]"/>
+            <net is_signal_inverted="no" name="clock_select[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="cgen_rst"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_IDLE"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_WAIT"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q1"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q23"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_DATA_Q4"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|NW_state.NW_LOW"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dout"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_xmit:MDIQ|bcnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[4]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|bcnt[5]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_xmit:MDIQ|data_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[4]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|data_cnt[5]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_xmit:MDIQ|dly_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[4]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[5]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[6]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[7]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[8]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[9]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[10]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[11]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[12]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[13]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[14]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[15]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[16]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[17]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[18]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[19]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[20]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[21]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[22]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[23]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|dly_cnt[24]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|iack"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_xmit:MDIQ|id" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[0]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[1]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[2]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[3]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[4]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[5]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[6]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[7]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[8]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[9]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[10]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[11]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[12]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[13]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[14]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[15]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[16]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[17]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[18]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[19]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[20]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[21]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[22]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[23]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[24]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[25]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[26]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[27]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[28]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[29]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[30]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[31]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[32]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[33]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[34]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[35]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[36]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[37]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[38]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[39]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[40]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[41]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[42]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[43]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[44]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[45]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[46]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|id[47]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|irdy"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xack"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_xmit:MDIQ|xdata" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[0]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[1]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[2]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[3]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[4]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[5]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[6]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[7]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[8]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[9]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[10]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[11]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[12]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[13]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[14]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[15]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[16]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[17]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[18]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[19]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[20]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[21]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[22]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[23]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[24]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[25]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[26]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[27]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[28]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[29]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[30]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[31]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[32]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[33]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[34]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[35]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[36]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[37]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[38]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[39]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[40]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[41]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[42]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[43]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[44]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[45]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[46]"/>
+            <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xdata[47]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xrdy"/>
+          <net is_signal_inverted="no" name="NWire_xmit:MDIQ|xreq"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|CBfall"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|CBrise"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_IDLE"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_LR_HI"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_LR_LO"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_WH"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|TLV_state.TLV_WL"/>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|bit_count" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|bit_count[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|left_sample" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|left_sample[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|lrclk"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|obit"/>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|outbit"/>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|right_sample" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|right_sample[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="I2S_xmit:LR|xmit_done"/>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|data" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|data[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="I2S_xmit:LR|last_data" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[0]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[1]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[2]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[3]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[4]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[5]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[6]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[7]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[8]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[9]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[10]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[11]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[12]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[13]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[14]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[15]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[16]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[17]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[18]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[19]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[20]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[21]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[22]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[23]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[24]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[25]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[26]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[27]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[28]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[29]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[30]"/>
+            <net is_signal_inverted="no" name="I2S_xmit:LR|last_data[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="RAND"/>
+          <net is_signal_inverted="no" name="C13"/>
+        </setup_view>
+      </presentation>
+      <trigger CRC="D633D631" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2009/03/24 18:21:41  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'NWire_xmit:MDIQ|NW_state.NW_WAIT' == falling edge
+            
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            
+            <pwr_up_transitional>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2009/03/29 01:31:38  #0" power_up_mode="false" sample_depth="128" trigger_position="16">000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110110111111111111100110011110011111011111111001111100010010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000011011111111111110011001111001111101111111100111110101111111111111100111000001101111111111111101011110010010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000000000100000000000000000001110011101000000000110111111111111110011100000110111111111111110101111101111111111111100111000001101111111111111101011100010010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000110000000000000000000000001110011101000000001110111111111111110011100000110111111111111110101111101111111111111100111000001101111111111111101011100010000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000110000010000000000000000001110011101000000001110111111111111110011100000110111111111111110101101101111111111111100111000001101111111111111101011000010000110000000110100010000000000000010001000100000000100000000000011110011000010000111111000100100111110011110001010011111001111000110000001000000000000000001110011101000000001110111111111111110011100000110111111111111110101101101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000110000011000000000000000001110011101000000001110111111111111110011100000110111111111111110101101101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000000100000000000000001110011101000000001110111111111111110011100000110111111111111110101101101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000010100000000000000001110011101000000001110111111111111110011100000110111111111111110101101101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000001100000000000000001110011101000000001110111111111111110011100000110111111111111110101101101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000011100000000000000001110011101000000001110111111111111110011100000110111111111111110101101101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000000010000000000000001110011101000000001110111111111111110011100000110111111111111110101101101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000010010000000000000001110011101000000001110111111111111110011100000110111111111111110101101101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000000100001010000000000000001110011101000000000110111111111111110011100000110111111111111110101101101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000000100011010000000000000001110011101000000000010111111111111110011100000110111111111111110101100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000000100000110000000000000001110011101000000000010111111111111110011100000110111111111111110101100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000110000000000010000000000001110011101000000001011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000110000010000010000000000001110011101000000001011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000110000001000010000000000001110011101000000001011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000110000011000010000000000001110011101000000001011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000000100010000000000001110011101000000001011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000010100010000000000001110011101000000001011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000001100010000000000001110011101000000001011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000011100010000000000001110011101000000001011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000000010010000000000001110011101000000001011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000000000110000000110100010000000000000001001000100000000100000000000011110011000010000111111000100100111110011110001110011111001111000101000010010010000000000001110011101000000001011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000000100001010010000000000001110011101000000000011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000000100011010010000000000001110011101000000000011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000000100000110010000000000001110011101000000000011111111111011100111001001101111111111111001011000101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000000000001000000000001110011101000000001001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000010000001000000000001110011101000000001001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000001000001000000000001110011101000000001001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000011000001000000000001110011101000000001001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000001000000100001000000000001110011101000000000001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000001000010100001000000000001110011101000000000001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000001000001100001000000000001110011101000000000001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000001000011100001000000000001110011101000000000001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000001000000010001000000000001110011101000000000001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000001000010010001000000000001110011101000000000001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000000100001010001000000000001110011101000000000001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000000100011010001000000000001110011101000000000001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000000100000110001000000000001110011101000000000001111111111111001110001011011111101111110010110100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000000000011000000000001110011101000000001011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000010000011000000000001110011101000000001011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000001000011000000000001110011101000000001011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000010001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000011000011000000000001110011101000000001011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000000100011000000000001110011101000000001011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000010100011000000000001110011101000000001011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000001100011000000000001110011101000000001011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000011100011000000000001110011101000000001011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000000010011000000000001110011101000000001011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000010010011000000000001110011101000000001011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000000100001010011000000000001110011101000000000011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000000100011010011000000000001110011101000000000011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000000100000110011000000000001110011101000000000011111111111110011100000110111111111111100001101100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000000000000100000000001110011101000000001011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000010000000100000000001110011101000000001011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000001000000100000000001110011101000000001011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000110000011000000100000000001110011101000000001011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000000100000100000000001110011101000000001011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000010100000100000000001110011101000000001011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000001100000100000000001110011101000000001011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000011100000100000000001110011101000000001011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000000010000100000000001110011101000000001011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000101000010010000100000000001110011101000000001011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000001001001000000000000000000000011110011000010000111111000100100111110011110001110011111001111000000100001010000100000000001110011101000000000011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000000100011010000100000000001110011101000000000011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000000100000110000100000000001110011101000000000011111111111000111000011101111111101111000011011100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000110000000000010100000000001110011101000000001001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000110000010000010100000000001110011101000000001001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000110000001000010100000000001110011101000000001001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000110000011000010100000000001110011101000000001001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000001000000100010100000000001110011101000000000001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000001000010100010100000000001110011101000000000001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000001000001100010100000000001110011101000000000001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000001000011100010100000000001110011101000000000001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000001000000010010100000000001110011101000000000001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000001000010010010100000000001110011101000000000001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000000100001010010100000000001110011101000000000001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000000100011010010100000000001110011101000000000001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000000100000110010100000000001110011101000000000001111111110101110000110011111111111110000010111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000110000000000001100000000001110011101000000001011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000110000010000001100000000001110011101000000001011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000110000001000001100000000001110011101000000001011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000110000011000001100000000001110011101000000001011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000010001000000000000000000000000011110011000010000111111000100100111110011110000110011111001111000101000000100001100000000001110011101000000001011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000101000010100001100000000001110011101000000001011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000101000001100001100000000001110011101000000001011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000101000011100001100000000001110011101000000001011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000101000000010001100000000001110011101000000001011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000101000010010001100000000001110011101000000001011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000000100001010001100000000001110011101000000000011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000000100011010001100000000001110011101000000000011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000000100000110001100000000001110011101000000000011111111100011100001101111111111111100000001111100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000110000000000011100000000001110011101000000001001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000110000010000011100000000001110011101000000001001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000110000001000011100000000001110011101000000001001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000110000011000011100000000001110011101000000001001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000001000000100011100000000001110011101000000000001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000001000010100011100000000001110011101000000000001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000001000001100011100000000001110011101000000000001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000001000011100011100000000001110011101000000000001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000001000000010011100000000001110011101000000000001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000010110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000001000010010011100000000001110011101000000000001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000000100001010011100000000001110011101000000000001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000001001000000000000000000000000011110011000010000111111000100100111110011110000010011111001111000000100011010011100000000001110011101000000000001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000000000110000000110100010000000000000000000010000000000000000000000011110011000010000111111000100100111110011110000010011111001111000000100000110011100000000001110011101000000000001111111001111000011011111111111101000000011111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000000011111000111101100010000011110011000010000111111000100100111110011110000010011111001111000110000000000000010000000001110011101000000001011111110011110000110110111111111110000000011111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000000011111000111101100010000011110011000010000111111000100100111110011110000010011111001111000110000010000000010000000001110011101000000001011111110011110000110110111111111110000000011111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000000011111000111101100010000011110011000010000111111000100100111110011110000010011111001111000110000001000000010000000001110011101000000001011111110011110000110110111111111110000000011111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000000011111000111101100010000011110011000010000111111000100100111110011110000010011111001111000110000011000000010000000001110011101000000001011111110011110000110110111111111110000000011111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000000011111000111101100010000011110011000010000111111000100100111110011110000010011111001111000101000000100000010000000001110011101000000001011111110011110000110110111111111110000000011111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000000011111000111101100010000011110011000010000111111000100100111110011110000010011111001111000101000010100000010000000001110011101000000001011111110011110000110110111111111110000000011111100101111111111111100111000001101111111111111101011000010010110000000110100010000000000000000000011111000111101100010000011110011000010000111111000100100111110011110000010011111001111000101000001100000010000000001110011101000000001011111110011110000110110111111111110000000011111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000000000000011111000111101100010000011110011000010000111111000100100111110011110000010011111001111000101000011100000010000000001110011101000000001011111110011110000110110111111111110000000011111100101111111111111100111000001101111111111111101011000010000110000000110100010000000000</data>
+          <extradata>1111111111111111T111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="21"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="130944"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="column width" size="23" value="34,34,235,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,10"/>
+    <multi attribute="window position" size="9" value="1196,849,398,76,0,50,82,0,0"/>
+  </global_info>
+</session>

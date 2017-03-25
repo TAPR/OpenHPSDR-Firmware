@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 09 19:03:16 2011
+Quartus II Version : 11.0 Build 208 07/03/2011 SP 1 SJ Web Edition
+Revision Name : Mercury
+Top-level Entity Name : Mercury
+Family : Cyclone III
+Total logic elements : 25,366
+    Total combinational functions : 21,259
+    Dedicated logic registers : 17,594
+Total registers : 17594
+Total pins : 76
+Total virtual pins : 0
+Total memory bits : 157,296
+Embedded Multiplier 9-bit elements : 88
+Total PLLs : 2

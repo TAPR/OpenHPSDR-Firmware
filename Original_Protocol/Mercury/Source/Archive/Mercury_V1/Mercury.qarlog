@@ -1,0 +1,186 @@
+Quartus II Archive log --	C:/HPSDR/trunk/Mercury/Mercury.qarlog
+
+Archive:	C:/HPSDR/trunk/Mercury/Mercury.qar
+Date:		Fri Jul 11 19:58:16 2008
+Quartus II		8.0 Build 215 05/29/2008 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/HPSDR/trunk/Mercury/10th May with LED flash before  Atlas problem tests  Mercury.v
+C:/HPSDR/trunk/Mercury/14 June before Alex antenna switching  Mercury.v
+C:/HPSDR/trunk/Mercury/25 May before 2208 control  Mercury.v
+C:/HPSDR/trunk/Mercury/3 May 2008 Starting point  Mercury.v
+C:/HPSDR/trunk/Mercury/30 June before test Cathy's code  Mercury.v
+C:/HPSDR/trunk/Mercury/6 July before full Alex control Mercury.v
+C:/HPSDR/trunk/Mercury/7 June before 3kHz spur test  Mercury.v
+C:/HPSDR/trunk/Mercury/9 May before LED flash  Mercury.v
+C:/HPSDR/trunk/Mercury/FIFO.v
+C:/HPSDR/trunk/Mercury/FIR_top.v
+C:/HPSDR/trunk/Mercury/HPF_select.v
+C:/HPSDR/trunk/Mercury/I2S_Encoder_24bit.v
+C:/HPSDR/trunk/Mercury/LPF_select.v
+C:/HPSDR/trunk/Mercury/Mercury.asm.rpt
+C:/HPSDR/trunk/Mercury/Mercury.asm.talkback.xml
+C:/HPSDR/trunk/Mercury/Mercury.cdf
+C:/HPSDR/trunk/Mercury/Mercury.done
+C:/HPSDR/trunk/Mercury/Mercury.dpf
+C:/HPSDR/trunk/Mercury/Mercury.fit.eqn
+C:/HPSDR/trunk/Mercury/Mercury.fit.rpt
+C:/HPSDR/trunk/Mercury/Mercury.fit.summary
+C:/HPSDR/trunk/Mercury/Mercury.fit.talkback.xml
+C:/HPSDR/trunk/Mercury/Mercury.flow.rpt
+C:/HPSDR/trunk/Mercury/Mercury.gui.talkback.xml
+C:/HPSDR/trunk/Mercury/Mercury.map.eqn
+C:/HPSDR/trunk/Mercury/Mercury.map.rpt
+C:/HPSDR/trunk/Mercury/Mercury.map.smsg
+C:/HPSDR/trunk/Mercury/Mercury.map.summary
+C:/HPSDR/trunk/Mercury/Mercury.map.talkback.xml
+C:/HPSDR/trunk/Mercury/Mercury.pin
+C:/HPSDR/trunk/Mercury/Mercury.pof
+C:/HPSDR/trunk/Mercury/Mercury.qarlog
+C:/HPSDR/trunk/Mercury/Mercury.qsf
+C:/HPSDR/trunk/Mercury/Mercury.quartus.talkback.xml
+C:/HPSDR/trunk/Mercury/Mercury.sim.rpt
+C:/HPSDR/trunk/Mercury/Mercury.sim.talkback.xml
+C:/HPSDR/trunk/Mercury/Mercury.sof
+C:/HPSDR/trunk/Mercury/Mercury.sta.rpt
+C:/HPSDR/trunk/Mercury/Mercury.sta.summary
+C:/HPSDR/trunk/Mercury/Mercury.tan.rpt
+C:/HPSDR/trunk/Mercury/Mercury.tan.summary
+C:/HPSDR/trunk/Mercury/Mercury.tan.talkback.xml
+C:/HPSDR/trunk/Mercury/Mercury.v
+C:/HPSDR/trunk/Mercury/Mercury.vwf
+C:/HPSDR/trunk/Mercury/Mercury_assignment_defaults.qdf
+C:/HPSDR/trunk/Mercury/Programming EPCS16 or M25P16.txt
+C:/HPSDR/trunk/Mercury/SPI.v
+C:/HPSDR/trunk/Mercury/assignment_defaults.qdf
+C:/HPSDR/trunk/Mercury/cROM.v
+C:/HPSDR/trunk/Mercury/cROM_Sequencer.v
+C:/HPSDR/trunk/Mercury/cbuffer_top.v
+C:/HPSDR/trunk/Mercury/cic_10_1_3_nofraction.v
+C:/HPSDR/trunk/Mercury/cic_4_1_8_nofraction.v
+C:/HPSDR/trunk/Mercury/cic_8_1_5_nofraction.v
+C:/HPSDR/trunk/Mercury/cmcordic.v
+C:/HPSDR/trunk/Mercury/cordic_16.v
+C:/HPSDR/trunk/Mercury/cordic_VK6APH.v
+C:/HPSDR/trunk/Mercury/cordic_mjs.v
+C:/HPSDR/trunk/Mercury/db/Mercury.cbx.xml
+C:/HPSDR/trunk/Mercury/db/Mercury.qpf
+C:/HPSDR/trunk/Mercury/db/Mercury.sim.vwf
+C:/HPSDR/trunk/Mercury/db/Mercury0.rtl.mif
+C:/HPSDR/trunk/Mercury/db/a_fefifo_b0d.tdf
+C:/HPSDR/trunk/Mercury/db/a_fefifo_g0d.tdf
+C:/HPSDR/trunk/Mercury/db/a_gray2bin_36b.tdf
+C:/HPSDR/trunk/Mercury/db/a_gray2bin_mdb.tdf
+C:/HPSDR/trunk/Mercury/db/a_gray2bin_ndb.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_726.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_8j6.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_9j6.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_d4c.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_e4c.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_g86.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_ik6.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_im6.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_jk6.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_kk6.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_lk6.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_q96.tdf
+C:/HPSDR/trunk/Mercury/db/a_graycounter_r96.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_0ng.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_5ng.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_klg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_l4h.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_ljg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_lkc.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_llg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_mkc.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_n4h.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_njg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_p4h.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_ppg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_pvb.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_qjg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_r4h.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_rpg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_s4h.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_sjg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_tbf.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_tmg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_tpg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_umg.tdf
+C:/HPSDR/trunk/Mercury/db/add_sub_vbf.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_1e8.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_297.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_2e8.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_397.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_497.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_8u7.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_9u7.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_hv7.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_iv7.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_jv7.tdf
+C:/HPSDR/trunk/Mercury/db/alt_synch_pipe_kv7.tdf
+C:/HPSDR/trunk/Mercury/db/alt_u_div_06f.tdf
+C:/HPSDR/trunk/Mercury/db/alt_u_div_u5f.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_5fb1.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_5ti1.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_7nu.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_8ec1.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_aec1.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_e0j1.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_gqu.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_hpi1.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_ibc1.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_mmu.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_rof1.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_tpu.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_uia1.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_vpu.tdf
+C:/HPSDR/trunk/Mercury/db/altsyncram_vsi1.tdf
+C:/HPSDR/trunk/Mercury/db/cntr_j08.tdf
+C:/HPSDR/trunk/Mercury/db/dcfifo_6bf1.tdf
+C:/HPSDR/trunk/Mercury/db/dcfifo_f2c1.tdf
+C:/HPSDR/trunk/Mercury/db/dcfifo_huc1.tdf
+C:/HPSDR/trunk/Mercury/db/dcfifo_ijb1.tdf
+C:/HPSDR/trunk/Mercury/db/dcfifo_ld61.tdf
+C:/HPSDR/trunk/Mercury/db/dcfifo_qcd1.tdf
+C:/HPSDR/trunk/Mercury/db/dcfifo_rhc1.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_2v8.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_3v8.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_b09.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_c09.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_d09.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_e09.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_f09.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_pe9.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_re9.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_s98.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_se9.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_t98.tdf
+C:/HPSDR/trunk/Mercury/db/dffpipe_u98.tdf
+C:/HPSDR/trunk/Mercury/db/dpram_fvr.tdf
+C:/HPSDR/trunk/Mercury/db/dpram_ipm.tdf
+C:/HPSDR/trunk/Mercury/db/lpm_divide_6gm.tdf
+C:/HPSDR/trunk/Mercury/db/lpm_divide_7gm.tdf
+C:/HPSDR/trunk/Mercury/db/lpm_divide_sms.tdf
+C:/HPSDR/trunk/Mercury/db/mult_7o01.tdf
+C:/HPSDR/trunk/Mercury/db/mult_8o01.tdf
+C:/HPSDR/trunk/Mercury/db/mult_gm01.tdf
+C:/HPSDR/trunk/Mercury/db/mult_hr01.tdf
+C:/HPSDR/trunk/Mercury/db/mult_jr01.tdf
+C:/HPSDR/trunk/Mercury/db/mux_a18.tdf
+C:/HPSDR/trunk/Mercury/db/rom0_cROM_337f69.hdl.mif
+C:/HPSDR/trunk/Mercury/db/sign_div_unsign_gnh.tdf
+C:/HPSDR/trunk/Mercury/db/sign_div_unsign_hnh.tdf
+C:/HPSDR/trunk/Mercury/dc_offset_correct_new.v
+C:/HPSDR/trunk/Mercury/division.v
+C:/HPSDR/trunk/Mercury/mac.v
+C:/HPSDR/trunk/Mercury/oddClockDiv.v
+C:/HPSDR/trunk/Mercury/original cROM.v
+C:/HPSDR/trunk/Mercury/phase_accumulator.v
+C:/HPSDR/trunk/VK6APH/Mercury/megafunctions/altdpram.inc
+C:/HPSDR/trunk/VK6APH/Mercury/megafunctions/cbx.lst
+C:/HPSDR/trunk/VK6APH/Mercury/megafunctions/lpm_add_sub.inc
+	======= Total: 175 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

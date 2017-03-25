@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Dec 03 19:09:23 2012
+Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
+Revision Name : Metis
+Top-level Entity Name : Metis
+Family : Cyclone III
+Total logic elements : 14,652
+    Total combinational functions : 11,596
+    Dedicated logic registers : 6,719
+Total registers : 6719
+Total pins : 72
+Total virtual pins : 0
+Total memory bits : 290,816
+Embedded Multiplier 9-bit elements : 8
+Total PLLs : 1

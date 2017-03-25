@@ -1,0 +1,112 @@
+Restore Archived Project report for Metis
+Fri Mar 04 18:58:53 2011
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Fri Mar 04 18:58:53 2011 ;
+; Revision Name                   ; Metis                                 ;
+; Top-level Entity Name           ; Metis                                 ;
+; Family                          ; Cyclone III                           ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/HPSDR/trunk/Metis/Source/Metis/Metis.qar' into the 'C:/HPSDR/trunk/Metis/Source/Metis/' directory
+Info: Generated report 'Metis.restore.rpt'
+Info: Evaluation of Tcl script c:/altera/91sp2/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 94 megabytes
+    Info: Processing ended: Fri Mar 04 18:58:53 2011
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++-------------------------+
+; Files Restored          ;
++-------------------------+
+; File Name               ;
++-------------------------+
+; ASMI.v                  ;
+; ASMI_interface.v        ;
+; CRC32.v                 ;
+; DHCP.v                  ;
+; EEPROM.v                ;
+; EPCS_fifo.bsf           ;
+; EPCS_fifo.qip           ;
+; EPCS_fifo.v             ;
+; FIFO.v                  ;
+; I2C_Master.v            ;
+; Led_control.v           ;
+; Led_flash.v             ;
+; MDIO.v                  ;
+; Metis.dpf               ;
+; Metis.qpf               ;
+; Metis.qsf               ;
+; Metis.v                 ;
+; PHY_IN.v                ;
+; PHY_Rx_fifo.v           ;
+; PHY_Tx.v                ;
+; PHY_Tx_fifo.v           ;
+; PLL_clocks.v            ;
+; Rx_MAC.v                ;
+; Tx_MAC.v                ;
+; Tx_fifo.v               ;
+; Tx_fifo_ctrl.v          ;
+; assignment_defaults.qdf ;
+; common/I2S_rcv.v        ;
+; common/I2S_xmit.v       ;
+; common/NWire_rcv.v      ;
+; common/NWire_xmit.v     ;
+; common/OneWire_rcv.v    ;
+; common/OneWire_xmit.v   ;
+; common/cdc_mcp.v        ;
+; common/cdc_sync.v       ;
+; common/clk_div.v        ;
+; common/clk_lrclk_gen.v  ;
+; common/pulsegen.v       ;
+; debounce.v              ;
++-------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.052 ns
+From           : C21
+To             : sp_xmit_ctrl:SPC|sp_state~4
+From Clock     : --
+To Clock       : C122_clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.715 ns
+From           : SPI:Alex_SPI_Tx|Tx_load_strobe
+To             : Tx_load_strobe
+From Clock     : C122_clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.147 ns
+From           : OVERFLOW
+To             : DEBUG_LED0
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -1.943 ns
+From           : INA[0]
+To             : temp_ADC[11]
+From Clock     : --
+To Clock       : C122_clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'C122_clk'
+Slack          : 0.445 ns
+Required Time  : 122.88 MHz ( period = 8.138 ns )
+Actual Time    : 129.99 MHz ( period = 7.693 ns )
+From           : C122_frequency_HZ[3]~_Duplicate_2
+To             : HPF_select:Alex_HPF_select|HPF[0]
+From Clock     : C122_clk
+To Clock       : C122_clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'spc[1]'
+Slack          : 75.126 ns
+Required Time  : 12.29 MHz ( period = 81.380 ns )
+Actual Time    : 159.90 MHz ( period = 6.254 ns )
+From           : SPI_Alex_data[28]
+To             : SPI:Alex_SPI_Tx|data_count[4]
+From Clock     : spc[1]
+To Clock       : spc[1]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'OSC_10MHZ'
+Slack          : 97.081 ns
+Required Time  : 10.00 MHz ( period = 100.000 ns )
+Actual Time    : Restricted to 250.00 MHz ( period = 4.000 ns )
+From           : oddClockDivider:refClockDivider|count[0]
+To             : oddClockDivider:refClockDivider|count[6]
+From Clock     : OSC_10MHZ
+To Clock       : OSC_10MHZ
+Failed Paths   : 0
+
+Type           : Clock Hold: 'C122_clk'
+Slack          : 0.603 ns
+Required Time  : 122.88 MHz ( period = 8.138 ns )
+Actual Time    : N/A
+From           : SP_fifo:SPF|scfifo:scfifo_component|scfifo_ph31:auto_generated|a_dpfifo_c931:dpfifo|cntr_3ab:wr_ptr|counter_reg_bit[4]
+To             : SP_fifo:SPF|scfifo:scfifo_component|scfifo_ph31:auto_generated|a_dpfifo_c931:dpfifo|altsyncram_47e1:FIFOram|ram_block1a14~porta_address_reg0
+From Clock     : C122_clk
+To Clock       : C122_clk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'spc[1]'
+Slack          : 0.646 ns
+Required Time  : 12.29 MHz ( period = 81.380 ns )
+Actual Time    : N/A
+From           : SPI:Alex_SPI_Tx|SPI_clock
+To             : SPI:Alex_SPI_Tx|SPI_clock
+From Clock     : spc[1]
+To Clock       : spc[1]
+Failed Paths   : 0
+
+Type           : Clock Hold: 'OSC_10MHZ'
+Slack          : 0.646 ns
+Required Time  : 10.00 MHz ( period = 100.000 ns )
+Actual Time    : N/A
+From           : oddClockDivider:refClockDivider|count[0]
+To             : oddClockDivider:refClockDivider|count[0]
+From Clock     : OSC_10MHZ
+To Clock       : OSC_10MHZ
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
