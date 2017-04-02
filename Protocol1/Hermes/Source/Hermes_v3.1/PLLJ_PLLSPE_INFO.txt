@@ -1,0 +1,20 @@
+PLL_Name	C10_PLL:PLL2_inst|altpll:altpll_component|C10_PLL_altpll:auto_generated|pll1
+PLLJITTER	44
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	C122_PLL:PLL_inst|altpll:altpll_component|C122_PLL_altpll:auto_generated|pll1
+PLLJITTER	33
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	PLL_clocks:PLL_clocks_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|pll1
+PLLJITTER	28
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	PLL_IF:PLL_IF_inst|altpll:altpll_component|PLL_IF_altpll:auto_generated|pll1
+PLLJITTER	35
+PLLSPEmax	84
+PLLSPEmin	-53
+

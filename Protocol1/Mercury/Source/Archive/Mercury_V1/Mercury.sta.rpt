@@ -1,0 +1,920 @@
+TimeQuest Timing Analyzer report for Mercury
+Sat Mar 01 21:39:20 2008
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Clocks
+  4. Slow 1200mV 85C Model Fmax Summary
+  5. Slow 1200mV 85C Model Setup Summary
+  6. Slow 1200mV 85C Model Hold Summary
+  7. Slow 1200mV 85C Model Recovery Summary
+  8. Slow 1200mV 85C Model Removal Summary
+  9. Slow 1200mV 85C Model Minimum Pulse Width
+ 10. Slow 1200mV 0C Model Fmax Summary
+ 11. Slow 1200mV 0C Model Setup Summary
+ 12. Slow 1200mV 0C Model Hold Summary
+ 13. Slow 1200mV 0C Model Recovery Summary
+ 14. Slow 1200mV 0C Model Removal Summary
+ 15. Slow 1200mV 0C Model Minimum Pulse Width
+ 16. Fast 1200mV 0C Model Setup Summary
+ 17. Fast 1200mV 0C Model Hold Summary
+ 18. Fast 1200mV 0C Model Recovery Summary
+ 19. Fast 1200mV 0C Model Removal Summary
+ 20. Fast 1200mV 0C Model Minimum Pulse Width
+ 21. Board Trace Model Assignments
+ 22. Slow Corner Signal Integrity Metrics
+ 23. Fast Corner Signal Integrity Metrics
+ 24. Setup Transfers
+ 25. Hold Transfers
+ 26. Recovery Transfers
+ 27. Removal Transfers
+ 28. Report TCCS
+ 29. Report RSKM
+ 30. Unconstrained Paths
+ 31. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                    ;
++--------------------+-------------------------------------------------+
+; Quartus II Version ; Version 7.2 Build 151 09/26/2007 SJ Web Edition ;
+; Revision Name      ; Mercury                                         ;
+; Device Family      ; Cyclone III                                     ;
+; Device Name        ; EP3C25Q240C8                                    ;
+; Timing Models      ; Preliminary                                     ;
+; Delay Model        ; Combined                                        ;
+; Rise/Fall Delays   ; Enabled                                         ;
++--------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                             ;
++------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------+
+; Clock Name                               ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                      ;
++------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------+
+; BCLK                                     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { BCLK }                                     ;
+; C17                                      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { C17 }                                      ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { cic_8_1_5_nofraction:cic_I_2|ce_out_reg }  ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { cic_10_1_3_nofraction:cic_Q_1|ce_out_reg } ;
+; FIR_top:FIR|strobe_out                   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { FIR_top:FIR|strobe_out }                   ;
+; FPGA_CLK6IN                              ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { FPGA_CLK6IN }                              ;
+; index                                    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { index }                                    ;
++------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                          ;
++------------+-----------------+------------------------------------------+-------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                               ; Note              ;
++------------+-----------------+------------------------------------------+-------------------+
+; 77.95 MHz  ; 77.95 MHz       ; FPGA_CLK6IN                              ;                   ;
+; 128.07 MHz ; 128.07 MHz      ; BCLK                                     ;                   ;
+; 130.12 MHz ; 130.12 MHz      ; FIR_top:FIR|strobe_out                   ;                   ;
+; 169.03 MHz ; 169.03 MHz      ; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ;                   ;
+; 183.79 MHz ; 183.79 MHz      ; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ;                   ;
+; 213.22 MHz ; 213.22 MHz      ; C17                                      ;                   ;
+; 368.73 MHz ; 350.02 MHz      ; index                                    ; limit due to tmin ;
++------------+-----------------+------------------------------------------+-------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary                                ;
++------------------------------------------+---------+---------------+
+; Clock                                    ; Slack   ; End Point TNS ;
++------------------------------------------+---------+---------------+
+; FPGA_CLK6IN                              ; -11.829 ; -7257.945     ;
+; FIR_top:FIR|strobe_out                   ; -6.685  ; -385.943      ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; -5.143  ; -5808.288     ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; -4.916  ; -2945.931     ;
+; C17                                      ; -3.690  ; -30.479       ;
+; BCLK                                     ; -3.577  ; -240.615      ;
+; index                                    ; -1.712  ; -12.426       ;
++------------------------------------------+---------+---------------+
+
+
++------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary                               ;
++------------------------------------------+-------+---------------+
+; Clock                                    ; Slack ; End Point TNS ;
++------------------------------------------+-------+---------------+
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 0.416 ; 0.000         ;
+; FPGA_CLK6IN                              ; 0.526 ; 0.000         ;
+; BCLK                                     ; 0.526 ; 0.000         ;
+; C17                                      ; 0.526 ; 0.000         ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 0.543 ; 0.000         ;
+; index                                    ; 0.543 ; 0.000         ;
+; FIR_top:FIR|strobe_out                   ; 0.776 ; 0.000         ;
++------------------------------------------+-------+---------------+
+
+
++-------------------------------------------------------------------+
+; Slow 1200mV 85C Model Recovery Summary                            ;
++------------------------------------------+--------+---------------+
+; Clock                                    ; Slack  ; End Point TNS ;
++------------------------------------------+--------+---------------+
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; -4.571 ; -7183.032     ;
+; FPGA_CLK6IN                              ; -4.081 ; -2144.183     ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; -3.731 ; -3539.147     ;
++------------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------+
+; Slow 1200mV 85C Model Removal Summary                            ;
++------------------------------------------+-------+---------------+
+; Clock                                    ; Slack ; End Point TNS ;
++------------------------------------------+-------+---------------+
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 4.242 ; 0.000         ;
+; FPGA_CLK6IN                              ; 4.569 ; 0.000         ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 5.081 ; 0.000         ;
++------------------------------------------+-------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width                                                                                                                                                             ;
++--------+--------------+----------------+--------+-------------+------------+--------------------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Pulse  ; Clock       ; Clock Edge ; Target                                                                                                                   ;
++--------+--------------+----------------+--------+-------------+------------+--------------------------------------------------------------------------------------------------------------------------+
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[0]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~portb_re_reg       ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_address_reg1 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_address_reg2 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_address_reg3 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_datain_reg10 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_address_reg4 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_address_reg5 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_address_reg6 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_address_reg7 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~portb_address_reg0 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~portb_address_reg1 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~portb_address_reg2 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~portb_address_reg3 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~portb_address_reg4 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~portb_address_reg5 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[18]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[19]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[20]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[21]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[22]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[23]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[18]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[19]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[20]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[21]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[22]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[23]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[1]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[2]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[3]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[4]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[5]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[6]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[7]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[8]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[9]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[10]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[11]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[12]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[13]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[14]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[15]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[16]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[17]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[42]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[43]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[44]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[45]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[46]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[47]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[42]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[43]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[44]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[45]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[46]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[47]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[24]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[25]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[26]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[27]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[28]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[29]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[30]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[31]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[32]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[33]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[34]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[35]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[36]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[37]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[38]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[39]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[40]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[41]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[0]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[1]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[2]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[3]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[4]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[5]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[6]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[7]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[8]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[9]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[10]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[11]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[12]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[13]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[14]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[15]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[16]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[17]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~portb_address_reg6 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~portb_address_reg7 ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_datain_reg1  ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_datain_reg2  ;
++--------+--------------+----------------+--------+-------------+------------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                ;
++------------+-----------------+------------------------------------------+------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                               ; Note                   ;
++------------+-----------------+------------------------------------------+------------------------+
+; 85.47 MHz  ; 85.47 MHz       ; FPGA_CLK6IN                              ;                        ;
+; 139.2 MHz  ; 139.2 MHz       ; BCLK                                     ;                        ;
+; 144.82 MHz ; 144.82 MHz      ; FIR_top:FIR|strobe_out                   ;                        ;
+; 185.63 MHz ; 185.63 MHz      ; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ;                        ;
+; 203.21 MHz ; 203.21 MHz      ; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ;                        ;
+; 228.57 MHz ; 225.02 MHz      ; C17                                      ; limit due to port rate ;
+; 389.86 MHz ; 350.02 MHz      ; index                                    ; limit due to tmin      ;
++------------+-----------------+------------------------------------------+------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary                                 ;
++------------------------------------------+---------+---------------+
+; Clock                                    ; Slack   ; End Point TNS ;
++------------------------------------------+---------+---------------+
+; FPGA_CLK6IN                              ; -10.700 ; -6551.042     ;
+; FIR_top:FIR|strobe_out                   ; -5.905  ; -344.493      ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; -4.813  ; -5298.323     ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; -4.387  ; -2643.501     ;
+; C17                                      ; -3.375  ; -26.881       ;
+; BCLK                                     ; -3.198  ; -214.015      ;
+; index                                    ; -1.565  ; -10.828       ;
++------------------------------------------+---------+---------------+
+
+
++------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                                ;
++------------------------------------------+-------+---------------+
+; Clock                                    ; Slack ; End Point TNS ;
++------------------------------------------+-------+---------------+
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 0.293 ; 0.000         ;
+; FPGA_CLK6IN                              ; 0.469 ; 0.000         ;
+; BCLK                                     ; 0.469 ; 0.000         ;
+; C17                                      ; 0.469 ; 0.000         ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 0.484 ; 0.000         ;
+; index                                    ; 0.484 ; 0.000         ;
+; FIR_top:FIR|strobe_out                   ; 0.693 ; 0.000         ;
++------------------------------------------+-------+---------------+
+
+
++-------------------------------------------------------------------+
+; Slow 1200mV 0C Model Recovery Summary                             ;
++------------------------------------------+--------+---------------+
+; Clock                                    ; Slack  ; End Point TNS ;
++------------------------------------------+--------+---------------+
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; -4.150 ; -6524.516     ;
+; FPGA_CLK6IN                              ; -3.730 ; -1961.179     ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; -3.346 ; -3175.435     ;
++------------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------+
+; Slow 1200mV 0C Model Removal Summary                             ;
++------------------------------------------+-------+---------------+
+; Clock                                    ; Slack ; End Point TNS ;
++------------------------------------------+-------+---------------+
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 3.704 ; 0.000         ;
+; FPGA_CLK6IN                              ; 4.069 ; 0.000         ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 4.507 ; 0.000         ;
++------------------------------------------+-------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width                                                                                                                                                              ;
++--------+--------------+----------------+--------+-------------+------------+--------------------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Pulse  ; Clock       ; Clock Edge ; Target                                                                                                                   ;
++--------+--------------+----------------+--------+-------------+------------+--------------------------------------------------------------------------------------------------------------------------+
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[0]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[18]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[19]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[20]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[21]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[22]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[23]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[18]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[19]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[20]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[21]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[22]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[23]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[1]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[2]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[3]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[4]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[5]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[6]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[7]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[8]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[9]~_Duplicate_1                                                            ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[10]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[11]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[12]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[13]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[14]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[15]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[16]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[17]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[42]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[43]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[44]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[45]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[46]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[47]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[42]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[43]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[44]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[45]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[46]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[47]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[24]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[25]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[26]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[27]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[28]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[29]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[30]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[31]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[32]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[33]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[34]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[35]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[36]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[37]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[38]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[39]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[40]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[41]~_Duplicate_1                                                           ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[0]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[1]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[2]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[3]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[4]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[5]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[6]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[7]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[8]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[9]                                                                         ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[10]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[11]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[12]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[13]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[14]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[15]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[16]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[17]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[24]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[25]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[26]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[27]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[28]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[29]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[30]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[31]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[32]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[33]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[34]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[35]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[36]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[37]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[38]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[39]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[40]                                                                        ;
+; -4.555 ; 1.000        ; 5.555          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|data_out[41]                                                                        ;
+; -3.975 ; 1.000        ; 4.975          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -3.975 ; 1.000        ; 4.975          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~portb_re_reg       ;
+; -3.975 ; 1.000        ; 4.975          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -3.975 ; 1.000        ; 4.975          ; Period ; FPGA_CLK6IN ; Rise       ; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ram_block1a0~porta_address_reg0 ;
++--------+--------------+----------------+--------+-------------+------------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary                                ;
++------------------------------------------+--------+---------------+
+; Clock                                    ; Slack  ; End Point TNS ;
++------------------------------------------+--------+---------------+
+; FPGA_CLK6IN                              ; -4.775 ; -2070.217     ;
+; FIR_top:FIR|strobe_out                   ; -2.912 ; -165.891      ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; -2.235 ; -2144.822     ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; -1.634 ; -819.783      ;
+; BCLK                                     ; -1.569 ; -72.526       ;
+; C17                                      ; -1.010 ; -3.452        ;
+; index                                    ; -0.168 ; -0.924        ;
++------------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                                ;
++------------------------------------------+-------+---------------+
+; Clock                                    ; Slack ; End Point TNS ;
++------------------------------------------+-------+---------------+
+; FPGA_CLK6IN                              ; 0.131 ; 0.000         ;
+; C17                                      ; 0.213 ; 0.000         ;
+; BCLK                                     ; 0.214 ; 0.000         ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 0.227 ; 0.000         ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 0.227 ; 0.000         ;
+; index                                    ; 0.227 ; 0.000         ;
+; FIR_top:FIR|strobe_out                   ; 0.308 ; 0.000         ;
++------------------------------------------+-------+---------------+
+
+
++-------------------------------------------------------------------+
+; Fast 1200mV 0C Model Recovery Summary                             ;
++------------------------------------------+--------+---------------+
+; Clock                                    ; Slack  ; End Point TNS ;
++------------------------------------------+--------+---------------+
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; -2.047 ; -3208.389     ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; -1.670 ; -1581.447     ;
+; FPGA_CLK6IN                              ; -1.468 ; -769.787      ;
++------------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------+
+; Fast 1200mV 0C Model Removal Summary                             ;
++------------------------------------------+-------+---------------+
+; Clock                                    ; Slack ; End Point TNS ;
++------------------------------------------+-------+---------------+
+; FPGA_CLK6IN                              ; 2.107 ; 0.000         ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 2.319 ; 0.000         ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 2.697 ; 0.000         ;
++------------------------------------------+-------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width                                                                                                          ;
++--------+--------------+----------------+--------+------------------------+------------+-----------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Pulse  ; Clock                  ; Clock Edge ; Target                                                    ;
++--------+--------------+----------------+--------+------------------------+------------+-----------------------------------------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FPGA_CLK6IN                                               ;
+; -3.000 ; 1.000        ; 4.000          ; Period ; BCLK                   ; Rise       ; BCLK                                                      ;
+; -3.000 ; 1.000        ; 4.000          ; Period ; C17                    ; Rise       ; C17                                                       ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; PCLK_12MHZ                                                ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; PCLK_count[0]                                             ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; PCLK_count[2]                                             ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; PCLK_count[1]                                             ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|bit_count[1]                                ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|bit_count[4]                                ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|bit_count[3]                                ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|bit_count[2]                                ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[3]                       ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[2]                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[16]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|encode_state.010                            ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|encode_state.100                            ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|encode_state.011                            ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|encode_state.001                            ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[18]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[19]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[23]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[21]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|bit_count[0]                                ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[7]                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[15]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[10]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[14]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[17]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[20]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[22]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|outbit                                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_I|accum_temp[30]                 ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[5]                                                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[5]                       ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[13]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[13]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; q[5]                                                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[8]                                                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[8]                       ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[21]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[11]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[3]                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[5]                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[13]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[8]                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[12]                                    ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[6]                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[7]                       ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[7]                                                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|encode_state.000                            ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[18]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[18]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[19]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[19]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[23]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[23]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[21]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[12]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[12]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[15]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[15]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[9]                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[1]                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[0]                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|data[4]                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[10]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[10]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[14]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[14]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; q[18]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; q[19]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[16]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[16]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[17]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[17]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[20]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[20]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[22]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[22]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; q[7]                                                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[11]                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[11]                                                     ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; i[3]                                                      ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_Q|accum_out[28]                  ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FIR_top:FIR|strobe_out ; Rise       ; dc_offset_correct_new:dc_offset_correct_q|accumulator[20] ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FIR_top:FIR|strobe_out ; Rise       ; dc_offset_correct_new:dc_offset_correct_q|accumulator[29] ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_Q|accum_out[37]                  ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_I|accum_temp[38]                 ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_Q|accum_out[33]                  ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FIR_top:FIR|strobe_out ; Rise       ; dc_offset_correct_new:dc_offset_correct_q|accumulator[25] ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_I|accum_temp[26]                 ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FIR_top:FIR|strobe_out ; Rise       ; dc_offset_correct_new:dc_offset_correct_q|accumulator[17] ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_Q|accum_out[25]                  ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_I|accum_temp[33]                 ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_I|accum_temp[43]                 ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_I|accum_out[41]                  ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FIR_top:FIR|strobe_out ; Rise       ; dc_offset_correct_new:dc_offset_correct_i|accumulator[33] ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FIR_top:FIR|strobe_out ; Rise       ; dc_offset_correct_new:dc_offset_correct_q|accumulator[35] ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; FPGA_CLK6IN            ; Rise       ; FIR_top:FIR|MAC:MAC_inst_Q|accum_out[43]                  ;
+; -1.000 ; 1.000        ; 2.000          ; Period ; BCLK                   ; Rise       ; I2SEncode:I2S|local_right_sample[6]                       ;
++--------+--------------+----------------+--------+------------------------+------------+-----------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                          ;
++---------------+--------------+---------------+----------------+------------------+--------+--------------+--------------------+--------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+; Pin           ; I/O Standard ; Near Series R ; Near Pull-up R ; Near Pull-down R ; Near C ; Tline Length ; Tline L per Length ; Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ;
++---------------+--------------+---------------+----------------+------------------+--------+--------------+--------------------+--------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+; DEBUG_LED0    ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; DEBUG_LED1    ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; DEBUG_LED2    ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; DEBUG_LED3    ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; A11           ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MDOUT         ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; CDIN          ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; CBCLK         ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; CLRCLK        ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; CMCLK         ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; CMODE         ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MOSI          ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; SSCK          ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; nCS           ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; FPGA_PLL      ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; FPGA_CLKXOUT  ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; ext_10MHZ     ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; A5            ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; LRCLK         ; 3.0-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; ~ALTERA_DCLK~ ; 3.3-V LVTTL  ; short         ; open           ; open             ; open   ; 0 in         ; 0 H/in             ; 0 F/in             ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
++---------------+--------------+---------------+----------------+------------------+--------+--------------+--------------------+--------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+-------------------------------------+-------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+------------------------------------+------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Margin on Rise at FPGA Pin ; Ringback Margin on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Margin on Rise at Far-end ; Ringback Margin on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+-------------------------------------+-------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+------------------------------------+------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; DEBUG_LED0    ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; DEBUG_LED1    ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.81 V              ; -0.00404 V          ; 0.212 V                             ; 0.086 V                             ; 3.59e-009 s                 ; 3.43e-009 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.81 V             ; -0.00404 V         ; 0.212 V                            ; 0.086 V                            ; 3.59e-009 s                ; 3.43e-009 s                ; Yes                       ; Yes                       ;
+; DEBUG_LED2    ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; DEBUG_LED3    ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; A11           ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; MDOUT         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; CDIN          ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; CBCLK         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; CLRCLK        ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; CMCLK         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.94e-006 V                 ; 2.84 V              ; -0.0358 V           ; 0.161 V                             ; 0.191 V                             ; 6.71e-010 s                 ; 6.39e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.94e-006 V                ; 2.84 V             ; -0.0358 V          ; 0.161 V                            ; 0.191 V                            ; 6.71e-010 s                ; 6.39e-010 s                ; Yes                       ; Yes                       ;
+; CMODE         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; MOSI          ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; SSCK          ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; nCS           ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; FPGA_PLL      ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; FPGA_CLKXOUT  ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.94e-006 V                 ; 2.84 V              ; -0.0358 V           ; 0.161 V                             ; 0.191 V                             ; 6.71e-010 s                 ; 6.39e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.94e-006 V                ; 2.84 V             ; -0.0358 V          ; 0.161 V                            ; 0.191 V                            ; 6.71e-010 s                ; 6.39e-010 s                ; Yes                       ; Yes                       ;
+; ext_10MHZ     ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.82e-006 V                 ; 2.84 V              ; -0.0461 V           ; 0.162 V                             ; 0.213 V                             ; 4.62e-010 s                 ; 4.6e-010 s                  ; Yes                        ; Yes                        ; 2.8 V                       ; -3.82e-006 V                ; 2.84 V             ; -0.0461 V          ; 0.162 V                            ; 0.213 V                            ; 4.62e-010 s                ; 4.6e-010 s                 ; Yes                       ; Yes                       ;
+; A5            ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.82e-006 V                 ; 2.84 V              ; -0.0461 V           ; 0.162 V                             ; 0.213 V                             ; 4.62e-010 s                 ; 4.6e-010 s                  ; Yes                        ; Yes                        ; 2.8 V                       ; -3.82e-006 V                ; 2.84 V             ; -0.0461 V          ; 0.162 V                            ; 0.213 V                            ; 4.62e-010 s                ; 4.6e-010 s                 ; Yes                       ; Yes                       ;
+; LRCLK         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; -3.79e-006 V                 ; 2.83 V              ; -0.0353 V           ; 0.173 V                             ; 0.203 V                             ; 6.79e-010 s                 ; 6.51e-010 s                 ; Yes                        ; Yes                        ; 2.8 V                       ; -3.79e-006 V                ; 2.83 V             ; -0.0353 V          ; 0.173 V                            ; 0.203 V                            ; 6.79e-010 s                ; 6.51e-010 s                ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.68e-007 V                  ; 3.13 V              ; -0.0977 V           ; 0.164 V                             ; 0.13 V                              ; 3.14e-010 s                 ; 3.98e-010 s                 ; Yes                        ; Yes                        ; 3.08 V                      ; 2.68e-007 V                 ; 3.13 V             ; -0.0977 V          ; 0.164 V                            ; 0.13 V                             ; 3.14e-010 s                ; 3.98e-010 s                ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+-------------------------------------+-------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+------------------------------------+------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+-------------------------------------+-------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+------------------------------------+------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Margin on Rise at FPGA Pin ; Ringback Margin on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Margin on Rise at Far-end ; Ringback Margin on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+-------------------------------------+-------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+------------------------------------+------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; DEBUG_LED0    ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; DEBUG_LED1    ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.17 V              ; -0.015 V            ; 0.273 V                             ; 0.244 V                             ; 2.4e-009 s                  ; 2.3e-009 s                  ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.17 V             ; -0.015 V           ; 0.273 V                            ; 0.244 V                            ; 2.4e-009 s                 ; 2.3e-009 s                 ; No                        ; Yes                       ;
+; DEBUG_LED2    ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; DEBUG_LED3    ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; A11           ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; MDOUT         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; CDIN          ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; CBCLK         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; CLRCLK        ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; CMCLK         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -2.41e-007 V                 ; 3.25 V              ; -0.0513 V           ; 0.187 V                             ; 0.137 V                             ; 4.53e-010 s                 ; 4.19e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -2.41e-007 V                ; 3.25 V             ; -0.0513 V          ; 0.187 V                            ; 0.137 V                            ; 4.53e-010 s                ; 4.19e-010 s                ; No                        ; Yes                       ;
+; CMODE         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; MOSI          ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; SSCK          ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; nCS           ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; FPGA_PLL      ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; FPGA_CLKXOUT  ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -2.41e-007 V                 ; 3.25 V              ; -0.0513 V           ; 0.187 V                             ; 0.137 V                             ; 4.53e-010 s                 ; 4.19e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -2.41e-007 V                ; 3.25 V             ; -0.0513 V          ; 0.187 V                            ; 0.137 V                            ; 4.53e-010 s                ; 4.19e-010 s                ; No                        ; Yes                       ;
+; ext_10MHZ     ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.107 V            ; 0.203 V                             ; 0.307 V                             ; 2.74e-010 s                 ; 2.69e-010 s                 ; Yes                        ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.107 V           ; 0.203 V                            ; 0.307 V                            ; 2.74e-010 s                ; 2.69e-010 s                ; Yes                       ; Yes                       ;
+; A5            ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.107 V            ; 0.203 V                             ; 0.307 V                             ; 2.74e-010 s                 ; 2.69e-010 s                 ; Yes                        ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.107 V           ; 0.203 V                            ; 0.307 V                            ; 2.74e-010 s                ; 2.69e-010 s                ; Yes                       ; Yes                       ;
+; LRCLK         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; -1.7e-007 V                  ; 3.25 V              ; -0.0642 V           ; 0.193 V                             ; 0.158 V                             ; 4.56e-010 s                 ; 4.26e-010 s                 ; No                         ; Yes                        ; 3.15 V                      ; -1.7e-007 V                 ; 3.25 V             ; -0.0642 V          ; 0.193 V                            ; 0.158 V                            ; 4.56e-010 s                ; 4.26e-010 s                ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 6.64e-008 V                  ; 3.66 V              ; -0.242 V            ; 0.408 V                             ; 0.304 V                             ; 1.57e-010 s                 ; 2.12e-010 s                 ; No                         ; Yes                        ; 3.46 V                      ; 6.64e-008 V                 ; 3.66 V             ; -0.242 V           ; 0.408 V                            ; 0.304 V                            ; 1.57e-010 s                ; 2.12e-010 s                ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+-------------------------------------+-------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+------------------------------------+------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                 ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+; From Clock                               ; To Clock                                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+; BCLK                                     ; BCLK                                     ; 220      ; 48       ; 48       ; 0        ;
+; FIR_top:FIR|strobe_out                   ; BCLK                                     ; 0        ; 0        ; 0        ; 600      ;
+; FPGA_CLK6IN                              ; BCLK                                     ; 0        ; 0        ; 600      ; 0        ;
+; C17                                      ; C17                                      ; 110      ; 0        ; 0        ; 0        ;
+; index                                    ; C17                                      ; 17       ; 1        ; 0        ; 0        ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 38678    ; 0        ; 0        ; 0        ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 48       ; 0        ; 0        ; 0        ;
+; FPGA_CLK6IN                              ; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 950      ; 0        ; 0        ; 0        ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 22435    ; 0        ; 0        ; 0        ;
+; FPGA_CLK6IN                              ; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 605      ; 0        ; 0        ; 0        ;
+; FIR_top:FIR|strobe_out                   ; FIR_top:FIR|strobe_out                   ; 0        ; 0        ; 0        ; 22968    ;
+; FPGA_CLK6IN                              ; FIR_top:FIR|strobe_out                   ; 0        ; 0        ; 21408    ; 0        ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; FPGA_CLK6IN                              ; 101      ; 0        ; 0        ; 0        ;
+; FIR_top:FIR|strobe_out                   ; FPGA_CLK6IN                              ; 1        ; 1        ; 0        ; 0        ;
+; FPGA_CLK6IN                              ; FPGA_CLK6IN                              ; 494683   ; 391      ; 848      ; 528      ;
+; index                                    ; index                                    ; 46       ; 0        ; 0        ; 0        ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                  ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+; From Clock                               ; To Clock                                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+; BCLK                                     ; BCLK                                     ; 220      ; 48       ; 48       ; 0        ;
+; FIR_top:FIR|strobe_out                   ; BCLK                                     ; 0        ; 0        ; 0        ; 600      ;
+; FPGA_CLK6IN                              ; BCLK                                     ; 0        ; 0        ; 600      ; 0        ;
+; C17                                      ; C17                                      ; 110      ; 0        ; 0        ; 0        ;
+; index                                    ; C17                                      ; 17       ; 1        ; 0        ; 0        ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 38678    ; 0        ; 0        ; 0        ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 48       ; 0        ; 0        ; 0        ;
+; FPGA_CLK6IN                              ; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 950      ; 0        ; 0        ; 0        ;
+; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 22435    ; 0        ; 0        ; 0        ;
+; FPGA_CLK6IN                              ; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 605      ; 0        ; 0        ; 0        ;
+; FIR_top:FIR|strobe_out                   ; FIR_top:FIR|strobe_out                   ; 0        ; 0        ; 0        ; 22968    ;
+; FPGA_CLK6IN                              ; FIR_top:FIR|strobe_out                   ; 0        ; 0        ; 21408    ; 0        ;
+; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; FPGA_CLK6IN                              ; 101      ; 0        ; 0        ; 0        ;
+; FIR_top:FIR|strobe_out                   ; FPGA_CLK6IN                              ; 1        ; 1        ; 0        ; 0        ;
+; FPGA_CLK6IN                              ; FPGA_CLK6IN                              ; 494683   ; 391      ; 848      ; 528      ;
+; index                                    ; index                                    ; 46       ; 0        ; 0        ; 0        ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++----------------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                                 ;
++-------------+------------------------------------------+----------+----------+----------+----------+
+; From Clock  ; To Clock                                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------+------------------------------------------+----------+----------+----------+----------+
+; FPGA_CLK6IN ; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 1576     ; 0        ; 0        ; 0        ;
+; FPGA_CLK6IN ; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 952      ; 0        ; 0        ; 0        ;
+; FPGA_CLK6IN ; FPGA_CLK6IN                              ; 527      ; 0        ; 0        ; 0        ;
++-------------+------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++----------------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                                  ;
++-------------+------------------------------------------+----------+----------+----------+----------+
+; From Clock  ; To Clock                                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------+------------------------------------------+----------+----------+----------+----------+
+; FPGA_CLK6IN ; cic_8_1_5_nofraction:cic_I_2|ce_out_reg  ; 1576     ; 0        ; 0        ; 0        ;
+; FPGA_CLK6IN ; cic_10_1_3_nofraction:cic_Q_1|ce_out_reg ; 952      ; 0        ; 0        ; 0        ;
+; FPGA_CLK6IN ; FPGA_CLK6IN                              ; 527      ; 0        ; 0        ; 0        ;
++-------------+------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No LVDS transmitter found in design.
+
+
+---------------
+; Report RSKM ;
+---------------
+No LVDS receiver found in design.
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 21    ; 21   ;
+; Unconstrained Input Port Paths  ; 93    ; 93   ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 9     ; 9    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II TimeQuest Timing Analyzer
+    Info: Version 7.2 Build 151 09/26/2007 SJ Web Edition
+    Info: Processing started: Sat Mar 01 21:39:00 2008
+Info: Command: quartus_sta Mercury -c Mercury
+Info: qsta_default_script.tcl version: 25.0.1.4
+Critical Warning: SDC file not found: 'Mercury.sdc'. An SDC file is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the compiler will not properly optimize the design
+Info: No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info: Deriving Clocks
+    Info: create_clock -period 1.000 -waveform {0.000 0.500} -name FPGA_CLK6IN FPGA_CLK6IN
+    Info: create_clock -period 1.000 -waveform {0.000 0.500} -name BCLK BCLK
+    Info: create_clock -period 1.000 -waveform {0.000 0.500} -name FIR_top:FIR|strobe_out FIR_top:FIR|strobe_out
+    Info: create_clock -period 1.000 -waveform {0.000 0.500} -name cic_8_1_5_nofraction:cic_I_2|ce_out_reg cic_8_1_5_nofraction:cic_I_2|ce_out_reg
+    Info: create_clock -period 1.000 -waveform {0.000 0.500} -name cic_10_1_3_nofraction:cic_Q_1|ce_out_reg cic_10_1_3_nofraction:cic_Q_1|ce_out_reg
+    Info: create_clock -period 1.000 -waveform {0.000 0.500} -name C17 C17
+    Info: create_clock -period 1.000 -waveform {0.000 0.500} -name index index
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning: Timing requirements not met
+Info: Worst-case setup slack is -11.829
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:   -11.829     -7257.945 FPGA_CLK6IN 
+    Info:    -6.685      -385.943 FIR_top:FIR|strobe_out 
+    Info:    -5.143     -5808.288 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+    Info:    -4.916     -2945.931 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+    Info:    -3.690       -30.479 C17 
+    Info:    -3.577      -240.615 BCLK 
+    Info:    -1.712       -12.426 index 
+Info: Worst-case hold slack is 0.416
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.416         0.000 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+    Info:     0.526         0.000 FPGA_CLK6IN 
+    Info:     0.526         0.000 BCLK 
+    Info:     0.526         0.000 C17 
+    Info:     0.543         0.000 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+    Info:     0.543         0.000 index 
+    Info:     0.776         0.000 FIR_top:FIR|strobe_out 
+Info: Worst-case recovery slack is -4.571
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    -4.571     -7183.032 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+    Info:    -4.081     -2144.183 FPGA_CLK6IN 
+    Info:    -3.731     -3539.147 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+Info: Worst-case removal slack is 4.242
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     4.242         0.000 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+    Info:     4.569         0.000 FPGA_CLK6IN 
+    Info:     5.081         0.000 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+Critical Warning: Found minimum pulse width or period violations. See Report Minimum Pulse Width for details.
+Info: Analyzing Slow 1200mV 0C Model
+Info: Started post-fitting delay annotation
+Warning: Timing characteristics of device EP3C25Q240C8 are preliminary
+Info: Delay annotation completed successfully
+Critical Warning: Timing requirements not met
+Info: Worst-case setup slack is -10.700
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:   -10.700     -6551.042 FPGA_CLK6IN 
+    Info:    -5.905      -344.493 FIR_top:FIR|strobe_out 
+    Info:    -4.813     -5298.323 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+    Info:    -4.387     -2643.501 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+    Info:    -3.375       -26.881 C17 
+    Info:    -3.198      -214.015 BCLK 
+    Info:    -1.565       -10.828 index 
+Info: Worst-case hold slack is 0.293
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.293         0.000 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+    Info:     0.469         0.000 FPGA_CLK6IN 
+    Info:     0.469         0.000 BCLK 
+    Info:     0.469         0.000 C17 
+    Info:     0.484         0.000 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+    Info:     0.484         0.000 index 
+    Info:     0.693         0.000 FIR_top:FIR|strobe_out 
+Info: Worst-case recovery slack is -4.150
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    -4.150     -6524.516 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+    Info:    -3.730     -1961.179 FPGA_CLK6IN 
+    Info:    -3.346     -3175.435 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+Info: Worst-case removal slack is 3.704
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     3.704         0.000 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+    Info:     4.069         0.000 FPGA_CLK6IN 
+    Info:     4.507         0.000 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+Critical Warning: Found minimum pulse width or period violations. See Report Minimum Pulse Width for details.
+Info: Analyzing Fast 1200mV 0C Model
+Critical Warning: Timing requirements not met
+Info: Worst-case setup slack is -4.775
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    -4.775     -2070.217 FPGA_CLK6IN 
+    Info:    -2.912      -165.891 FIR_top:FIR|strobe_out 
+    Info:    -2.235     -2144.822 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+    Info:    -1.634      -819.783 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+    Info:    -1.569       -72.526 BCLK 
+    Info:    -1.010        -3.452 C17 
+    Info:    -0.168        -0.924 index 
+Info: Worst-case hold slack is 0.131
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.131         0.000 FPGA_CLK6IN 
+    Info:     0.213         0.000 C17 
+    Info:     0.214         0.000 BCLK 
+    Info:     0.227         0.000 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+    Info:     0.227         0.000 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+    Info:     0.227         0.000 index 
+    Info:     0.308         0.000 FIR_top:FIR|strobe_out 
+Info: Worst-case recovery slack is -2.047
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    -2.047     -3208.389 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+    Info:    -1.670     -1581.447 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+    Info:    -1.468      -769.787 FPGA_CLK6IN 
+Info: Worst-case removal slack is 2.107
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     2.107         0.000 FPGA_CLK6IN 
+    Info:     2.319         0.000 cic_10_1_3_nofraction:cic_Q_1|ce_out_reg 
+    Info:     2.697         0.000 cic_8_1_5_nofraction:cic_I_2|ce_out_reg 
+Critical Warning: Found minimum pulse width or period violations. See Report Minimum Pulse Width for details.
+Info: Design is not fully constrained for setup requirements
+Info: Design is not fully constrained for hold requirements
+Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
+    Info: Allocated 198 megabytes of memory during processing
+    Info: Processing ended: Sat Mar 01 21:39:20 2008
+    Info: Elapsed time: 00:00:20
+
+

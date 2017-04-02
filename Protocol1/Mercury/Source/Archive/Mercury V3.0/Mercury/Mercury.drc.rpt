@@ -1,0 +1,1011 @@
+Design Assistant report for Mercury
+Wed Sep 14 19:16:53 2011
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Design Assistant Summary
+  3. Design Assistant Settings
+  4. Critical Violations
+  5. High Violations
+  6. Medium Violations
+  7. Information only Violations
+  8. Design Assistant Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Design Assistant Summary                                                ;
++-----------------------------------+-------------------------------------+
+; Design Assistant Status           ; Analyzed - Wed Sep 14 19:16:52 2011 ;
+; Revision Name                     ; Mercury                             ;
+; Top-level Entity Name             ; Mercury                             ;
+; Family                            ; Cyclone III                         ;
+; Total Critical Violations         ; 1                                   ;
+; - Rule C101                       ; 1                                   ;
+; Total High Violations             ; 61                                  ;
+; - Rule D101                       ; 1                                   ;
+; - Rule D103                       ; 60                                  ;
+; Total Medium Violations           ; 12                                  ;
+; - Rule A104                       ; 1                                   ;
+; - Rule C103                       ; 1                                   ;
+; - Rule C104                       ; 3                                   ;
+; - Rule D102                       ; 7                                   ;
+; Total Information only Violations ; 106                                 ;
+; - Rule T101                       ; 56                                  ;
+; - Rule T102                       ; 50                                  ;
++-----------------------------------+-------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Design Assistant Settings                                                                                                                                                                                                                                                                                ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----+
+; Option                                                                                                                                                                                                                                                                               ; Setting      ; To ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----+
+; Design Assistant mode                                                                                                                                                                                                                                                                ; Post-Fitting ;    ;
+; Threshold value for clock net not mapped to clock spines rule                                                                                                                                                                                                                        ; 25           ;    ;
+; Minimum number of clock port feed by gated clocks                                                                                                                                                                                                                                    ; 30           ;    ;
+; Minimum number of node fan-out                                                                                                                                                                                                                                                       ; 30           ;    ;
+; Maximum number of nodes to report                                                                                                                                                                                                                                                    ; 50           ;    ;
+; Rule C101: Gated clock should be implemented according to the Altera standard scheme                                                                                                                                                                                                 ; On           ;    ;
+; Rule C102: Logic cell should not be used to generate an inverted clock signal                                                                                                                                                                                                        ; On           ;    ;
+; Rule C103: Gated clock does not feed at least a pre-defined number of clock ports to effectively save power                                                                                                                                                                          ; On           ;    ;
+; Rule C104: Clock signal source should drive only clock input ports                                                                                                                                                                                                                   ; On           ;    ;
+; Rule C105: Clock signal should be a global signal (Rule applies during post-fitting analysis. This rule applies during both post-fitting analysis and post-synthesis analysis if the design targets a MAX 3000 or MAX 7000 device. For more information, see the Help for the rule.) ; On           ;    ;
+; Rule C106: Clock signal source should not drive registers triggered by different clock edges                                                                                                                                                                                         ; On           ;    ;
+; Rule R101: Combinational logic used as a reset signal should be synchronized                                                                                                                                                                                                         ; On           ;    ;
+; Rule R102: External reset signals should be synchronized using two cascaded registers                                                                                                                                                                                                ; On           ;    ;
+; Rule R103: External reset signal should be correctly synchronized                                                                                                                                                                                                                    ; On           ;    ;
+; Rule R104: The reset signal that is generated in one clock domain and used in another clock domain should be correctly synchronized                                                                                                                                                  ; On           ;    ;
+; Rule R105: The reset signal that is generated in one clock domain and used in another clock domain should be synchronized                                                                                                                                                            ; On           ;    ;
+; Rule T101: Nodes with more than the specified number of fan-outs                                                                                                                                                                                                                     ; On           ;    ;
+; Rule T102: Top nodes with the highest number of fan-outs                                                                                                                                                                                                                             ; On           ;    ;
+; Rule A101: Design should not contain combinational loops                                                                                                                                                                                                                             ; On           ;    ;
+; Rule A102: Register output should not drive its own control signal directly or through combinational logic                                                                                                                                                                           ; On           ;    ;
+; Rule A103: Design should not contain delay chains                                                                                                                                                                                                                                    ; On           ;    ;
+; Rule A104: Design should not contain ripple clock structures                                                                                                                                                                                                                         ; On           ;    ;
+; Rule A105: Pulses should not be implemented asynchronously                                                                                                                                                                                                                           ; On           ;    ;
+; Rule A106: Multiple pulses should not be generated in design                                                                                                                                                                                                                         ; On           ;    ;
+; Rule A107: Design should not contain SR latches                                                                                                                                                                                                                                      ; On           ;    ;
+; Rule A108: Design should not contain latches                                                                                                                                                                                                                                         ; On           ;    ;
+; Rule S101: Output enable and input of the same tri-state node should not be driven by same signal source                                                                                                                                                                             ; On           ;    ;
+; Rule S102: Synchronous port and asynchronous port of the same register should not be driven by the same signal source                                                                                                                                                                ; On           ;    ;
+; Rule S103: More than one asynchronous port of a register should not be driven by the same signal source                                                                                                                                                                              ; On           ;    ;
+; Rule S104: Clock port and any other port of a register should not be driven by the same signal source                                                                                                                                                                                ; On           ;    ;
+; Rule D101: Data bits are not synchronized when transferred between asynchronous clock domains                                                                                                                                                                                        ; On           ;    ;
+; Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain                                                                                                                 ; On           ;    ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains                                                                                                                                                                              ; On           ;    ;
+; Rule M101: Data bits are not synchronized when transferred to the state machine of asynchronous clock domains                                                                                                                                                                        ; Off          ;    ;
+; Rule M102: No reset signal defined to initialize the state machine                                                                                                                                                                                                                   ; Off          ;    ;
+; Rule M103: State machine should not contain an unreachable state                                                                                                                                                                                                                     ; Off          ;    ;
+; Rule M104: State machine should not contain a deadlock state                                                                                                                                                                                                                         ; Off          ;    ;
+; Rule M105: State machine should not contain a dead transition                                                                                                                                                                                                                        ; Off          ;    ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Critical Violations                                                                                                             ;
++--------------------------------------------------------------------------------------+------------------------------------------+
+; Rule name                                                                            ; Name                                     ;
++--------------------------------------------------------------------------------------+------------------------------------------+
+; Rule C101: Gated clock should be implemented according to the Altera standard scheme ; reference                                ;
+;  Gated clock destination node(s) list                                                ; oddClockDivider:refClockDivider|count[5] ;
+;  Gated clock destination node(s) list                                                ; oddClockDivider:refClockDivider|count[3] ;
+;  Gated clock destination node(s) list                                                ; oddClockDivider:refClockDivider|count[2] ;
+;  Gated clock destination node(s) list                                                ; oddClockDivider:refClockDivider|count[4] ;
+;  Gated clock destination node(s) list                                                ; oddClockDivider:refClockDivider|count[0] ;
+;  Gated clock destination node(s) list                                                ; oddClockDivider:refClockDivider|count[6] ;
+;  Gated clock destination node(s) list                                                ; oddClockDivider:refClockDivider|count[1] ;
+;  Gated clock destination node(s) list                                                ; oddClockDivider:refClockDivider|clk_o    ;
++--------------------------------------------------------------------------------------+------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; High Violations                                                                                                                                             ;
++------------------------------------------------------------------------------------------------------------------------+------------------------------------+
+; Rule name                                                                                                              ; Name                               ;
++------------------------------------------------------------------------------------------------------------------------+------------------------------------+
+; Rule D101: Data bits are not synchronized when transferred between asynchronous clock domains - Structure 1            ;                                    ;
+;  Source node(s) from clock "spc[1]"                                                                                    ; SPI_Alex_ack                       ;
+;  Destination node(s) from clock "C122_clk"                                                                             ; C122_ALEX_HANDSHAKE.ack            ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 1  ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[16]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 2  ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[17]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 3  ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[21]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 4  ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[20]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 5  ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[19]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 6  ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[18]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 7  ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[22]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 8  ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[23]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 9  ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[30]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 10 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[31]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 11 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[28]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 12 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[29]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 13 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[25]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 14 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[24]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 15 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[26]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 16 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[27]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 17 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[14]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 18 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[15]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 19 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[13]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 20 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[12]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 21 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[10]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 22 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[6]~_Duplicate_2  ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 23 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[7]~_Duplicate_2  ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 24 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[4]~_Duplicate_2  ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 25 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[5]~_Duplicate_2  ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 26 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[8]~_Duplicate_2  ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 27 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[9]~_Duplicate_2  ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 28 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; C122_frequency_HZ[11]~_Duplicate_2 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[6]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[4]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[3]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[12]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 29 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; Alex_manual_LPF[1]                 ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[21]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[21]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 30 ;                                    ;
+;  Source node(s) from clock "C122_clk"                                                                                  ; Alex_manual                        ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[21]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[21]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[29]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[29]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[30]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[30]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[5]          ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad0[23]         ;
+;  Synchronizer node(s) from clock "spc[1]"                                                                              ; SPI_ALEX_HANDSHAKE.ad1[23]         ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 31 ;                                    ;
+;  Structure 31                                                                                                          ; LPF_select:Alex_LPF_select|LPF[1]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 32 ;                                    ;
+;  Structure 32                                                                                                          ; Alex_manual_LPF[4]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 33 ;                                    ;
+;  Structure 33                                                                                                          ; LPF_select:Alex_LPF_select|LPF[4]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 34 ;                                    ;
+;  Structure 34                                                                                                          ; Alex_manual_LPF[5]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 35 ;                                    ;
+;  Structure 35                                                                                                          ; LPF_select:Alex_LPF_select|LPF[5]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 36 ;                                    ;
+;  Structure 36                                                                                                          ; Alex_manual_LPF[3]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 37 ;                                    ;
+;  Structure 37                                                                                                          ; LPF_select:Alex_LPF_select|LPF[3]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 38 ;                                    ;
+;  Structure 38                                                                                                          ; LPF_select:Alex_LPF_select|LPF[0]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 39 ;                                    ;
+;  Structure 39                                                                                                          ; Alex_manual_LPF[0]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 40 ;                                    ;
+;  Structure 40                                                                                                          ; C122_RX_relay[1]                   ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 41 ;                                    ;
+;  Structure 41                                                                                                          ; C122_RX_relay[0]                   ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 42 ;                                    ;
+;  Structure 42                                                                                                          ; C122_TX_relay[0]                   ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 43 ;                                    ;
+;  Structure 43                                                                                                          ; C122_TX_relay[1]                   ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 44 ;                                    ;
+;  Structure 44                                                                                                          ; Alex_6m_preamp                     ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 45 ;                                    ;
+;  Structure 45                                                                                                          ; HPF_select:Alex_HPF_select|HPF[3]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 46 ;                                    ;
+;  Structure 46                                                                                                          ; Alex_manual_HPF[3]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 47 ;                                    ;
+;  Structure 47                                                                                                          ; LPF_select:Alex_LPF_select|LPF[6]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 48 ;                                    ;
+;  Structure 48                                                                                                          ; Alex_manual_LPF[6]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 49 ;                                    ;
+;  Structure 49                                                                                                          ; Alex_manual_HPF[4]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 50 ;                                    ;
+;  Structure 50                                                                                                          ; HPF_select:Alex_HPF_select|HPF[4]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 51 ;                                    ;
+;  Structure 51                                                                                                          ; Alex_manual_HPF[2]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 52 ;                                    ;
+;  Structure 52                                                                                                          ; HPF_select:Alex_HPF_select|HPF[2]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 53 ;                                    ;
+;  Structure 53                                                                                                          ; LPF_select:Alex_LPF_select|LPF[2]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 54 ;                                    ;
+;  Structure 54                                                                                                          ; Alex_manual_LPF[2]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 55 ;                                    ;
+;  Structure 55                                                                                                          ; Alex_manual_HPF[5]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 56 ;                                    ;
+;  Structure 56                                                                                                          ; HPF_select:Alex_HPF_select|HPF[5]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 57 ;                                    ;
+;  Structure 57                                                                                                          ; HPF_select:Alex_HPF_select|HPF[1]  ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 58 ;                                    ;
+;  Structure 58                                                                                                          ; Alex_manual_HPF[1]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 59 ;                                    ;
+;  Structure 59                                                                                                          ; Alex_manual_HPF[0]                 ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains - Structure 60 ;                                    ;
+;  Structure 60                                                                                                          ; HPF_select:Alex_HPF_select|HPF[0]  ;
++------------------------------------------------------------------------------------------------------------------------+------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Medium Violations                                                                                                                                                                                                             ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+; Rule name                                                                                                                                                                          ; Name                                     ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+; Rule A104: Design should not contain ripple clock structures - Structure 1                                                                                                         ;                                          ;
+;  Structure 1                                                                                                                                                                       ; clk_lrclk_gen:clrgen|BCLK                ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|SPI_data                 ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|data_count[3]            ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|spi_state~3              ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|spi_state~4              ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|spi_state~2              ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|data_count[1]            ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|data_count[2]            ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|data_count[4]            ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[15]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|data_count[0]            ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[26]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[30]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[5]                         ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[21]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[23]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[31]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[11]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[13]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[29]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[28]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[24]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[14]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[10]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[30]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[6]                         ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[4]                         ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[21]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[23]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[20]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[22]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[0]                         ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[2]                         ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[3]                         ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[15]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_ack                             ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.a2                    ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[29]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[25]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[9]                         ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[8]                         ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[12]                        ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[26]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[10]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[5]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[4]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[21]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[20]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[3]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_Alex_data[1]                         ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[30]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[31]   ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[31]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[11]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[13]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[29]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[9]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[28]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[24]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[12]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[14]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[30]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[5]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[6]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[23]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[20]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[22]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[0]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[2]                ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[3]    ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[2]    ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[6]    ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[8]    ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[1]    ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[0]    ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[5]    ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[4]    ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[15]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[20]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[13]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[14]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[12]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[11]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[9]    ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[10]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[23]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[24]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[22]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[21]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[26]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[25]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[29]   ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|previous_Alex_data[28]   ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[15]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.a1                    ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[11]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[13]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[25]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[9]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[8]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[26]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[14]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[10]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[6]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[4]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[3]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad1[1]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[31]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[28]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[24]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[8]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[12]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[22]               ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[0]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[2]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[1]                ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.a0                    ;
+;  Structure 1                                                                                                                                                                       ; SPI_ALEX_HANDSHAKE.ad0[25]               ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|SPI_clock                ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|Tx_load_strobe           ;
+;  Structure 1                                                                                                                                                                       ; SPI:Alex_SPI_Tx|Rx_load_strobe           ;
+;  Structure 1                                                                                                                                                                       ; spc[1]                                   ;
+; Rule C103: Gated clock does not feed at least a pre-defined number of clock ports to effectively save power                                                                        ; reference                                ;
+;  Gated clock destination node(s) list                                                                                                                                              ; oddClockDivider:refClockDivider|count[5] ;
+;  Gated clock destination node(s) list                                                                                                                                              ; oddClockDivider:refClockDivider|count[3] ;
+;  Gated clock destination node(s) list                                                                                                                                              ; oddClockDivider:refClockDivider|count[2] ;
+;  Gated clock destination node(s) list                                                                                                                                              ; oddClockDivider:refClockDivider|count[4] ;
+;  Gated clock destination node(s) list                                                                                                                                              ; oddClockDivider:refClockDivider|count[0] ;
+;  Gated clock destination node(s) list                                                                                                                                              ; oddClockDivider:refClockDivider|count[6] ;
+;  Gated clock destination node(s) list                                                                                                                                              ; oddClockDivider:refClockDivider|count[1] ;
+;  Gated clock destination node(s) list                                                                                                                                              ; oddClockDivider:refClockDivider|clk_o    ;
+; Rule C104: Clock signal source should drive only clock input ports                                                                                                                 ; clk_lrclk_gen:clrgen|BCLK                ;
+;  Clock ports destination node(s) list                                                                                                                                              ; spc[0]                                   ;
+;  Clock ports destination node(s) list                                                                                                                                              ; spc[1]                                   ;
+;  Non-clock ports destination node(s) list                                                                                                                                          ; clk_lrclk_gen:clrgen|BCLK~0              ;
+; Rule C104: Clock signal source should drive only clock input ports                                                                                                                 ; clk_lrclk_gen:lrgen|BCLK                 ;
+;  Clock ports destination node(s) list                                                                                                                                              ; nCS~reg0                                 ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SCLK~reg0                                ;
+;  Clock ports destination node(s) list                                                                                                                                              ; tlv_timeout[1]                           ;
+;  Clock ports destination node(s) list                                                                                                                                              ; tlv_timeout[3]                           ;
+;  Clock ports destination node(s) list                                                                                                                                              ; tlv_timeout[0]                           ;
+;  Clock ports destination node(s) list                                                                                                                                              ; tlv_timeout[2]                           ;
+;  Clock ports destination node(s) list                                                                                                                                              ; tlv_timeout[4]                           ;
+;  Clock ports destination node(s) list                                                                                                                                              ; tlv_timeout[6]                           ;
+;  Clock ports destination node(s) list                                                                                                                                              ; tlv_timeout[5]                           ;
+;  Clock ports destination node(s) list                                                                                                                                              ; tlv_timeout[7]                           ;
+;  Non-clock ports destination node(s) list                                                                                                                                          ; clk_lrclk_gen:lrgen|BCLK~0               ;
+; Rule C104: Clock signal source should drive only clock input ports                                                                                                                 ; spc[1]                                   ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SPI:Alex_SPI_Tx|Rx_load_strobe           ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SPI:Alex_SPI_Tx|Tx_load_strobe           ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SPI:Alex_SPI_Tx|SPI_clock                ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SPI_ALEX_HANDSHAKE.ad0[25]               ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SPI_ALEX_HANDSHAKE.a0                    ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SPI_ALEX_HANDSHAKE.ad0[1]                ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SPI_ALEX_HANDSHAKE.ad0[2]                ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SPI_ALEX_HANDSHAKE.ad0[0]                ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SPI_ALEX_HANDSHAKE.ad0[22]               ;
+;  Clock ports destination node(s) list                                                                                                                                              ; SPI_ALEX_HANDSHAKE.ad0[12]               ;
+;  Non-clock ports destination node(s) list                                                                                                                                          ; Add4~0                                   ;
+; Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain - Structure 1 ;                                          ;
+;  Source node(s) from clock "C122_clk" - (Bus)                                                                                                                                      ; Alex_manual_LPF                          ;
+;  Synchronizer node(s) from clock "spc[1]" - (Bus)                                                                                                                                  ; SPI_ALEX_HANDSHAKE.ad0                   ;
+; Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain - Structure 2 ;                                          ;
+;  Source node(s) from clock "C122_clk" - (Bus)                                                                                                                                      ; LPF_select:Alex_LPF_select|LPF           ;
+;  Synchronizer node(s) from clock "spc[1]" - (Bus)                                                                                                                                  ; SPI_ALEX_HANDSHAKE.ad0                   ;
+; Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain - Structure 3 ;                                          ;
+;  Source node(s) from clock "C122_clk" - (Bus)                                                                                                                                      ; C122_ATTEN                               ;
+;  Synchronizer node(s) from clock "spc[1]" - (Bus)                                                                                                                                  ; SPI_ALEX_HANDSHAKE.ad0                   ;
+; Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain - Structure 4 ;                                          ;
+;  Source node(s) from clock "C122_clk" - (Bus)                                                                                                                                      ; C122_RX_relay                            ;
+;  Synchronizer node(s) from clock "spc[1]" - (Bus)                                                                                                                                  ; SPI_ALEX_HANDSHAKE.ad0                   ;
+; Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain - Structure 5 ;                                          ;
+;  Source node(s) from clock "C122_clk" - (Bus)                                                                                                                                      ; C122_TX_relay                            ;
+;  Synchronizer node(s) from clock "spc[1]" - (Bus)                                                                                                                                  ; SPI_ALEX_HANDSHAKE.ad0                   ;
+; Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain - Structure 6 ;                                          ;
+;  Source node(s) from clock "C122_clk" - (Bus)                                                                                                                                      ; HPF_select:Alex_HPF_select|HPF           ;
+;  Synchronizer node(s) from clock "spc[1]" - (Bus)                                                                                                                                  ; SPI_ALEX_HANDSHAKE.ad0                   ;
+; Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain - Structure 7 ;                                          ;
+;  Source node(s) from clock "C122_clk" - (Bus)                                                                                                                                      ; Alex_manual_HPF                          ;
+;  Synchronizer node(s) from clock "spc[1]" - (Bus)                                                                                                                                  ; SPI_ALEX_HANDSHAKE.ad0                   ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Information only Violations                                                                                                                                                   ;
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; Rule name                                                        ; Name                                                                                             ; Fan-Out ;
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; Rule T101: Nodes with more than the specified number of fan-outs ; C122_clk~inputclkctrl                                                                            ; 7346    ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Alex_manual_HPF~1                                                                                ; 64      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; C122_rst                                                                                         ; 588     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; NWire_rcv:CCrcv|rcv_flag                                                                         ; 69      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; NWire_rcv:CCrcv|rdata~1                                                                          ; 59      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; NWire_rcv:CCrcv|DB_LEN~1                                                                         ; 60      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; ~GND                                                                                             ; 107     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; SP_fifo:SPF|scfifo:scfifo_component|scfifo_ph31:auto_generated|a_dpfifo_c931:dpfifo|valid_rreq~0 ; 40      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; C122_DFS0                                                                                        ; 76      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; C122_DFS1                                                                                        ; 77      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; NWire_xmit:M_IQ|id~2                                                                             ; 48      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; NWire_xmit:M_IQ|NW_state.NW_WAIT~0                                                               ; 82      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|fir:fir_inst_Q|clear_mac                                                  ; 49      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|fir:fir_inst_Q|clear_mac~clkctrl                                          ; 123     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cic:cic_inst_Q2|out_strobe                                                ; 2002    ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|varcic:varcic_inst_Q1|out_strobe                                          ; 2227    ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|fir:fir_inst_I|clear_mac                                                  ; 49      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|fir:fir_inst_I|clear_mac~clkctrl                                          ; 123     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Y[18][21]                                              ; 43      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[17][2]                                               ; 44      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|X[17][21]                                              ; 40      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Y[17][21]                                              ; 40      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[16][3]                                               ; 45      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|X[18][21]                                              ; 43      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Y[16][21]                                              ; 38      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|X[16][21]                                              ; 38      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[15][4]                                               ; 47      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Y[15][21]                                              ; 36      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|X[15][21]                                              ; 36      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[14][5]                                               ; 48      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[13][6]                                               ; 48      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|X[14][21]                                              ; 34      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Y[14][21]                                              ; 34      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[12][7]                                               ; 50      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|X[13][21]                                              ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Y[13][21]                                              ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[11][8]                                               ; 51      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[10][9]                                               ; 52      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[9][10]                                               ; 52      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[8][11]                                               ; 52      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[7][12]                                               ; 52      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[6][13]                                               ; 52      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[5][14]                                               ; 57      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[4][15]                                               ; 58      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[3][16]                                               ; 59      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[2][17]                                               ; 59      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[1][18]                                               ; 57      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; receiver:receiver_inst|cordic:cordic_inst|Z[0][18]                                               ; 53      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; C122_sync_phase_word[31]~108                                                                     ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; clk_lrclk_gen:clrgen|Brise                                                                       ; 41      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; I2S_xmit:LR|TLV_state.TLV_IDLE~0                                                                 ; 33      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; NWire_rcv:LRAudio|rcv_flag                                                                       ; 33      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; NWire_rcv:LRAudio|rdata~1                                                                        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; NWire_rcv:LRAudio|DB_LEN~1                                                                       ; 60      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; clk_lrclk_gen:lrgen|BCLK~clkctrl                                                                 ; 37      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; spc[1]~clkctrl                                                                                   ; 120     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; C122_clk~inputclkctrl                                                                            ; 7346    ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|varcic:varcic_inst_Q1|out_strobe                                          ; 2227    ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cic:cic_inst_Q2|out_strobe                                                ; 2002    ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; C122_rst                                                                                         ; 588     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|fir:fir_inst_Q|clear_mac~clkctrl                                          ; 123     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|fir:fir_inst_I|clear_mac~clkctrl                                          ; 123     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; spc[1]~clkctrl                                                                                   ; 120     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; ~GND                                                                                             ; 107     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; NWire_xmit:M_IQ|NW_state.NW_WAIT~0                                                               ; 82      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; C122_DFS1                                                                                        ; 77      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; C122_DFS0                                                                                        ; 76      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; NWire_rcv:CCrcv|rcv_flag                                                                         ; 69      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Alex_manual_HPF~1                                                                                ; 64      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; NWire_rcv:LRAudio|DB_LEN~1                                                                       ; 60      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; NWire_rcv:CCrcv|DB_LEN~1                                                                         ; 60      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[3][16]                                               ; 59      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; NWire_rcv:CCrcv|rdata~1                                                                          ; 59      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[2][17]                                               ; 59      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[4][15]                                               ; 58      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[5][14]                                               ; 57      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[1][18]                                               ; 57      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[0][18]                                               ; 53      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[10][9]                                               ; 52      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[7][12]                                               ; 52      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[6][13]                                               ; 52      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[9][10]                                               ; 52      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[8][11]                                               ; 52      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[11][8]                                               ; 51      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[12][7]                                               ; 50      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|fir:fir_inst_I|clear_mac                                                  ; 49      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|fir:fir_inst_Q|clear_mac                                                  ; 49      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; NWire_xmit:M_IQ|id~2                                                                             ; 48      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[14][5]                                               ; 48      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[13][6]                                               ; 48      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[15][4]                                               ; 47      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[16][3]                                               ; 45      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Z[17][2]                                               ; 44      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Y[18][21]                                              ; 43      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|X[18][21]                                              ; 43      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; clk_lrclk_gen:clrgen|Brise                                                                       ; 41      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Y[17][21]                                              ; 40      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|X[17][21]                                              ; 40      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; SP_fifo:SPF|scfifo:scfifo_component|scfifo_ph31:auto_generated|a_dpfifo_c931:dpfifo|valid_rreq~0 ; 40      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Y[16][21]                                              ; 38      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|X[16][21]                                              ; 38      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; clk_lrclk_gen:lrgen|BCLK~clkctrl                                                                 ; 37      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|X[15][21]                                              ; 36      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Y[15][21]                                              ; 36      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|Y[14][21]                                              ; 34      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; receiver:receiver_inst|cordic:cordic_inst|X[14][21]                                              ; 34      ;
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------+
+; Design Assistant Messages ;
++---------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Design Assistant
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Sep 14 19:16:44 2011
+Info: Command: quartus_drc --read_settings_files=off --write_settings_files=off Mercury -c Mercury
+Warning: Old Design Assistant assignment is used to turn ON/OFF rule. ENABLE_DA_RULE or DISABLE_DA_RULE assignment should be used to turn ON/OFF Design Assistant rule.
+    Warning: CLK_RULE_COMB_CLOCK
+    Warning: CLK_RULE_INV_CLOCK
+    Warning: CLK_RULE_INPINS_CLKNET
+    Warning: CLK_RULE_CLKNET_CLKSPINES
+    Warning: CLK_RULE_MIX_EDGES
+    Warning: RESET_RULE_COMB_ASYNCH_RESET
+    Warning: RESET_RULE_UNSYNCH_EXRESET
+    Warning: RESET_RULE_IMSYNCH_EXRESET
+    Warning: RESET_RULE_IMSYNCH_ASYNCH_DOMAIN
+    Warning: RESET_RULE_UNSYNCH_ASYNCH_DOMAIN
+    Warning: DRC_REPORT_FANOUT_EXCEEDING
+    Warning: DRC_REPORT_TOP_FANOUT
+    Warning: NONSYNCHSTRUCT_RULE_COMBLOOP
+    Warning: NONSYNCHSTRUCT_RULE_REG_LOOP
+    Warning: NONSYNCHSTRUCT_RULE_DELAY_CHAIN
+    Warning: NONSYNCHSTRUCT_RULE_RIPPLE_CLK
+    Warning: NONSYNCHSTRUCT_RULE_ILLEGAL_PULSE_GEN
+    Warning: NONSYNCHSTRUCT_RULE_MULTI_VIBRATOR
+    Warning: NONSYNCHSTRUCT_RULE_SRLATCH
+    Warning: NONSYNCHSTRUCT_RULE_LATCH_UNIDENTIFIED
+    Warning: NONSYNCHSTRUCT_RULE_COMB_DRIVES_RAM_WE
+    Warning: NONSYNCHSTRUCT_RULE_ASYN_RAM
+    Warning: SIGNALRACE_RULE_TRISTATE
+    Warning: SIGNALRACE_RULE_RESET_RACE
+    Warning: ACLK_RULE_NO_SZER_ACLK_DOMAIN
+    Warning: ACLK_RULE_SZER_BTW_ACLK_DOMAIN
+    Warning: ACLK_RULE_IMSZER_ADOMAIN
+    Warning: HCPY_VREF_PINS
+Critical Warning: (Critical) Rule C101: Gated clock should be implemented according to the Altera standard scheme. Found 1 node(s) related to this rule.
+    Critical Warning: Node  "reference"
+Critical Warning: (High) Rule D101: Data bits are not synchronized when transferred between asynchronous clock domains. (Value defined:2). Found 1 asynchronous clock domain interface structure(s) related to this rule.
+    Critical Warning: Node  "SPI_Alex_ack"
+Critical Warning: (High) Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains. (Value defined:2). Found 60 asynchronous clock domain interface structure(s) related to this rule.
+    Critical Warning: Node  "C122_frequency_HZ[16]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[17]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[21]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[20]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[19]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[18]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[22]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[23]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[30]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[31]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[28]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[29]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[25]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[24]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[26]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[27]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[14]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[15]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[13]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[12]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[10]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[6]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[7]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[4]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[5]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[8]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[9]~_Duplicate_2"
+    Critical Warning: Node  "C122_frequency_HZ[11]~_Duplicate_2"
+    Critical Warning: Node  "Alex_manual_LPF[1]"
+    Critical Warning: Node  "Alex_manual"
+    Info: Truncated list of Design Assistant messages to 30 messages. Go to sections under Design Assistant section of Compilation Report for complete lists of Design Assistant messages generated.
+Warning: (Medium) Rule A104: Design should not contain ripple clock structures. Found 1 ripple clock structure(s) related to this rule.
+    Warning: Node  "clk_lrclk_gen:clrgen|BCLK"
+Warning: (Medium) Rule C103: Gated clock does not feed at least a pre-defined number of clock ports to effectively save power. (Value defined:30). Found 1 node(s) related to this rule.
+    Warning: Node  "reference"
+Warning: (Medium) Rule C104: Clock signal source should drive only clock input ports. Found 3 nodes related to this rule.
+    Warning: Node  "clk_lrclk_gen:clrgen|BCLK"
+    Warning: Node  "clk_lrclk_gen:lrgen|BCLK"
+    Warning: Node  "spc[1]"
+Warning: (Medium) Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain. (Value defined:2). Found 7 asynchronous clock domain interface structure(s) related to this rule.
+    Warning: Node  "Alex_manual_LPF (Bus)"
+    Warning: Node  "LPF_select:Alex_LPF_select|LPF (Bus)"
+    Warning: Node  "C122_ATTEN (Bus)"
+    Warning: Node  "C122_RX_relay (Bus)"
+    Warning: Node  "C122_TX_relay (Bus)"
+    Warning: Node  "HPF_select:Alex_HPF_select|HPF (Bus)"
+    Warning: Node  "Alex_manual_HPF (Bus)"
+Info: (Information) Rule T101: Nodes with more than the specified number of fan-outs. (Value defined:30). Found 56 node(s) with highest fan-out.
+    Info: Node  "C122_clk~inputclkctrl"
+    Info: Node  "Alex_manual_HPF~1"
+    Info: Node  "C122_rst"
+    Info: Node  "NWire_rcv:CCrcv|rcv_flag"
+    Info: Node  "NWire_rcv:CCrcv|rdata~1"
+    Info: Node  "NWire_rcv:CCrcv|DB_LEN~1"
+    Info: Node  "~GND"
+    Info: Node  "SP_fifo:SPF|scfifo:scfifo_component|scfifo_ph31:auto_generated|a_dpfifo_c931:dpfifo|valid_rreq~0"
+    Info: Node  "C122_DFS0"
+    Info: Node  "C122_DFS1"
+    Info: Node  "NWire_xmit:M_IQ|id~2"
+    Info: Node  "NWire_xmit:M_IQ|NW_state.NW_WAIT~0"
+    Info: Node  "receiver:receiver_inst|fir:fir_inst_Q|clear_mac"
+    Info: Node  "receiver:receiver_inst|fir:fir_inst_Q|clear_mac~clkctrl"
+    Info: Node  "receiver:receiver_inst|cic:cic_inst_Q2|out_strobe"
+    Info: Node  "receiver:receiver_inst|varcic:varcic_inst_Q1|out_strobe"
+    Info: Node  "receiver:receiver_inst|fir:fir_inst_I|clear_mac"
+    Info: Node  "receiver:receiver_inst|fir:fir_inst_I|clear_mac~clkctrl"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Y[18][21]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[17][2]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|X[17][21]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Y[17][21]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[16][3]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|X[18][21]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Y[16][21]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|X[16][21]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[15][4]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Y[15][21]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|X[15][21]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[14][5]"
+    Info: Truncated list of Design Assistant messages to 30 messages. Go to sections under Design Assistant section of Compilation Report for complete lists of Design Assistant messages generated.
+Info: (Information) Rule T102: Top nodes with the highest number of fan-outs. (Value defined:50). Found 50 node(s) with highest fan-out.
+    Info: Node  "C122_clk~inputclkctrl"
+    Info: Node  "receiver:receiver_inst|varcic:varcic_inst_Q1|out_strobe"
+    Info: Node  "receiver:receiver_inst|cic:cic_inst_Q2|out_strobe"
+    Info: Node  "C122_rst"
+    Info: Node  "receiver:receiver_inst|fir:fir_inst_Q|clear_mac~clkctrl"
+    Info: Node  "receiver:receiver_inst|fir:fir_inst_I|clear_mac~clkctrl"
+    Info: Node  "spc[1]~clkctrl"
+    Info: Node  "~GND"
+    Info: Node  "NWire_xmit:M_IQ|NW_state.NW_WAIT~0"
+    Info: Node  "C122_DFS1"
+    Info: Node  "C122_DFS0"
+    Info: Node  "NWire_rcv:CCrcv|rcv_flag"
+    Info: Node  "Alex_manual_HPF~1"
+    Info: Node  "NWire_rcv:LRAudio|DB_LEN~1"
+    Info: Node  "NWire_rcv:CCrcv|DB_LEN~1"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[3][16]"
+    Info: Node  "NWire_rcv:CCrcv|rdata~1"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[2][17]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[4][15]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[5][14]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[1][18]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[0][18]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[10][9]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[7][12]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[6][13]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[9][10]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[8][11]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[11][8]"
+    Info: Node  "receiver:receiver_inst|cordic:cordic_inst|Z[12][7]"
+    Info: Node  "receiver:receiver_inst|fir:fir_inst_I|clear_mac"
+    Info: Truncated list of Design Assistant messages to 30 messages. Go to sections under Design Assistant section of Compilation Report for complete lists of Design Assistant messages generated.
+Info: Design Assistant information: finished post-fitting analysis of current design -- generated 106 information messages and 74 warning messages
+Info: Quartus II Design Assistant was successful. 0 errors, 80 warnings
+    Info: Peak virtual memory: 180 megabytes
+    Info: Processing ended: Wed Sep 14 19:16:53 2011
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:08
+
+

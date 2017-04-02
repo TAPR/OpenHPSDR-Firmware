@@ -1,0 +1,473 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'PHY_CLK125'
+Slack : 1.075
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 9.850
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.879
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 10.681
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'PHY_RX_CLOCK_2'
+Slack : 11.057
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'PHY_RX_CLOCK'
+Slack : 19.513
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'PHY_MDIO_clk'
+Slack : 32.380
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1247.897
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'i2c_interface:interface_inst|i2c_master:master_inst|scl_clk~en'
+Slack : 4991.776
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'i2c_interface:interface_inst|i2c_master:master_inst|data_clk'
+Slack : 4993.001
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PHY_RX_CLOCK_2'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PHY_RX_CLOCK'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PHY_CLK125'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PHY_MDIO_clk'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'i2c_interface:interface_inst|i2c_master:master_inst|data_clk'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'i2c_interface:interface_inst|i2c_master:master_inst|scl_clk~en'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 16.086
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 17.479
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 33.460
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'PHY_RX_CLOCK_2'
+Slack : 71.677
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.104
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.020
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PHY_RX_CLOCK_2'
+Slack : 5.132
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 7.518
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PHY_CLK125'
+Slack : 3.750
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 10.105
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.691
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PHY_RX_CLOCK'
+Slack : 19.722
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_25MHZ'
+Slack : 36.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PHY_RX_CLOCK_2'
+Slack : 39.551
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 39.691
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PHY_MDIO_clk'
+Slack : 199.709
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 624.689
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'i2c_interface:interface_inst|i2c_master:master_inst|data_clk'
+Slack : 2499.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'i2c_interface:interface_inst|i2c_master:master_inst|scl_clk~en'
+Slack : 2499.648
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'PHY_CLK125'
+Slack : 1.397
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 10.414
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 11.195
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'PHY_RX_CLOCK_2'
+Slack : 11.460
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 11.766
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'PHY_RX_CLOCK'
+Slack : 19.530
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'PHY_MDIO_clk'
+Slack : 32.882
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1248.024
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'i2c_interface:interface_inst|i2c_master:master_inst|scl_clk~en'
+Slack : 4992.252
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'i2c_interface:interface_inst|i2c_master:master_inst|data_clk'
+Slack : 4993.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PHY_RX_CLOCK_2'
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PHY_RX_CLOCK'
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PHY_CLK125'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PHY_MDIO_clk'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'i2c_interface:interface_inst|i2c_master:master_inst|data_clk'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'i2c_interface:interface_inst|i2c_master:master_inst|scl_clk~en'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 16.494
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 17.660
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 33.959
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'PHY_RX_CLOCK_2'
+Slack : 72.237
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.010
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.624
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PHY_RX_CLOCK_2'
+Slack : 4.635
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 6.785
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PHY_CLK125'
+Slack : 3.760
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 10.109
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.695
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PHY_RX_CLOCK'
+Slack : 19.720
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_25MHZ'
+Slack : 36.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PHY_RX_CLOCK_2'
+Slack : 39.551
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 39.694
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PHY_MDIO_clk'
+Slack : 199.682
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 624.694
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'i2c_interface:interface_inst|i2c_master:master_inst|data_clk'
+Slack : 2499.227
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'i2c_interface:interface_inst|i2c_master:master_inst|scl_clk~en'
+Slack : 2499.510
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PHY_CLK125'
+Slack : 4.759
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 15.762
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 15.921
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PHY_RX_CLOCK_2'
+Slack : 15.979
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PHY_RX_CLOCK'
+Slack : 20.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 26.750
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PHY_MDIO_clk'
+Slack : 36.482
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1249.133
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'i2c_interface:interface_inst|i2c_master:master_inst|scl_clk~en'
+Slack : 4996.407
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'i2c_interface:interface_inst|i2c_master:master_inst|data_clk'
+Slack : 4996.844
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PHY_RX_CLOCK_2'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PHY_RX_CLOCK'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PHY_MDIO_clk'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PHY_CLK125'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'i2c_interface:interface_inst|i2c_master:master_inst|data_clk'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'i2c_interface:interface_inst|i2c_master:master_inst|scl_clk~en'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 18.637
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 18.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 36.952
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'PHY_RX_CLOCK_2'
+Slack : 75.964
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.479
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.851
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PHY_RX_CLOCK_2'
+Slack : 2.339
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.377
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PHY_CLK125'
+Slack : 3.440
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 10.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PHY_RX_CLOCK'
+Slack : 19.390
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.751
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_25MHZ'
+Slack : 36.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PHY_RX_CLOCK_2'
+Slack : 39.715
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 39.750
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PHY_MDIO_clk'
+Slack : 199.716
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 624.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'i2c_interface:interface_inst|i2c_master:master_inst|data_clk'
+Slack : 2499.618
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'i2c_interface:interface_inst|i2c_master:master_inst|scl_clk~en'
+Slack : 2499.704
+TNS   : 0.000
+
+------------------------------------------------------------

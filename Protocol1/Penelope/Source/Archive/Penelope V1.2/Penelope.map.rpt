@@ -1,0 +1,1136 @@
+Analysis & Synthesis report for Penelope
+Mon May 18 19:37:53 2009
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Analysis & Synthesis DSP Block Usage Summary
+  8. State Machine - |Penelope|NWire_xmit:ser_no|NW_state
+  9. State Machine - |Penelope|NWire_xmit:P_MIC|NW_state
+ 10. State Machine - |Penelope|I2S_xmit:IQD|TLV_state
+ 11. State Machine - |Penelope|NWire_rcv:IQPWM|TB_state
+ 12. State Machine - |Penelope|NWire_rcv:CCrcv|TB_state
+ 13. State Machine - |Penelope|ADC:ADC_SPI|ADC_state
+ 14. Registers Removed During Synthesis
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Parameter Settings for User Entity Instance: Top-level Entity: |Penelope
+ 19. Parameter Settings for User Entity Instance: clk_div:TLVCLK
+ 20. Parameter Settings for User Entity Instance: clk_lrclk_gen:clrgen
+ 21. Parameter Settings for User Entity Instance: clk_lrclk_gen:lrgen
+ 22. Parameter Settings for User Entity Instance: cicint:cic_I
+ 23. Parameter Settings for User Entity Instance: cicint:cic_Q
+ 24. Parameter Settings for User Entity Instance: phase_accumulator:rx_phase_accumulator
+ 25. Parameter Settings for User Entity Instance: NWire_rcv:CCrcv
+ 26. Parameter Settings for User Entity Instance: NWire_rcv:IQPWM
+ 27. Parameter Settings for User Entity Instance: I2S_xmit:IQD
+ 28. Parameter Settings for User Entity Instance: NWire_xmit:P_MIC
+ 29. Parameter Settings for User Entity Instance: I2S_rcv:PJD
+ 30. Parameter Settings for User Entity Instance: NWire_xmit:ser_no
+ 31. Parameter Settings for User Entity Instance: oddClockDivider:refClockDivider
+ 32. Parameter Settings for Inferred Entity Instance: ALC:ALC_I|lpm_mult:Mult0
+ 33. Parameter Settings for Inferred Entity Instance: cordic_16:tx_cordic|lpm_add_sub:Add6
+ 34. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
+ 35. Parameter Settings for Inferred Entity Instance: ALC:ALC_Q|lpm_mult:Mult0
+ 36. lpm_mult Parameter Settings by Entity Instance
+ 37. Port Connectivity Checks: "NWire_xmit:ser_no"
+ 38. Port Connectivity Checks: "I2S_rcv:PJD"
+ 39. Port Connectivity Checks: "NWire_xmit:P_MIC"
+ 40. Port Connectivity Checks: "I2S_xmit:IQD"
+ 41. Port Connectivity Checks: "NWire_rcv:CCrcv"
+ 42. Port Connectivity Checks: "cordic_16:tx_cordic"
+ 43. Port Connectivity Checks: "phase_accumulator:rx_phase_accumulator"
+ 44. Port Connectivity Checks: "cicint:cic_Q"
+ 45. Port Connectivity Checks: "cicint:cic_I"
+ 46. Port Connectivity Checks: "clk_lrclk_gen:lrgen"
+ 47. Port Connectivity Checks: "clk_lrclk_gen:clrgen"
+ 48. Analysis & Synthesis Messages
+ 49. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++------------------------------------+-----------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon May 18 19:37:52 2009   ;
+; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
+; Revision Name                      ; Penelope                                ;
+; Top-level Entity Name              ; Penelope                                ;
+; Family                             ; Cyclone II                              ;
+; Total logic elements               ; 3,989                                   ;
+;     Total combinational functions  ; 3,535                                   ;
+;     Dedicated logic registers      ; 2,597                                   ;
+; Total registers                    ; 2597                                    ;
+; Total pins                         ; 56                                      ;
+; Total virtual pins                 ; 0                                       ;
+; Total memory bits                  ; 0                                       ;
+; Embedded Multiplier 9-bit elements ; 12                                      ;
+; Total PLLs                         ; 0                                       ;
++------------------------------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                            ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Option                                                         ; Setting            ; Default Value      ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Device                                                         ; EP2C8Q208C8        ;                    ;
+; Top-level entity name                                          ; Penelope           ; Penelope           ;
+; Family name                                                    ; Cyclone II         ; Stratix            ;
+; State Machine Processing                                       ; User-Encoded       ; Auto               ;
+; Power-Up Don't Care                                            ; Off                ; On                 ;
+; Remove Redundant Logic Cells                                   ; On                 ; Off                ;
+; Use smart compilation                                          ; Off                ; Off                ;
+; Maximum processors allowed for parallel compilation            ; 1                  ; 1                  ;
+; Restructure Multiplexers                                       ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                            ; Off                ; Off                ;
+; Preserve fewer node names                                      ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                      ; Off                ; Off                ;
+; Verilog Version                                                ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                   ; VHDL93             ; VHDL93             ;
+; Safe State Machine                                             ; Off                ; Off                ;
+; Extract Verilog State Machines                                 ; On                 ; On                 ;
+; Extract VHDL State Machines                                    ; On                 ; On                 ;
+; Ignore Verilog initial constructs                              ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                     ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                 ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                        ; On                 ; On                 ;
+; Parallel Synthesis                                             ; Off                ; Off                ;
+; DSP Block Balancing                                            ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                             ; On                 ; On                 ;
+; Remove Duplicate Registers                                     ; On                 ; On                 ;
+; Ignore CARRY Buffers                                           ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                         ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                          ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                      ; Off                ; Off                ;
+; Ignore LCELL Buffers                                           ; Off                ; Off                ;
+; Ignore SOFT Buffers                                            ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                 ; Off                ; Off                ;
+; Optimization Technique                                         ; Balanced           ; Balanced           ;
+; Carry Chain Length                                             ; 70                 ; 70                 ;
+; Auto Carry Chains                                              ; On                 ; On                 ;
+; Auto Open-Drain Pins                                           ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                          ; Off                ; Off                ;
+; Auto ROM Replacement                                           ; On                 ; On                 ;
+; Auto RAM Replacement                                           ; On                 ; On                 ;
+; Auto Shift Register Replacement                                ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                  ; On                 ; On                 ;
+; Strict RAM Replacement                                         ; Off                ; Off                ;
+; Allow Synchronous Control Signals                              ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                         ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                              ; Off                ; Off                ;
+; Auto Resource Sharing                                          ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                  ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing            ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives              ; Off                ; Off                ;
+; Timing-Driven Synthesis                                        ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report             ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                             ; Off                ; Off                ;
+; Synchronization Register Chain Length                          ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                              ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report       ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report      ; 100                ; 100                ;
+; Clock MUX Protection                                           ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                    ; Off                ; Off                ;
+; Block Design Naming                                            ; Auto               ; Auto               ;
+; SDC constraint protection                                      ; Off                ; Off                ;
+; Synthesis Effort                                               ; Auto               ; Auto               ;
+; Allows Asynchronous Clear Usage For Shift Register Replacement ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                             ; Medium             ; Medium             ;
++----------------------------------------------------------------+--------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                             ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+
+; ../common/I2S_xmit.v             ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/common/I2S_xmit.v            ;
+; ../common/NWire_rcv.v            ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/common/NWire_rcv.v           ;
+; ../common/NWire_xmit.v           ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/common/NWire_xmit.v          ;
+; ../common/clk_lrclk_gen.v        ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/common/clk_lrclk_gen.v       ;
+; ../common/clk_div.v              ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/common/clk_div.v             ;
+; ALC.v                            ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/ALC.v               ;
+; oddClockDiv.v                    ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/oddClockDiv.v       ;
+; cordic.v                         ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/cordic.v            ;
+; ADC.v                            ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/ADC.v               ;
+; phase_accumulator.v              ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/phase_accumulator.v ;
+; cicint.v                         ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/cicint.v            ;
+; Penelope.v                       ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/Penelope.v          ;
+; ../common/I2S_rcv.v              ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/common/I2S_rcv.v             ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/lpm_mult.tdf                ;
+; aglobal90.inc                    ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/aglobal90.inc               ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/lpm_add_sub.inc             ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/multcore.inc                ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/bypassff.inc                ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/altshift.inc                ;
+; db/mult_9v01.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/db/mult_9v01.tdf    ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/lpm_add_sub.tdf             ;
+; addcore.inc                      ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/addcore.inc                 ;
+; look_add.inc                     ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/look_add.inc                ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/alt_stratix_add_sub.inc     ;
+; alt_mercury_add_sub.inc          ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/alt_mercury_add_sub.inc     ;
+; db/add_sub_ari.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/db/add_sub_ari.tdf  ;
+; db/mult_r211.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/db/mult_r211.tdf    ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 3,989    ;
+;                                             ;          ;
+; Total combinational functions               ; 3535     ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 303      ;
+;     -- 3 input functions                    ; 2057     ;
+;     -- <=2 input functions                  ; 1175     ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 1244     ;
+;     -- arithmetic mode                      ; 2291     ;
+;                                             ;          ;
+; Total registers                             ; 2597     ;
+;     -- Dedicated logic registers            ; 2597     ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 56       ;
+; Embedded Multiplier 9-bit elements          ; 12       ;
+; Maximum fan-out node                        ; C122_clk ;
+; Maximum fan-out                             ; 2555     ;
+; Total fan-out                               ; 17149    ;
+; Average fan-out                             ; 2.77     ;
++---------------------------------------------+----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Library Name ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
+; |Penelope                                   ; 3535 (311)        ; 2597 (367)   ; 0           ; 12           ; 0       ; 6         ; 56   ; 0            ; |Penelope                                                                 ; work         ;
+;    |ADC:ADC_SPI|                            ; 38 (38)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|ADC:ADC_SPI                                                     ; work         ;
+;    |ALC:ALC_I|                              ; 32 (32)           ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Penelope|ALC:ALC_I                                                       ; work         ;
+;       |lpm_mult:Mult0|                      ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Penelope|ALC:ALC_I|lpm_mult:Mult0                                        ; work         ;
+;          |mult_9v01:auto_generated|         ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Penelope|ALC:ALC_I|lpm_mult:Mult0|mult_9v01:auto_generated               ; work         ;
+;    |ALC:ALC_Q|                              ; 32 (32)           ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Penelope|ALC:ALC_Q                                                       ; work         ;
+;       |lpm_mult:Mult0|                      ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Penelope|ALC:ALC_Q|lpm_mult:Mult0                                        ; work         ;
+;          |mult_9v01:auto_generated|         ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Penelope|ALC:ALC_Q|lpm_mult:Mult0|mult_9v01:auto_generated               ; work         ;
+;    |I2S_rcv:PJD|                            ; 26 (26)           ; 57 (57)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|I2S_rcv:PJD                                                     ; work         ;
+;    |I2S_xmit:IQD|                           ; 65 (65)           ; 57 (57)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|I2S_xmit:IQD                                                    ; work         ;
+;    |NWire_rcv:CCrcv|                        ; 470 (470)         ; 238 (238)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|NWire_rcv:CCrcv                                                 ; work         ;
+;    |NWire_rcv:IQPWM|                        ; 369 (369)         ; 177 (177)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|NWire_rcv:IQPWM                                                 ; work         ;
+;    |NWire_xmit:P_MIC|                       ; 150 (150)         ; 82 (82)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|NWire_xmit:P_MIC                                                ; work         ;
+;    |NWire_xmit:ser_no|                      ; 69 (69)           ; 41 (41)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|NWire_xmit:ser_no                                               ; work         ;
+;    |cicint:cic_I|                           ; 336 (336)         ; 327 (327)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|cicint:cic_I                                                    ; work         ;
+;    |cicint:cic_Q|                           ; 323 (323)         ; 340 (340)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|cicint:cic_Q                                                    ; work         ;
+;    |clk_div:TLVCLK|                         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|clk_div:TLVCLK                                                  ; work         ;
+;    |clk_lrclk_gen:clrgen|                   ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|clk_lrclk_gen:clrgen                                            ; work         ;
+;    |clk_lrclk_gen:lrgen|                    ; 35 (35)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|clk_lrclk_gen:lrgen                                             ; work         ;
+;    |cordic_16:tx_cordic|                    ; 1160 (1126)       ; 784 (784)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|cordic_16:tx_cordic                                             ; work         ;
+;       |lpm_add_sub:Add6|                    ; 34 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|cordic_16:tx_cordic|lpm_add_sub:Add6                            ; work         ;
+;          |add_sub_ari:auto_generated|       ; 34 (34)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|cordic_16:tx_cordic|lpm_add_sub:Add6|add_sub_ari:auto_generated ; work         ;
+;    |lpm_mult:Mult0|                         ; 33 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Penelope|lpm_mult:Mult0                                                  ; work         ;
+;       |mult_r211:auto_generated|            ; 33 (33)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Penelope|lpm_mult:Mult0|mult_r211:auto_generated                         ; work         ;
+;    |oddClockDivider:refClockDivider|        ; 16 (16)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|oddClockDivider:refClockDivider                                 ; work         ;
+;    |phase_accumulator:rx_phase_accumulator| ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Penelope|phase_accumulator:rx_phase_accumulator                          ; work         ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 6           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 12          ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 6           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
+Encoding Type:  User-Encoded
++----------------------------------------------------------------+
+; State Machine - |Penelope|NWire_xmit:ser_no|NW_state           ;
++----------------------+-------------+-------------+-------------+
+; Name                 ; NW_state~13 ; NW_state~12 ; NW_state~11 ;
++----------------------+-------------+-------------+-------------+
+; NW_state.NW_IDLE     ; 0           ; 0           ; 0           ;
+; NW_state.NW_WAIT     ; 0           ; 1           ; 0           ;
+; NW_state.NW_DATA_Q1  ; 0           ; 1           ; 1           ;
+; NW_state.NW_DATA_Q23 ; 1           ; 0           ; 0           ;
+; NW_state.NW_DATA_Q4  ; 1           ; 0           ; 1           ;
+; NW_state.NW_LOW      ; 1           ; 1           ; 0           ;
++----------------------+-------------+-------------+-------------+
+
+
+Encoding Type:  User-Encoded
++----------------------------------------------------------------+
+; State Machine - |Penelope|NWire_xmit:P_MIC|NW_state            ;
++----------------------+-------------+-------------+-------------+
+; Name                 ; NW_state~13 ; NW_state~12 ; NW_state~11 ;
++----------------------+-------------+-------------+-------------+
+; NW_state.NW_IDLE     ; 0           ; 0           ; 0           ;
+; NW_state.NW_WAIT     ; 0           ; 1           ; 0           ;
+; NW_state.NW_DATA_Q1  ; 0           ; 1           ; 1           ;
+; NW_state.NW_DATA_Q23 ; 1           ; 0           ; 0           ;
+; NW_state.NW_DATA_Q4  ; 1           ; 0           ; 1           ;
+; NW_state.NW_LOW      ; 1           ; 1           ; 0           ;
++----------------------+-------------+-------------+-------------+
+
+
+Encoding Type:  User-Encoded
++------------------------------------------------------------------+
+; State Machine - |Penelope|I2S_xmit:IQD|TLV_state                 ;
++---------------------+--------------+--------------+--------------+
+; Name                ; TLV_state~12 ; TLV_state~11 ; TLV_state~10 ;
++---------------------+--------------+--------------+--------------+
+; TLV_state.TLV_IDLE  ; 0            ; 0            ; 0            ;
+; TLV_state.TLV_WH    ; 0            ; 0            ; 1            ;
+; TLV_state.TLV_LR_LO ; 0            ; 1            ; 0            ;
+; TLV_state.TLV_WL    ; 0            ; 1            ; 1            ;
+; TLV_state.TLV_LR_HI ; 1            ; 0            ; 0            ;
++---------------------+--------------+--------------+--------------+
+
+
+Encoding Type:  User-Encoded
++------------------------------------------------------------+
+; State Machine - |Penelope|NWire_rcv:IQPWM|TB_state         ;
++------------------+-------------+-------------+-------------+
+; Name             ; TB_state~13 ; TB_state~12 ; TB_state~11 ;
++------------------+-------------+-------------+-------------+
+; TB_state.TB_IDLE ; 0           ; 0           ; 0           ;
+; TB_state.TB_DB   ; 0           ; 0           ; 1           ;
+; TB_state.TB_CALC ; 0           ; 1           ; 0           ;
+; TB_state.TB_SYNC ; 0           ; 1           ; 1           ;
+; TB_state.TB_NEXT ; 1           ; 0           ; 0           ;
+; TB_state.TB_BIT  ; 1           ; 0           ; 1           ;
++------------------+-------------+-------------+-------------+
+
+
+Encoding Type:  User-Encoded
++------------------------------------------------------------+
+; State Machine - |Penelope|NWire_rcv:CCrcv|TB_state         ;
++------------------+-------------+-------------+-------------+
+; Name             ; TB_state~13 ; TB_state~12 ; TB_state~11 ;
++------------------+-------------+-------------+-------------+
+; TB_state.TB_IDLE ; 0           ; 0           ; 0           ;
+; TB_state.TB_DB   ; 0           ; 0           ; 1           ;
+; TB_state.TB_CALC ; 0           ; 1           ; 0           ;
+; TB_state.TB_SYNC ; 0           ; 1           ; 1           ;
+; TB_state.TB_NEXT ; 1           ; 0           ; 0           ;
+; TB_state.TB_BIT  ; 1           ; 0           ; 1           ;
++------------------+-------------+-------------+-------------+
+
+
+Encoding Type:  User-Encoded
++---------------------------------------------------------+
+; State Machine - |Penelope|ADC:ADC_SPI|ADC_state         ;
++---------------+-------------+-------------+-------------+
+; Name          ; ADC_state~8 ; ADC_state~7 ; ADC_state~6 ;
++---------------+-------------+-------------+-------------+
+; ADC_state.000 ; 0           ; 0           ; 0           ;
+; ADC_state.001 ; 0           ; 0           ; 1           ;
+; ADC_state.010 ; 0           ; 1           ; 0           ;
+; ADC_state.011 ; 0           ; 1           ; 1           ;
+; ADC_state.100 ; 1           ; 0           ; 0           ;
++---------------+-------------+-------------+-------------+
+
+
++------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                 ;
++----------------------------------------+-------------------------------------------+
+; Register name                          ; Reason for Removal                        ;
++----------------------------------------+-------------------------------------------+
+; PWM1_Data_in[0..2]                     ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|q0[0..2]           ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|i0[0..2]           ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|q1[0]              ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|i1[0]              ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|q1[1]              ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|i1[1]              ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|q2[0]              ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|i2[0]              ; Stuck at GND due to stuck port data_in    ;
+; PWM1_Data_in[15]                       ; Merged with PWM2_Data_in[15]              ;
+; PWM1_accumulator[1..2]                 ; Merged with PWM1_accumulator[0]           ;
+; cicint:cic_Q|diff1[15]                 ; Merged with cicint:cic_Q|diff1[16]        ;
+; cicint:cic_Q|diff2[16]                 ; Merged with cicint:cic_Q|diff2[17]        ;
+; cicint:cic_Q|diff3[17]                 ; Merged with cicint:cic_Q|diff3[18]        ;
+; cicint:cic_Q|diff4[18]                 ; Merged with cicint:cic_Q|diff4[19]        ;
+; cicint:cic_I|diff1[15]                 ; Merged with cicint:cic_I|diff1[16]        ;
+; cicint:cic_I|diff2[16]                 ; Merged with cicint:cic_I|diff2[17]        ;
+; cicint:cic_I|diff3[17]                 ; Merged with cicint:cic_I|diff3[18]        ;
+; cicint:cic_I|diff4[18]                 ; Merged with cicint:cic_I|diff4[19]        ;
+; NWire_rcv:CCrcv|tb_width[18]           ; Merged with NWire_rcv:CCrcv|tb_width[17]  ;
+; NWire_xmit:ser_no|dly_cnt[0..24]       ; Lost fanout                               ;
+; PWM1_accumulator[0]                    ; Stuck at GND due to stuck port data_in    ;
+; NWire_xmit:ser_no|id[19]               ; Stuck at GND due to stuck port data_in    ;
+; NWire_rcv:IQPWM|tb_width[13..14]       ; Stuck at GND due to stuck port data_in    ;
+; NWire_rcv:CCrcv|tb_width[17]           ; Stuck at GND due to stuck port data_in    ;
+; NWire_xmit:ser_no|id[16..18]           ; Stuck at GND due to stuck port data_in    ;
+; NWire_xmit:P_MIC|dly_cnt[25]           ; Merged with NWire_xmit:ser_no|dly_cnt[25] ;
+; cicint:cic_I|cur_count[11]             ; Merged with cicint:cic_Q|cur_count[11]    ;
+; cicint:cic_I|cur_count[10]             ; Merged with cicint:cic_Q|cur_count[10]    ;
+; cicint:cic_I|cur_count[9]              ; Merged with cicint:cic_Q|cur_count[9]     ;
+; cicint:cic_I|cur_count[8]              ; Merged with cicint:cic_Q|cur_count[8]     ;
+; cicint:cic_I|cur_count[7]              ; Merged with cicint:cic_Q|cur_count[7]     ;
+; cicint:cic_I|cur_count[6]              ; Merged with cicint:cic_Q|cur_count[6]     ;
+; cicint:cic_I|cur_count[5]              ; Merged with cicint:cic_Q|cur_count[5]     ;
+; cicint:cic_I|cur_count[4]              ; Merged with cicint:cic_Q|cur_count[4]     ;
+; cicint:cic_I|cur_count[3]              ; Merged with cicint:cic_Q|cur_count[3]     ;
+; cicint:cic_I|cur_count[2]              ; Merged with cicint:cic_Q|cur_count[2]     ;
+; cicint:cic_I|cur_count[1]              ; Merged with cicint:cic_Q|cur_count[1]     ;
+; cicint:cic_I|cur_count[0]              ; Merged with cicint:cic_Q|cur_count[0]     ;
+; cicint:cic_I|ce_out_reg                ; Merged with cicint:cic_Q|ce_out_reg       ;
+; cordic_16:tx_cordic|q1[2]              ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|i1[2]              ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|q2[1]              ; Stuck at GND due to stuck port data_in    ;
+; cordic_16:tx_cordic|i2[1]              ; Stuck at GND due to stuck port data_in    ;
+; attack_cnt[0]                          ; Stuck at GND due to stuck port data_in    ;
+; Total Number of Removed Registers = 79 ;                                           ;
++----------------------------------------+-------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                          ;
++---------------------------+---------------------------+------------------------------------------------------------------------------+
+; Register name             ; Reason for Removal        ; Registers Removed due to This Register                                       ;
++---------------------------+---------------------------+------------------------------------------------------------------------------+
+; NWire_xmit:ser_no|id[19]  ; Stuck at GND              ; NWire_xmit:ser_no|id[18], NWire_xmit:ser_no|id[17], NWire_xmit:ser_no|id[16] ;
+;                           ; due to stuck port data_in ;                                                                              ;
+; cordic_16:tx_cordic|q1[1] ; Stuck at GND              ; cordic_16:tx_cordic|i2[0]                                                    ;
+;                           ; due to stuck port data_in ;                                                                              ;
+; cordic_16:tx_cordic|i1[1] ; Stuck at GND              ; cordic_16:tx_cordic|q2[0]                                                    ;
+;                           ; due to stuck port data_in ;                                                                              ;
+; cordic_16:tx_cordic|q1[2] ; Stuck at GND              ; cordic_16:tx_cordic|i2[1]                                                    ;
+;                           ; due to stuck port data_in ;                                                                              ;
+; cordic_16:tx_cordic|i1[2] ; Stuck at GND              ; cordic_16:tx_cordic|q2[1]                                                    ;
+;                           ; due to stuck port data_in ;                                                                              ;
++---------------------------+---------------------------+------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 2597  ;
+; Number of registers using Synchronous Clear  ; 276   ;
+; Number of registers using Synchronous Load   ; 120   ;
+; Number of registers using Asynchronous Clear ; 667   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 929   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Penelope|I2S_xmit:IQD|last_data[0]         ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |Penelope|NWire_rcv:IQPWM|DBrise_cnt[5]     ;
+; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |Penelope|NWire_rcv:IQPWM|tb_width[9]       ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Penelope|NWire_rcv:IQPWM|data_cnt[0]       ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |Penelope|NWire_rcv:CCrcv|DBrise_cnt[0]     ;
+; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |Penelope|NWire_rcv:CCrcv|tb_width[14]      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |Penelope|NWire_rcv:CCrcv|data_cnt[0]       ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Penelope|NWire_rcv:IQPWM|tb_cnt[0]         ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |Penelope|NWire_rcv:CCrcv|tb_cnt[3]         ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Penelope|NWire_xmit:P_MIC|id[2]            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |Penelope|PTT_out                           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |Penelope|clk_div:TLVCLK|cnt[1]             ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |Penelope|NWire_xmit:ser_no|id[12]          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Penelope|NWire_xmit:ser_no|id[0]           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Penelope|I2S_xmit:IQD|bit_count[0]         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Penelope|C122_SPEED[1]                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Penelope|clk_lrclk_gen:clrgen|BCLK_cnt[0]  ;
+; 3:1                ; 60 bits   ; 120 LEs       ; 60 LEs               ; 60 LEs                 ; Yes        ; |Penelope|NWire_rcv:IQPWM|DB_LEN[0][14]     ;
+; 3:1                ; 76 bits   ; 152 LEs       ; 76 LEs               ; 76 LEs                 ; Yes        ; |Penelope|NWire_rcv:CCrcv|DB_LEN[1][18]     ;
+; 3:1                ; 50 bits   ; 100 LEs       ; 50 LEs               ; 50 LEs                 ; Yes        ; |Penelope|NWire_rcv:CCrcv|rdata[17]         ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Penelope|I2S_rcv:PJD|b_clk_cnt[3]          ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Penelope|clk_lrclk_gen:lrgen|BCLK_cnt[2]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Penelope|NWire_rcv:IQPWM|rdata[27]         ;
+; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |Penelope|NWire_xmit:P_MIC|dly_cnt[23]      ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |Penelope|I2S_xmit:IQD|data[3]              ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Penelope|clk_lrclk_gen:clrgen|LRCLK_cnt[3] ;
+; 4:1                ; 41 bits   ; 82 LEs        ; 41 LEs               ; 41 LEs                 ; Yes        ; |Penelope|OC[4]                             ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Penelope|clk_lrclk_gen:lrgen|LRCLK_cnt[1]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Penelope|I2S_rcv:PJD|shift_cnt[3]          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Penelope|ADC:ADC_SPI|bit_cnt[2]            ;
+; 5:1                ; 14 bits   ; 42 LEs        ; 14 LEs               ; 28 LEs                 ; Yes        ; |Penelope|NWire_xmit:ser_no|bcnt[2]         ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |Penelope|NWire_xmit:P_MIC|bcnt[26]         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Penelope ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; PENNY_ADDR     ; 0000  ; Unsigned Binary                                 ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_div:TLVCLK ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; CLK_DIV        ; 10    ; Signed Integer                     ;
+; TPD            ; 1     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_lrclk_gen:clrgen ;
++----------------+-----------+--------------------------------------+
+; Parameter Name ; Value     ; Type                                 ;
++----------------+-----------+--------------------------------------+
+; BCLK_00        ; 32        ; Signed Integer                       ;
+; BCLK_01        ; 32        ; Signed Integer                       ;
+; BCLK_10        ; 32        ; Signed Integer                       ;
+; CLK_FREQ       ; 122880000 ; Signed Integer                       ;
++----------------+-----------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_lrclk_gen:lrgen ;
++----------------+-----------+-------------------------------------+
+; Parameter Name ; Value     ; Type                                ;
++----------------+-----------+-------------------------------------+
+; BCLK_00        ; 32        ; Signed Integer                      ;
+; BCLK_01        ; 32        ; Signed Integer                      ;
+; BCLK_10        ; 32        ; Signed Integer                      ;
+; CLK_FREQ       ; 122880000 ; Signed Integer                      ;
++----------------+-----------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cicint:cic_I ;
++----------------+----------------------+-------------------+
+; Parameter Name ; Value                ; Type              ;
++----------------+----------------------+-------------------+
+; zeroconst      ; 00000000000000000000 ; Signed Binary     ;
++----------------+----------------------+-------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cicint:cic_Q ;
++----------------+----------------------+-------------------+
+; Parameter Name ; Value                ; Type              ;
++----------------+----------------------+-------------------+
+; zeroconst      ; 00000000000000000000 ; Signed Binary     ;
++----------------+----------------------+-------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: phase_accumulator:rx_phase_accumulator ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; RESOLUTION     ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NWire_rcv:CCrcv ;
++----------------+-----------+---------------------------------+
+; Parameter Name ; Value     ; Type                            ;
++----------------+-----------+---------------------------------+
+; DATA_BITS      ; 61        ; Signed Integer                  ;
+; SLOWEST_FREQ   ; 500       ; Signed Integer                  ;
+; ICLK_FREQ      ; 122880000 ; Signed Integer                  ;
+; XCLK_FREQ      ; 122880000 ; Signed Integer                  ;
+; TPD            ; 1         ; Signed Integer                  ;
++----------------+-----------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NWire_rcv:IQPWM ;
++----------------+-----------+---------------------------------+
+; Parameter Name ; Value     ; Type                            ;
++----------------+-----------+---------------------------------+
+; DATA_BITS      ; 32        ; Signed Integer                  ;
+; SLOWEST_FREQ   ; 10000     ; Signed Integer                  ;
+; ICLK_FREQ      ; 122880000 ; Signed Integer                  ;
+; XCLK_FREQ      ; 122880000 ; Signed Integer                  ;
+; TPD            ; 1         ; Signed Integer                  ;
++----------------+-----------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: I2S_xmit:IQD ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; DATA_BITS      ; 32    ; Signed Integer                   ;
+; TPD            ; 5     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NWire_xmit:P_MIC ;
++----------------+-----------+----------------------------------+
+; Parameter Name ; Value     ; Type                             ;
++----------------+-----------+----------------------------------+
+; XCLK_FREQ      ; 122880000 ; Signed Integer                   ;
+; ICLK_FREQ      ; 122880000 ; Signed Integer                   ;
+; DLY_TIME       ; 200       ; Signed Integer                   ;
+; DATA_BITS      ; 16        ; Signed Integer                   ;
+; SEND_FREQ      ; 48000     ; Signed Integer                   ;
+; LOW_BITS       ; 3         ; Signed Integer                   ;
+; TPD            ; 1         ; Signed Integer                   ;
+; NUM_DLY_CLKS   ; 24576000  ; Signed Integer                   ;
+; LOW_TIME       ; 0         ; Unsigned Binary                  ;
++----------------+-----------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: I2S_rcv:PJD ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; DATA_BITS      ; 32    ; Signed Integer                  ;
+; BCNT           ; 2     ; Signed Integer                  ;
+; DSTRB          ; 1     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NWire_xmit:ser_no ;
++----------------+-----------+-----------------------------------+
+; Parameter Name ; Value     ; Type                              ;
++----------------+-----------+-----------------------------------+
+; XCLK_FREQ      ; 122880000 ; Signed Integer                    ;
+; ICLK_FREQ      ; 122880000 ; Signed Integer                    ;
+; DLY_TIME       ; 200       ; Signed Integer                    ;
+; DATA_BITS      ; 20        ; Signed Integer                    ;
+; SEND_FREQ      ; 1000      ; Signed Integer                    ;
+; LOW_BITS       ; 3         ; Signed Integer                    ;
+; TPD            ; 1         ; Signed Integer                    ;
+; NUM_DLY_CLKS   ; 24576000  ; Signed Integer                    ;
+; LOW_TIME       ; 16026     ; Signed Integer                    ;
++----------------+-----------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: oddClockDivider:refClockDivider ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; DIVIDE_RATE    ; 125   ; Signed Integer                                      ;
+; COUNTER_WIDTH  ; 7     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ALC:ALC_I|lpm_mult:Mult0         ;
++------------------------------------------------+------------+---------------------+
+; Parameter Name                                 ; Value      ; Type                ;
++------------------------------------------------+------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 16         ; Untyped             ;
+; LPM_WIDTHB                                     ; 16         ; Untyped             ;
+; LPM_WIDTHP                                     ; 32         ; Untyped             ;
+; LPM_WIDTHR                                     ; 32         ; Untyped             ;
+; LPM_WIDTHS                                     ; 1          ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped             ;
+; LPM_PIPELINE                                   ; 0          ; Untyped             ;
+; LATENCY                                        ; 0          ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped             ;
+; USE_EAB                                        ; OFF        ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6          ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_9v01  ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
++------------------------------------------------+------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_16:tx_cordic|lpm_add_sub:Add6 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; LPM_WIDTH              ; 17          ; Untyped                                        ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                        ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                        ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                        ;
+; LPM_PIPELINE           ; 0           ; Untyped                                        ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                        ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                        ;
+; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped                                        ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                        ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                        ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                             ;
+; DEVICE_FAMILY          ; Cyclone II  ; Untyped                                        ;
+; USE_WYS                ; OFF         ; Untyped                                        ;
+; STYLE                  ; FAST        ; Untyped                                        ;
+; CBXI_PARAMETER         ; add_sub_ari ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0                   ;
++------------------------------------------------+------------+---------------------+
+; Parameter Name                                 ; Value      ; Type                ;
++------------------------------------------------+------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 32         ; Untyped             ;
+; LPM_WIDTHB                                     ; 31         ; Untyped             ;
+; LPM_WIDTHP                                     ; 63         ; Untyped             ;
+; LPM_WIDTHR                                     ; 63         ; Untyped             ;
+; LPM_WIDTHS                                     ; 1          ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped             ;
+; LPM_PIPELINE                                   ; 0          ; Untyped             ;
+; LATENCY                                        ; 0          ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; YES        ; Untyped             ;
+; USE_EAB                                        ; OFF        ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5          ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_r211  ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
++------------------------------------------------+------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ALC:ALC_Q|lpm_mult:Mult0         ;
++------------------------------------------------+------------+---------------------+
+; Parameter Name                                 ; Value      ; Type                ;
++------------------------------------------------+------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 16         ; Untyped             ;
+; LPM_WIDTHB                                     ; 16         ; Untyped             ;
+; LPM_WIDTHP                                     ; 32         ; Untyped             ;
+; LPM_WIDTHR                                     ; 32         ; Untyped             ;
+; LPM_WIDTHS                                     ; 1          ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped             ;
+; LPM_PIPELINE                                   ; 0          ; Untyped             ;
+; LATENCY                                        ; 0          ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped             ;
+; USE_EAB                                        ; OFF        ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6          ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_9v01  ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
++------------------------------------------------+------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                   ;
++---------------------------------------+--------------------------+
+; Name                                  ; Value                    ;
++---------------------------------------+--------------------------+
+; Number of entity instances            ; 3                        ;
+; Entity Instance                       ; ALC:ALC_I|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                       ;
+;     -- LPM_WIDTHB                     ; 16                       ;
+;     -- LPM_WIDTHP                     ; 32                       ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                 ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                       ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                       ;
+;     -- USE_EAB                        ; OFF                      ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                     ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                       ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                       ;
+; Entity Instance                       ; lpm_mult:Mult0           ;
+;     -- LPM_WIDTHA                     ; 32                       ;
+;     -- LPM_WIDTHB                     ; 31                       ;
+;     -- LPM_WIDTHP                     ; 63                       ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                 ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                       ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                      ;
+;     -- USE_EAB                        ; OFF                      ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                     ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                       ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                       ;
+; Entity Instance                       ; ALC:ALC_Q|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                       ;
+;     -- LPM_WIDTHB                     ; 16                       ;
+;     -- LPM_WIDTHP                     ; 32                       ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                 ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                       ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                       ;
+;     -- USE_EAB                        ; OFF                      ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                     ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                       ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                       ;
++---------------------------------------+--------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "NWire_xmit:ser_no"              ;
++---------------+--------+----------+------------------------+
+; Port          ; Type   ; Severity ; Details                ;
++---------------+--------+----------+------------------------+
+; xdata[15..14] ; Input  ; Info     ; Stuck at VCC           ;
+; xdata[19..16] ; Input  ; Info     ; Stuck at GND           ;
+; xdata[13..12] ; Input  ; Info     ; Stuck at GND           ;
+; xreq          ; Input  ; Info     ; Stuck at VCC           ;
+; xrdy          ; Output ; Info     ; Explicitly unconnected ;
+; xack          ; Output ; Info     ; Explicitly unconnected ;
++---------------+--------+----------+------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "I2S_rcv:PJD"                                                                                                     ;
++--------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                                                  ;
++--------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; xData[15..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
+; xlrclk       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; xBrise       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; xBfall       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; xLRrise      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; xLRfall      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "NWire_xmit:P_MIC"      ;
++------+--------+----------+------------------------+
+; Port ; Type   ; Severity ; Details                ;
++------+--------+----------+------------------------+
+; xrdy ; Output ; Info     ; Explicitly unconnected ;
+; xack ; Output ; Info     ; Explicitly unconnected ;
++------+--------+----------+------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "I2S_xmit:IQD"                                                                                                                                    ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                      ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; xmit_rdy ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; xmit_ack ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "NWire_rcv:CCrcv"                                                                                ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; xrcv_data[10..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; xrcv_data[19]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cordic_16:tx_cordic"                                                                      ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; iout[2..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; iout[16]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; qout       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "phase_accumulator:rx_phase_accumulator"                                                         ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; phase_out[11..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "cicint:cic_Q"     ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; clk_enable ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "cicint:cic_I"     ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; clk_enable ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clk_lrclk_gen:lrgen"                                                                                       ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; BCLK   ; Output ; Info     ; Explicitly unconnected                                                                                   ;
+; LRCLK  ; Output ; Info     ; Explicitly unconnected                                                                                   ;
+; Brise  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Bfall  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; LRrise ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clk_lrclk_gen:clrgen"                                                                                      ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Speed  ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; LRrise ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; LRfall ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
+    Info: Processing started: Mon May 18 19:37:37 2009
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Penelope -c Penelope
+Info: Found 1 design units, including 1 entities, in source file ../common/I2S_xmit.v
+    Info: Found entity 1: I2S_xmit
+Info: Found 1 design units, including 1 entities, in source file ../common/NWire_rcv.v
+    Info: Found entity 1: NWire_rcv
+Info: Found 1 design units, including 1 entities, in source file ../common/NWire_xmit.v
+    Info: Found entity 1: NWire_xmit
+Info: Found 1 design units, including 1 entities, in source file ../common/clk_lrclk_gen.v
+    Info: Found entity 1: clk_lrclk_gen
+Info: Found 1 design units, including 1 entities, in source file ../common/clk_div.v
+    Info: Found entity 1: clk_div
+Info: Found 1 design units, including 1 entities, in source file ALC.v
+    Info: Found entity 1: ALC
+Info: Found 1 design units, including 1 entities, in source file oddClockDiv.v
+    Info: Found entity 1: oddClockDivider
+Info: Found 1 design units, including 1 entities, in source file cordic.v
+    Info: Found entity 1: cordic_16
+Info: Found 1 design units, including 1 entities, in source file ADC.v
+    Info: Found entity 1: ADC
+Info: Found 1 design units, including 1 entities, in source file phase_accumulator.v
+    Info: Found entity 1: phase_accumulator
+Info: Found 1 design units, including 1 entities, in source file cicint.v
+    Info: Found entity 1: cicint
+Info: Found 1 design units, including 1 entities, in source file Penelope.v
+    Info: Found entity 1: Penelope
+Info: Found 1 design units, including 1 entities, in source file ../common/I2S_rcv.v
+    Info: Found entity 1: I2S_rcv
+Info: Elaborating entity "Penelope" for the top level hierarchy
+Info: Elaborating entity "clk_div" for hierarchy "clk_div:TLVCLK"
+Info: Elaborating entity "clk_lrclk_gen" for hierarchy "clk_lrclk_gen:clrgen"
+Warning (10230): Verilog HDL assignment warning at clk_lrclk_gen.v(39): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at clk_lrclk_gen.v(41): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at clk_lrclk_gen.v(43): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at clk_lrclk_gen.v(45): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at clk_lrclk_gen.v(82): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at clk_lrclk_gen.v(84): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at clk_lrclk_gen.v(86): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at clk_lrclk_gen.v(88): truncated value with size 32 to match size of target (5)
+Info: Elaborating entity "ADC" for hierarchy "ADC:ADC_SPI"
+Info: Elaborating entity "ALC" for hierarchy "ALC:ALC_I"
+Info: Elaborating entity "cicint" for hierarchy "cicint:cic_I"
+Warning (10036): Verilog HDL or VHDL warning at cicint.v(86): object "section_in1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at cicint.v(94): object "section_in2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at cicint.v(102): object "section_in3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at cicint.v(110): object "section_in4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at cicint.v(133): object "section_in7" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at cicint.v(141): object "section_in8" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at cicint.v(149): object "section_in9" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at cicint.v(157): object "section_in10" assigned a value but never read
+Info: Elaborating entity "phase_accumulator" for hierarchy "phase_accumulator:rx_phase_accumulator"
+Info: Elaborating entity "cordic_16" for hierarchy "cordic_16:tx_cordic"
+Info: Elaborating entity "NWire_rcv" for hierarchy "NWire_rcv:CCrcv"
+Info: Elaborating entity "NWire_rcv" for hierarchy "NWire_rcv:IQPWM"
+Info: Elaborating entity "I2S_xmit" for hierarchy "I2S_xmit:IQD"
+Warning (10230): Verilog HDL assignment warning at I2S_xmit.v(80): truncated value with size 32 to match size of target (4)
+Info: Elaborating entity "NWire_xmit" for hierarchy "NWire_xmit:P_MIC"
+Info: Elaborating entity "I2S_rcv" for hierarchy "I2S_rcv:PJD"
+Info: Elaborating entity "NWire_xmit" for hierarchy "NWire_xmit:ser_no"
+Info: Elaborating entity "oddClockDivider" for hierarchy "oddClockDivider:refClockDivider"
+Warning: Clock multiplexers are found and protected
+    Warning: Found clock multiplexer reference
+Info: Inferred 5 megafunctions from design logic
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "ALC:ALC_I|Mult0"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_16:tx_cordic|Add6"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_16:tx_cordic|Add6"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "ALC:ALC_Q|Mult0"
+Info: Elaborated megafunction instantiation "ALC:ALC_I|lpm_mult:Mult0"
+Info: Instantiated megafunction "ALC:ALC_I|lpm_mult:Mult0" with the following parameter:
+    Info: Parameter "LPM_WIDTHA" = "16"
+    Info: Parameter "LPM_WIDTHB" = "16"
+    Info: Parameter "LPM_WIDTHP" = "32"
+    Info: Parameter "LPM_WIDTHR" = "32"
+    Info: Parameter "LPM_WIDTHS" = "1"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info: Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info: Parameter "MAXIMIZE_SPEED" = "6"
+    Info: Parameter "DEDICATED_MULTIPLIER_CIRCUITRY" = "AUTO"
+Info: Found 1 design units, including 1 entities, in source file db/mult_9v01.tdf
+    Info: Found entity 1: mult_9v01
+Info: Elaborated megafunction instantiation "cordic_16:tx_cordic|lpm_add_sub:Add6"
+Info: Instantiated megafunction "cordic_16:tx_cordic|lpm_add_sub:Add6" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "17"
+    Info: Parameter "LPM_DIRECTION" = "DEFAULT"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "NO"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_ari.tdf
+    Info: Found entity 1: add_sub_ari
+Info: Elaborated megafunction instantiation "lpm_mult:Mult0"
+Info: Instantiated megafunction "lpm_mult:Mult0" with the following parameter:
+    Info: Parameter "LPM_WIDTHA" = "32"
+    Info: Parameter "LPM_WIDTHB" = "31"
+    Info: Parameter "LPM_WIDTHP" = "63"
+    Info: Parameter "LPM_WIDTHR" = "63"
+    Info: Parameter "LPM_WIDTHS" = "1"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info: Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info: Parameter "MAXIMIZE_SPEED" = "5"
+    Info: Parameter "DEDICATED_MULTIPLIER_CIRCUITRY" = "AUTO"
+Info: Found 1 design units, including 1 entities, in source file db/mult_r211.tdf
+    Info: Found entity 1: mult_r211
+Warning: 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Ignored 168 buffer(s)
+    Info: Ignored 168 SOFT buffer(s)
+Info: 25 registers lost all their fanouts during netlist optimizations. The first 25 are displayed below.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[24]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[23]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[22]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[21]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[20]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[19]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[18]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[17]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[16]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "NWire_xmit:ser_no|dly_cnt[0]" lost all its fanouts during netlist optimizations.
+Info: Generated suppressed messages file C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/Penelope.map.smsg
+Info: Implemented 4207 device resources after synthesis - the final resource count might be different
+    Info: Implemented 7 input pins
+    Info: Implemented 48 output pins
+    Info: Implemented 1 bidirectional pins
+    Info: Implemented 4139 logic cells
+    Info: Implemented 12 DSP elements
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 184 megabytes
+    Info: Processing ended: Mon May 18 19:37:53 2009
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:15
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/HPSDR/trunk/Kirks Code/HPSDR Apr 13 2009/Penelope/Penelope.map.smsg.
+
+

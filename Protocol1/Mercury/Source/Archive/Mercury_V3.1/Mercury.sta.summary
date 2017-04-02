@@ -1,0 +1,221 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'spc[1]'
+Slack : -4.010
+TNS   : -221.555
+
+Type  : Slow 1200mV 85C Model Setup 'clk_lrclk_gen:lrgen|BCLK'
+Slack : -3.432
+TNS   : -95.535
+
+Type  : Slow 1200mV 85C Model Setup 'C122_clk'
+Slack : -3.051
+TNS   : -455.602
+
+Type  : Slow 1200mV 85C Model Setup 'OSC_10MHZ'
+Slack : -1.808
+TNS   : -11.763
+
+Type  : Slow 1200mV 85C Model Setup 'clk_lrclk_gen:clrgen|BCLK'
+Slack : -0.884
+TNS   : -1.739
+
+Type  : Slow 1200mV 85C Model Hold 'C122_clk'
+Slack : -0.711
+TNS   : -1.176
+
+Type  : Slow 1200mV 85C Model Hold 'spc[1]'
+Slack : -0.351
+TNS   : -1.746
+
+Type  : Slow 1200mV 85C Model Hold 'clk_lrclk_gen:clrgen|BCLK'
+Slack : -0.150
+TNS   : -0.150
+
+Type  : Slow 1200mV 85C Model Hold 'clk_lrclk_gen:lrgen|BCLK'
+Slack : 0.434
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'OSC_10MHZ'
+Slack : 0.468
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'C122_clk'
+Slack : 3.089
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'C122_clk'
+Slack : 1.194
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OSC_10MHZ'
+Slack : -3.000
+TNS   : -14.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'spc[1]'
+Slack : -1.487
+TNS   : -178.440
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_lrclk_gen:lrgen|BCLK'
+Slack : -1.487
+TNS   : -55.019
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_lrclk_gen:clrgen|BCLK'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'C122_clk'
+Slack : 3.138
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AUX_CLK'
+Slack : 49.871
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'spc[1]'
+Slack : -3.699
+TNS   : -203.702
+
+Type  : Slow 1200mV 0C Model Setup 'clk_lrclk_gen:lrgen|BCLK'
+Slack : -3.105
+TNS   : -85.829
+
+Type  : Slow 1200mV 0C Model Setup 'C122_clk'
+Slack : -2.016
+TNS   : -151.261
+
+Type  : Slow 1200mV 0C Model Setup 'OSC_10MHZ'
+Slack : -1.544
+TNS   : -10.107
+
+Type  : Slow 1200mV 0C Model Setup 'clk_lrclk_gen:clrgen|BCLK'
+Slack : -0.825
+TNS   : -1.593
+
+Type  : Slow 1200mV 0C Model Hold 'C122_clk'
+Slack : -0.748
+TNS   : -1.275
+
+Type  : Slow 1200mV 0C Model Hold 'spc[1]'
+Slack : -0.359
+TNS   : -1.795
+
+Type  : Slow 1200mV 0C Model Hold 'clk_lrclk_gen:clrgen|BCLK'
+Slack : -0.053
+TNS   : -0.053
+
+Type  : Slow 1200mV 0C Model Hold 'clk_lrclk_gen:lrgen|BCLK'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'OSC_10MHZ'
+Slack : 0.419
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'C122_clk'
+Slack : 3.367
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'C122_clk'
+Slack : 1.099
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OSC_10MHZ'
+Slack : -3.000
+TNS   : -14.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'spc[1]'
+Slack : -1.487
+TNS   : -183.826
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_lrclk_gen:lrgen|BCLK'
+Slack : -1.487
+TNS   : -55.253
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_lrclk_gen:clrgen|BCLK'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'C122_clk'
+Slack : 3.138
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AUX_CLK'
+Slack : 49.847
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'spc[1]'
+Slack : -1.746
+TNS   : -56.527
+
+Type  : Fast 1200mV 0C Model Setup 'clk_lrclk_gen:lrgen|BCLK'
+Slack : -0.925
+TNS   : -21.067
+
+Type  : Fast 1200mV 0C Model Setup 'C122_clk'
+Slack : -0.689
+TNS   : -0.747
+
+Type  : Fast 1200mV 0C Model Setup 'clk_lrclk_gen:clrgen|BCLK'
+Slack : -0.404
+TNS   : -0.780
+
+Type  : Fast 1200mV 0C Model Setup 'OSC_10MHZ'
+Slack : -0.224
+TNS   : -0.976
+
+Type  : Fast 1200mV 0C Model Hold 'C122_clk'
+Slack : -0.435
+TNS   : -0.770
+
+Type  : Fast 1200mV 0C Model Hold 'spc[1]'
+Slack : -0.176
+TNS   : -0.881
+
+Type  : Fast 1200mV 0C Model Hold 'clk_lrclk_gen:clrgen|BCLK'
+Slack : -0.158
+TNS   : -0.158
+
+Type  : Fast 1200mV 0C Model Hold 'clk_lrclk_gen:lrgen|BCLK'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'OSC_10MHZ'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'C122_clk'
+Slack : 5.729
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'C122_clk'
+Slack : 0.506
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OSC_10MHZ'
+Slack : -3.000
+TNS   : -12.488
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'spc[1]'
+Slack : -1.000
+TNS   : -120.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_lrclk_gen:lrgen|BCLK'
+Slack : -1.000
+TNS   : -37.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_lrclk_gen:clrgen|BCLK'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'C122_clk'
+Slack : 3.231
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AUX_CLK'
+Slack : 49.468
+TNS   : 0.000
+
+------------------------------------------------------------

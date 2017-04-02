@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Jan 11 19:11:37 2013
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Web Edition
+Revision Name : Metis
+Top-level Entity Name : Metis
+Family : Cyclone III
+Device : EP3C40Q240C8
+Timing Models : Final
+Total logic elements : 13,944 / 39,600 ( 35 % )
+    Total combinational functions : 11,913 / 39,600 ( 30 % )
+    Dedicated logic registers : 6,953 / 39,600 ( 18 % )
+Total registers : 6953
+Total pins : 72 / 129 ( 56 % )
+Total virtual pins : 0
+Total memory bits : 291,072 / 1,161,216 ( 25 % )
+Embedded Multiplier 9-bit elements : 8 / 252 ( 3 % )
+Total PLLs : 1 / 4 ( 25 % )

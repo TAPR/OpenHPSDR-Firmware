@@ -1,0 +1,187 @@
+Restore Archived Project report for Hermes
+Sun Aug 10 18:57:57 2014
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Sun Aug 10 18:57:57 2014 ;
+; Revision Name                   ; Hermes                                ;
+; Top-level Entity Name           ; Hermes                                ;
+; Family                          ; Cyclone III                           ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'E:/HPSDR/trunk/Hermes/Source/Hermes_v3.0_final/Hermes_v3.0_test.qar' into the 'E:/HPSDR/trunk/Hermes/Source/Hermes_v3.0_final/' directory
+Info: Generated report 'Hermes.restore.rpt'
+Info (23030): Evaluation of Tcl script e:/altera/13.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 337 megabytes
+    Info: Processing ended: Sun Aug 10 18:57:57 2014
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++---------------------------------------------------+
+; Files Restored                                    ;
++---------------------------------------------------+
+; File Name                                         ;
++---------------------------------------------------+
+; ASMI.v                                            ;
+; ASMI_interface.v                                  ;
+; Apollo.v                                          ;
+; Attenuator.v                                      ;
+; C10_PLL.v                                         ;
+; C122_PLL.v                                        ;
+; CRC32.v                                           ;
+; DHCP.v                                            ;
+; EEPROM.v                                          ;
+; EPCS_fifo.v                                       ;
+; FIFO.v                                            ;
+; HPF_select.v                                      ;
+; Hermes.dpf                                        ;
+; Hermes.out.sdc                                    ;
+; Hermes.qpf                                        ;
+; Hermes.qsf                                        ;
+; Hermes.sdc                                        ;
+; Hermes.v                                          ;
+; Hermes_5RX.sdc                                    ;
+; Hermes_ADC.v                                      ;
+; Hermes_Tx_fifo_ctrl.v                             ;
+; Hermes_assignment_defaults.qdf                    ;
+; Hermes_clk_lrclk_gen.v                            ;
+; I2S_rcv.v                                         ;
+; I2S_xmit.v                                        ;
+; LPF_select.v                                      ;
+; Led_control.v                                     ;
+; Led_flash.v                                       ;
+; MDIO.v                                            ;
+; Multiply2.v                                       ;
+; PHY_Rx_fifo.v                                     ;
+; PHY_fifo.qip                                      ;
+; PHY_fifo.v                                        ;
+; PLL_IF.ppf                                        ;
+; PLL_IF.qip                                        ;
+; PLL_IF.vhd                                        ;
+; PLL_clocks.ppf                                    ;
+; PLL_clocks.qip                                    ;
+; PLL_clocks.v                                      ;
+; Polyphase_FIR/CicInterpM5.v                       ;
+; Polyphase_FIR/FirInterp5_1025_EER .v              ;
+; Polyphase_FIR/FirInterp8_1024.v                   ;
+; Polyphase_FIR/coefA.mif                           ;
+; Polyphase_FIR/coefB.mif                           ;
+; Polyphase_FIR/coefC.mif                           ;
+; Polyphase_FIR/coefD.mif                           ;
+; Polyphase_FIR/coefEa.mif                          ;
+; Polyphase_FIR/coefEb.mif                          ;
+; Polyphase_FIR/coefFa.mif                          ;
+; Polyphase_FIR/coefFb.mif                          ;
+; Polyphase_FIR/coefI5_1025_EER.mif                 ;
+; Polyphase_FIR/coefI8_1024.mif                     ;
+; Polyphase_FIR/coefL8.dat                          ;
+; Polyphase_FIR/coefL8.mif                          ;
+; Polyphase_FIR/coefL8.txt                          ;
+; Polyphase_FIR/coefL8A.mif                         ;
+; Polyphase_FIR/coefL8B.mif                         ;
+; Polyphase_FIR/coefL8C.mif                         ;
+; Polyphase_FIR/coefL8D.mif                         ;
+; Polyphase_FIR/coefL8E.mif                         ;
+; Polyphase_FIR/coefL8F.mif                         ;
+; Polyphase_FIR/coefL8G.mif                         ;
+; Polyphase_FIR/coefL8H.mif                         ;
+; Polyphase_FIR/firfilt.v                           ;
+; Polyphase_FIR/firram36.qip                        ;
+; Polyphase_FIR/firram36.v                          ;
+; Polyphase_FIR/firram36I_1024.qip                  ;
+; Polyphase_FIR/firram36I_1024.v                    ;
+; Polyphase_FIR/firram36I_205.v                     ;
+; Polyphase_FIR/firram48.v                          ;
+; Polyphase_FIR/firrom1_1025.v                      ;
+; Polyphase_FIR/firromH.v                           ;
+; Polyphase_FIR/firromI_1024.qip                    ;
+; Polyphase_FIR/firromI_1024.v                      ;
+; Polyphase_FIR/firx2r2.v                           ;
+; Polyphase_FIR/firx4r4.v                           ;
+; Rx_MAC.v                                          ;
+; SPI.v                                             ;
+; SP_fifo.qip                                       ;
+; SP_fifo.v                                         ;
+; TLV320_SPI.v                                      ;
+; Tx_MAC.v                                          ;
+; Tx_fifo.v                                         ;
+; assignment_defaults.qdf                           ;
+; cdc_mcp.v                                         ;
+; cdc_sync.v                                        ;
+; cic.v                                             ;
+; cic_comb.v                                        ;
+; cic_integrator.v                                  ;
+; cicint.v                                          ;
+; clk_div.v                                         ;
+; cordic.v                                          ;
+; counter.v                                         ;
+; cpl_cordic.v                                      ;
+; db/Hermes.cmp.hdb                                 ;
+; db/Hermes.db_info                                 ;
+; debounce.v                                        ;
+; divide2.v                                         ;
+; iambic.v                                          ;
+; incremental_db/compiled_partitions/Hermes.db_info ;
+; phase_accumulator.v                               ;
+; profile.mif                                       ;
+; profile.v                                         ;
+; profile_ROM.v                                     ;
+; pulsegen.v                                        ;
+; receiver.v                                        ;
+; receiver2.v                                       ;
+; sidetone.v                                        ;
+; sine_table.mif                                    ;
+; sine_table.v                                      ;
+; sp_rcv_ctrl.v                                     ;
+; sqroot.v                                          ;
+; square.v                                          ;
+; varcic.v                                          ;
++---------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
