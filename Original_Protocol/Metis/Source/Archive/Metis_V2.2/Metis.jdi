@@ -1,9 +1,0 @@
-<sld_project_info>
-  <file_info>
-    <file checksum="0x0094D12C" device="EP3C40Q240C8" path="Metis.sof" usercode="0xFFFFFFFF"/>
-    <file checksum="0x1A4FA43B" device="EPCS16" path="Metis.pof" usercode="0x00000000"/>
-    <file path="Metis.rbf"/>
-  </file_info>
-  <hub_info ir_width="0" node_count="0"/>
-  <node_info/>
-</sld_project_info>
