@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Feb 01 22:10:38 2017
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : Angelia
+Top-level Entity Name : Angelia
+Family : Cyclone IV E
+Total logic elements : 56,938
+    Total combinational functions : 43,499
+    Dedicated logic registers : 38,729
+Total registers : 38729
+Total pins : 158
+Total virtual pins : 0
+Total memory bits : 1,208,592
+Embedded Multiplier 9-bit elements : 330
+Total PLLs : 4

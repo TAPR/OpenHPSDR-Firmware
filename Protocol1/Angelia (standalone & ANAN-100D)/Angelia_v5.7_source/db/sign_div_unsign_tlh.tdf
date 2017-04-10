@@ -1,0 +1,47 @@
+--sign_div_unsign DEN_REPRESENTATION="UNSIGNED" DEN_WIDTH=6 LPM_PIPELINE=0 MAXIMIZE_SPEED=5 NUM_REPRESENTATION="UNSIGNED" NUM_WIDTH=26 SKIP_BITS=0 denominator numerator quotient remainder
+--VERSION_BEGIN 16.0 cbx_cycloneii 2016:04:27:18:05:34:SJ cbx_lpm_abs 2016:04:27:18:05:34:SJ cbx_lpm_add_sub 2016:04:27:18:05:34:SJ cbx_lpm_divide 2016:04:27:18:05:34:SJ cbx_mgl 2016:04:27:18:06:48:SJ cbx_nadder 2016:04:27:18:05:34:SJ cbx_stratix 2016:04:27:18:05:34:SJ cbx_stratixii 2016:04:27:18:05:34:SJ cbx_util_mgl 2016:04:27:18:05:34:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, the Altera Quartus Prime License Agreement,
+--  the Altera MegaCore Function License Agreement, or other 
+--  applicable license agreement, including, without limitation, 
+--  that your use is for the sole purpose of programming logic 
+--  devices manufactured by Altera and sold by Altera or its 
+--  authorized distributors.  Please refer to the applicable 
+--  agreement for further details.
+
+
+FUNCTION alt_u_div_e7f (denominator[5..0], numerator[25..0])
+RETURNS ( quotient[25..0], remainder[5..0]);
+
+--synthesis_resources = lut 182 
+SUBDESIGN sign_div_unsign_tlh
+( 
+	denominator[5..0]	:	input;
+	numerator[25..0]	:	input;
+	quotient[25..0]	:	output;
+	remainder[5..0]	:	output;
+) 
+VARIABLE 
+	divider : alt_u_div_e7f;
+	norm_num[25..0]	: WIRE;
+	protect_quotient[25..0]	: WIRE;
+	protect_remainder[5..0]	: WIRE;
+
+BEGIN 
+	divider.denominator[] = denominator[];
+	divider.numerator[] = norm_num[];
+	norm_num[] = numerator[];
+	protect_quotient[] = divider.quotient[];
+	protect_remainder[] = divider.remainder[];
+	quotient[] = protect_quotient[];
+	remainder[] = protect_remainder[];
+END;
+--VALID FILE

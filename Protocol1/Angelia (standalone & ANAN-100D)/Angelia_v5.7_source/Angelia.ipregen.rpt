@@ -1,0 +1,99 @@
+IP Upgrade report for Angelia
+Wed Jan 18 19:57:42 2017
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. Failed Upgrade IP Components
+  5. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Failed - Wed Jan 18 19:57:42 2017           ;
+; Quartus Prime Version        ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                ; Angelia                                     ;
+; Top-level Entity Name        ; Angelia                                     ;
+; Family                       ; Cyclone IV E                                ;
++------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                              ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+---------+
+; Entity Name ; Component Name ; Version ; Original Source File ; Generation File Path ; New Source File ; Message ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+---------+
+; SP_fifo     ; FIFO           ; 11.1    ; SP_fifo.qip          ; SP_fifo.v            ; SP_fifo.qip     ;         ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Failed Upgrade IP Components                                                                                                                          ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+----------------------------------------------+
+; Entity Name ; Component Name ; Version ; Original Source File ; Generation File Path ; New Source File ; Message                                      ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+----------------------------------------------+
+; PLL_IF      ; ALTPLL         ; 13.1    ; PLL_IF.qip           ; PLL_IF.vhd           ;                 ; Error upgrading IP component "PLL_IF.vhd".   ;
+; PLL_clocks  ; ALTPLL         ; 9.1     ; PLL_clocks.qip       ; PLL_clocks.v         ;                 ; Error upgrading IP component "PLL_clocks.v". ;
+; C122_PLL    ; ALTPLL         ; 13.1    ; C122_PLL.qip         ; C122_PLL.v           ;                 ; Error upgrading IP component "C122_PLL.v".   ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+----------------------------------------------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "PLL_IF.vhd" to "PLL_IF.BAK.vhd"
+Info (11837): Started upgrading IP component ALTPLL with file "PLL_IF.vhd"
+Info (11904): Restoring file "PLL_IF.BAK.vhd" to "PLL_IF.vhd"
+Error (14921): Error upgrading IP component "PLL_IF.vhd".
+Info (11902): Backing up file "PLL_clocks.v" to "PLL_clocks.BAK.v"
+Info (11837): Started upgrading IP component ALTPLL with file "PLL_clocks.v"
+Info (11904): Restoring file "PLL_clocks.BAK.v" to "PLL_clocks.v"
+Error (14921): Error upgrading IP component "PLL_clocks.v".
+Info (11902): Backing up file "SP_fifo.v" to "SP_fifo.BAK.v"
+Info (11837): Started upgrading IP component FIFO with file "SP_fifo.v"
+Info (11902): Backing up file "C122_PLL.v" to "C122_PLL.BAK.v"
+Info (11837): Started upgrading IP component ALTPLL with file "C122_PLL.v"
+Info (11904): Restoring file "C122_PLL.BAK.v" to "C122_PLL.v"
+Error (14921): Error upgrading IP component "C122_PLL.v".
+Error (11133): IP component ALTPLL with file "PLL_IF.vhd" upgrade failed
+Error (11889): IP component upgrade failed
+Error (11133): IP component ALTPLL with file "PLL_clocks.v" upgrade failed
+Error (11889): IP component upgrade failed
+Info (11131): Completed upgrading IP component FIFO with file "SP_fifo.v"
+Error (11133): IP component ALTPLL with file "C122_PLL.v" upgrade failed
+Error (11889): IP component upgrade failed
+Error (23031): Evaluation of Tcl script c:/altera_lite/16.0/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 10 errors, 0 warnings
+    Error: Peak virtual memory: 872 megabytes
+    Error: Processing ended: Wed Jan 18 19:57:42 2017
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:21
+
+
