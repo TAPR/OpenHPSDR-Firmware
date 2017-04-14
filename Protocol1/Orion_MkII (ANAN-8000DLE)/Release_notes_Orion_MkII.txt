@@ -66,3 +66,12 @@ Orion MkII release notes
 		- changed FW version number to v1.1
 		- removed all max/min delay constraints from Orion.sdc
 		- retimed/compiled iteratively until timing closed	
+
+	Apr 14	- added peak detection code for AIN1 (FWD_PWR) and AIN2 (REV_PWR):
+			increased clock speed for the Orion_ADC.v module x10 to provide more FWD_PWR, REV_PWR readings per unit time:
+			created PLL_30MHz/.c0 to generate a 30.72MHz clock for the Orion_ADC module, results in 7.68MHz SCLK for the ADC
+			added peak detect for AIN1 and AIN2 in Orion_ADC.v
+			added pk_detect_reset and pk_detect_ack to define peak detection interval based upon the C&C AIN1/2 byte update rate, 
+				changes to Orion_Tx_fifo_ctl.v, Orion_ADC.v, and Orion.v to accommodate the peak detect feature
+		- changed FW version to v1.6
+		- closed timing
