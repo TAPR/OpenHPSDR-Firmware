@@ -198,4 +198,14 @@ Change log:
 		- changed FW version number to v4.7
 		- removed all max_delay and min_delay constraints from Orion.sdc
 		- retimed/compiled iteratively until timing closed
+
+	Apr 3	- changed C122_SHIFT_PLL/.c0 phase shift to 11.25 degrees
+	Apr 15	- implemented peak detection for AIN1 and AIN2:
+			-added PLL_30MHz/.c0 to provide 30.72 MHz clock for Orion_ADC.v module
+			-replaced Orion_ADC.v with version from Orion_MkII_v1.6 firmware
+			-replaced Orion_Tx_fifo_ctrl.v with version from Orion_MkII_v1.6 firmware
+			-added pk_detect_reset and pk_detect_ack to Orion.v, Orion_ADC, and Orion_Tx_fifo_ctrl				
+		- added clean_PTT_in to FPGA_PTT to fix bug with external PTT in via pin13 on ANAN-200D accessory jack
+		- removed all max_delay and min_delay constraints from Orion.sdc
+		- retimed/compiled iteratively until timing closed
 				
