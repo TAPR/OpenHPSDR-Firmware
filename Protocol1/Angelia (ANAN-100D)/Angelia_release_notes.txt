@@ -37,3 +37,19 @@ Angelia_v5.7 release notes
 		- removed output port constraint for DACD[*] paths,  added a corresponding false path 
 			constraint in Angelia.sdc to avoid triggering the associated Quartus TimeQuest complaint
 		- changed version number to 5.7
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	Apr 15	- ported to Quartus Prime Lite v16.1
+		- upgraded all megafunctions to v16.1 versions
+		- implemented peak detection for AIN1 and AIN2:
+			-created userADC_clk, 30.72MHz clock for Angelia_ADC.v which provides a 7.68MHz clock to 
+				the ADC78H90 chip, increasing its previous sampling rate x10
+			-replaced Angelia_ADC.v with version from Orion_MkII_v1.6 firmware
+			-replaced Angelia_Tx_fifo_ctrl.v with version from Orion_MkII_v1.6 firmware
+			-added pk_detect_reset and pk_detect_ack to Orion.v, Orion_ADC, and Orion_Tx_fifo_ctrl				
+		- added clean_PTT_in to FPGA_PTT to fix bug with external PTT IN via pin13 on ANAN-100D accessory jack
+		- added userADC_clk as a 30.72MHz generated clock to Angelia.sdc
+		- changed FW version number to v5.8
+		- removed all max_delay and min_delay constraints from Orion.sdc
+		- retimed/compiled iteratively until timing closed
