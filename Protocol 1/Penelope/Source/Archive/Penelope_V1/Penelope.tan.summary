@@ -1,0 +1,136 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.334 ns
+From           : LRCLK
+To             : serno_data_count[1]
+From Clock     : --
+To Clock       : BCLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 16.684 ns
+From           : ADC:ADC_SPI|AIN5[7]
+To             : LED4
+From Clock     : C8
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.383 ns
+From           : C4
+To             : LROUT
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -2.938 ns
+From           : ADCMISO
+To             : ADC:ADC_SPI|temp_AIN5[4]
+From Clock     : --
+To Clock       : C8
+Failed Paths   : 0
+
+Type           : Clock Setup: '_122MHZ'
+Slack          : -0.681 ns
+Required Time  : 123.00 MHz ( period = 8.130 ns )
+Actual Time    : 113.49 MHz ( period = 8.811 ns )
+From           : cicint:cic_Q|diff4[0]
+To             : cicint:cic_Q|section_out6[19]~58_OTERM609
+From Clock     : _122MHZ
+To Clock       : _122MHZ
+Failed Paths   : 75
+
+Type           : Clock Setup: 'BCLK'
+Slack          : -0.065 ns
+Required Time  : 123.00 MHz ( period = 8.130 ns )
+Actual Time    : 121.07 MHz ( period = 8.260 ns )
+From           : serno_data_count[0]
+To             : serno~reg0
+From Clock     : BCLK
+To Clock       : BCLK
+Failed Paths   : 1
+
+Type           : Clock Setup: '_10MHZ'
+Slack          : 96.760 ns
+Required Time  : 10.00 MHz ( period = 100.000 ns )
+Actual Time    : 308.64 MHz ( period = 3.240 ns )
+From           : oddClockDivider:refClockDivider|count[5]
+To             : oddClockDivider:refClockDivider|count[6]
+From Clock     : _10MHZ
+To Clock       : _10MHZ
+Failed Paths   : 0
+
+Type           : Clock Setup: 'C8'
+Slack          : 304.522 ns
+Required Time  : 3.13 MHz ( period = 320.000 ns )
+Actual Time    : 64.61 MHz ( period = 15.478 ns )
+From           : I_sync_data[0]
+To             : ix0[15]
+From Clock     : C8
+To Clock       : C8
+Failed Paths   : 0
+
+Type           : Clock Hold: '_122MHZ'
+Slack          : 0.499 ns
+Required Time  : 123.00 MHz ( period = 8.130 ns )
+Actual Time    : N/A
+From           : PTT_out
+To             : PTT_out
+From Clock     : _122MHZ
+To Clock       : _122MHZ
+Failed Paths   : 0
+
+Type           : Clock Hold: 'C8'
+Slack          : 0.499 ns
+Required Time  : 3.13 MHz ( period = 320.000 ns )
+Actual Time    : N/A
+From           : ADC:ADC_SPI|nCS
+To             : ADC:ADC_SPI|nCS
+From Clock     : C8
+To Clock       : C8
+Failed Paths   : 0
+
+Type           : Clock Hold: '_10MHZ'
+Slack          : 0.499 ns
+Required Time  : 10.00 MHz ( period = 100.000 ns )
+Actual Time    : N/A
+From           : oddClockDivider:refClockDivider|count[0]
+To             : oddClockDivider:refClockDivider|count[0]
+From Clock     : _10MHZ
+To Clock       : _10MHZ
+Failed Paths   : 0
+
+Type           : Clock Hold: 'BCLK'
+Slack          : 0.499 ns
+Required Time  : 123.00 MHz ( period = 8.130 ns )
+Actual Time    : N/A
+From           : serno_data_count[3]
+To             : serno_data_count[3]
+From Clock     : BCLK
+To Clock       : BCLK
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 76
+
+--------------------------------------------------------------------------------------
+

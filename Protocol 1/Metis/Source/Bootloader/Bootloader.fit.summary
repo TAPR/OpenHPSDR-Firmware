@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Mar 01 15:17:22 2011
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : Bootloader
+Top-level Entity Name : Bootloader
+Family : Cyclone III
+Device : EP3C40Q240C8
+Timing Models : Final
+Total logic elements : 2,731 / 39,600 ( 7 % )
+    Total combinational functions : 2,323 / 39,600 ( 6 % )
+    Dedicated logic registers : 1,697 / 39,600 ( 4 % )
+Total registers : 1697
+Total pins : 50 / 129 ( 39 % )
+Total virtual pins : 0
+Total memory bits : 20,608 / 1,161,216 ( 2 % )
+Embedded Multiplier 9-bit elements : 0 / 252 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

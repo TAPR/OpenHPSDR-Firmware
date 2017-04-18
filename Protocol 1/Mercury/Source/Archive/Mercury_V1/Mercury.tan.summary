@@ -1,0 +1,156 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.402 ns
+From           : INA[12]
+To             : temp_ADC[12]
+From Clock     : --
+To Clock       : CLKA
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.459 ns
+From           : oddClockDivider:refClockDivider|div2
+To             : FPGA_PLL
+From Clock     : C9
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.509 ns
+From           : C17
+To             : CMCLK
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.273 ns
+From           : CC
+To             : CCdata[23]
+From Clock     : --
+To Clock       : C8
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLKA'
+Slack          : -3.997 ns
+Required Time  : 122.88 MHz ( period = 8.138 ns )
+Actual Time    : 82.41 MHz ( period = 12.135 ns )
+From           : FIR_top:FIR|cROM_Sequencer:cROM_seq_inst|cROM:cROM_inst|data[23]~55
+To             : FIR_top:FIR|MAC:MAC_inst_I|mult_temp[47]
+From Clock     : CLKA
+To Clock       : CLKA
+Failed Paths   : 3027
+
+Type           : Clock Setup: 'C8'
+Slack          : -2.912 ns
+Required Time  : 3.07 MHz ( period = 325.520 ns )
+Actual Time    : N/A
+From           : frequency[3]
+To             : SPI:Alex_SPI_Tx|SPI_data
+From Clock     : CLKA
+To Clock       : C8
+Failed Paths   : 256
+
+Type           : Clock Setup: 'BCLK'
+Slack          : -1.659 ns
+Required Time  : 12.29 MHz ( period = 81.380 ns )
+Actual Time    : N/A
+From           : dc_offset_correct_new:dc_offset_correct_i|accumulator[11]
+To             : i[16]
+From Clock     : CLKA
+To Clock       : BCLK
+Failed Paths   : 549
+
+Type           : Clock Setup: 'OSC_10MHZ'
+Slack          : 47.947 ns
+Required Time  : 10.00 MHz ( period = 100.000 ns )
+Actual Time    : 243.55 MHz ( period = 4.106 ns )
+From           : oddClockDivider:refClockDivider|count[0]
+To             : oddClockDivider:refClockDivider|div2
+From Clock     : OSC_10MHZ
+To Clock       : OSC_10MHZ
+Failed Paths   : 0
+
+Type           : Clock Setup: 'C9'
+Slack          : 321.678 ns
+Required Time  : 0.05 MHz ( period = 20833.280 ns )
+Actual Time    : N/A
+From           : CCdata[19]
+To             : clock_select[1]
+From Clock     : C8
+To Clock       : C9
+Failed Paths   : 0
+
+Type           : Clock Hold: 'BCLK'
+Slack          : -0.049 ns
+Required Time  : 12.29 MHz ( period = 81.380 ns )
+Actual Time    : N/A
+From           : FIR_top:FIR|MAC:MAC_inst_Q|accum_out[30]
+To             : q[6]
+From Clock     : CLKA
+To Clock       : BCLK
+Failed Paths   : 1
+
+Type           : Clock Hold: 'CLKA'
+Slack          : 0.191 ns
+Required Time  : 122.88 MHz ( period = 8.138 ns )
+Actual Time    : N/A
+From           : frequency_HZ[7]
+To             : frequency[7]
+From Clock     : C9
+To Clock       : CLKA
+Failed Paths   : 0
+
+Type           : Clock Hold: 'C9'
+Slack          : 0.646 ns
+Required Time  : 0.05 MHz ( period = 20833.280 ns )
+Actual Time    : N/A
+From           : oddClockDivider:refClockDivider|count[6]
+To             : oddClockDivider:refClockDivider|count[6]
+From Clock     : C9
+To Clock       : C9
+Failed Paths   : 0
+
+Type           : Clock Hold: 'C8'
+Slack          : 0.646 ns
+Required Time  : 3.07 MHz ( period = 325.520 ns )
+Actual Time    : N/A
+From           : CCdata[8]
+To             : CCdata[8]
+From Clock     : C8
+To Clock       : C8
+Failed Paths   : 0
+
+Type           : Clock Hold: 'OSC_10MHZ'
+Slack          : 0.646 ns
+Required Time  : 10.00 MHz ( period = 100.000 ns )
+Actual Time    : N/A
+From           : oddClockDivider:refClockDivider|count[6]
+To             : oddClockDivider:refClockDivider|count[6]
+From Clock     : OSC_10MHZ
+To Clock       : OSC_10MHZ
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 3833
+
+--------------------------------------------------------------------------------------
+

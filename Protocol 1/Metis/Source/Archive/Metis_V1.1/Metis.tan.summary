@@ -1,0 +1,186 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.965 ns
+From           : PHY_DV
+To             : Rx_MAC:Rx_MAC_inst|PHY_byte[1]
+From Clock     : --
+To Clock       : PHY_RX_CLOCK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 20.081 ns
+From           : MDIO:MDIO_inst|read[0]
+To             : PHY_MDC
+From Clock     : PHY_CLK125
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.300 ns
+From           : MODE2
+To             : MDIO:MDIO_inst|previous_speed
+From Clock     : --
+To Clock       : PHY_CLK125
+Failed Paths   : 0
+
+Type           : Clock Setup: 'PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[0]'
+Slack          : -3.832 ns
+Required Time  : 48.00 MHz ( period = 20.833 ns )
+Actual Time    : N/A
+From           : reset
+To             : NWire_rcv:p_ser|DB_LEN[3][15]
+From Clock     : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[2]
+To Clock       : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[0]
+Failed Paths   : 1067
+
+Type           : Clock Setup: 'PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[3]'
+Slack          : -2.861 ns
+Required Time  : 0.80 MHz ( period = 1250.000 ns )
+Actual Time    : N/A
+From           : IF_Mic_boost
+To             : I2C_Master:I2C_Master_inst|state[1]
+From Clock     : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[0]
+To Clock       : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[3]
+Failed Paths   : 19
+
+Type           : Clock Setup: 'PHY_CLK125'
+Slack          : -2.105 ns
+Required Time  : 125.00 MHz ( period = 8.000 ns )
+Actual Time    : N/A
+From           : IF_I_PWM[5]
+To             : NWire_xmit:P_IQPWM|DIFF_CLK.id0[21]
+From Clock     : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[0]
+To Clock       : PHY_CLK125
+Failed Paths   : 135
+
+Type           : Clock Setup: 'PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[2]'
+Slack          : -0.834 ns
+Required Time  : 12.50 MHz ( period = 80.000 ns )
+Actual Time    : N/A
+From           : EEPROM:EEPROM_inst|This_IP[2]
+To             : Assigned_IP_valid
+From Clock     : PHY_MDIO_clk
+To Clock       : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[2]
+Failed Paths   : 32
+
+Type           : Clock Setup: 'PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[1]'
+Slack          : 8.901 ns
+Required Time  : 25.00 MHz ( period = 40.000 ns )
+Actual Time    : 45.05 MHz ( period = 22.198 ns )
+From           : EPCS_fifo:EPCS_fifo_inst|dcfifo:dcfifo_component|dcfifo_7gh1:auto_generated|dffpipe_pe9:rs_bwp|dffe13a[0]
+To             : ASMI_interface:ASMI_int_inst|address[23]
+From Clock     : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[1]
+To Clock       : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[1]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'PHY_RX_CLOCK'
+Slack          : 14.030 ns
+Required Time  : 25.00 MHz ( period = 40.000 ns )
+Actual Time    : 83.75 MHz ( period = 11.940 ns )
+From           : Rx_MAC:Rx_MAC_inst|Rx_enable
+To             : PHY_Rx_fifo:PHY_Rx_fifo_inst|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_nhk1:auto_generated|a_graycounter_rjc:wrptr_g1p|counter10a[13]
+From Clock     : PHY_RX_CLOCK
+To Clock       : PHY_RX_CLOCK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'PHY_MDIO_clk'
+Slack          : 31.312 ns
+Required Time  : 2.50 MHz ( period = 400.000 ns )
+Actual Time    : N/A
+From           : write_PHY
+To             : MDIO:MDIO_inst|preamble[0]
+From Clock     : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[2]
+To Clock       : PHY_MDIO_clk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'PHY_RX_CLOCK'
+Slack          : -1.851 ns
+Required Time  : 25.00 MHz ( period = 40.000 ns )
+Actual Time    : N/A
+From           : Rx_MAC:Rx_MAC_inst|PHY_output[105]
+To             : Rx_MAC:Rx_MAC_inst|FromMAC[41]
+From Clock     : PHY_RX_CLOCK
+To Clock       : PHY_RX_CLOCK
+Failed Paths   : 563
+
+Type           : Clock Hold: 'PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[0]'
+Slack          : 0.586 ns
+Required Time  : 48.00 MHz ( period = 20.833 ns )
+Actual Time    : N/A
+From           : Tx_fifo:Tx_fifo_inst|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_a9l1:auto_generated|wrptr_g[0]
+To             : Tx_fifo:Tx_fifo_inst|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_a9l1:auto_generated|altsyncram_nj31:fifo_ram|ram_block11a0~porta_address_reg0
+From Clock     : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[0]
+To Clock       : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[0]
+Failed Paths   : 0
+
+Type           : Clock Hold: 'PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[1]'
+Slack          : 0.646 ns
+Required Time  : 25.00 MHz ( period = 40.000 ns )
+Actual Time    : N/A
+From           : ASMI_interface:ASMI_int_inst|NCONFIG
+To             : ASMI_interface:ASMI_int_inst|NCONFIG
+From Clock     : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[1]
+To Clock       : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[1]
+Failed Paths   : 0
+
+Type           : Clock Hold: 'PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[2]'
+Slack          : 0.646 ns
+Required Time  : 12.50 MHz ( period = 80.000 ns )
+Actual Time    : N/A
+From           : Tx_MAC:Tx_MAC_inst|reset_CRC
+To             : Tx_MAC:Tx_MAC_inst|reset_CRC
+From Clock     : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[2]
+To Clock       : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[2]
+Failed Paths   : 0
+
+Type           : Clock Hold: 'PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[3]'
+Slack          : 0.646 ns
+Required Time  : 0.80 MHz ( period = 1250.000 ns )
+Actual Time    : N/A
+From           : I2C_Master:I2C_Master_inst|setup[2]
+To             : I2C_Master:I2C_Master_inst|setup[2]
+From Clock     : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[3]
+To Clock       : PLL_clocks:PLL_inst|altpll:altpll_component|PLL_clocks_altpll:auto_generated|wire_pll1_clk[3]
+Failed Paths   : 0
+
+Type           : Clock Hold: 'PHY_CLK125'
+Slack          : 0.646 ns
+Required Time  : 125.00 MHz ( period = 8.000 ns )
+Actual Time    : N/A
+From           : NWire_xmit:M_LRAudio|id[31]
+To             : NWire_xmit:M_LRAudio|id[31]
+From Clock     : PHY_CLK125
+To Clock       : PHY_CLK125
+Failed Paths   : 0
+
+Type           : Clock Hold: 'PHY_MDIO_clk'
+Slack          : 0.646 ns
+Required Time  : 2.50 MHz ( period = 400.000 ns )
+Actual Time    : N/A
+From           : EEPROM:EEPROM_inst|CS
+To             : EEPROM:EEPROM_inst|CS
+From Clock     : PHY_MDIO_clk
+To Clock       : PHY_MDIO_clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 1816
+
+--------------------------------------------------------------------------------------
+

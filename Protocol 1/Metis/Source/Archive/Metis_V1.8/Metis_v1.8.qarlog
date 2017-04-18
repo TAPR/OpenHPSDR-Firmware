@@ -1,0 +1,55 @@
+Quartus II Archive log --	E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Metis_v1.8.qarlog
+
+Archive:	E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Metis_v1.8.qar
+Date:		Sun Jul 08 16:02:42 2012
+Quartus II 32-bit		11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
+
+	=========== Files Selected: ===========
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/ASMI.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/ASMI_interface.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/CRC32.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/DHCP.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/EEPROM.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/EPCS_fifo.bsf
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/EPCS_fifo.qip
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/EPCS_fifo.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/FIFO.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/I2C_Master.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Led_control.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Led_flash.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/MDIO.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Metis.qpf
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Metis.qsf
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Metis.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Metis_assignment_defaults.qdf
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/PHY_IN.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/PHY_Rx_fifo.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/PHY_Tx.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/PHY_Tx_fifo.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/PLL_clocks.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Rx_MAC.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/SP_fifo.bsf
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/SP_fifo.qip
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/SP_fifo.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Tx_MAC.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Tx_fifo.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/Tx_fifo_ctrl.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/assignment_defaults.qdf
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/I2S_rcv.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/I2S_xmit.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/NWire_rcv.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/NWire_xmit.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/OneWire_rcv.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/OneWire_xmit.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/cdc_mcp.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/cdc_sync.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/clk_div.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/clk_lrclk_gen.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/common/pulsegen.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/debounce.v
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/incremental_db/compiled_partitions/Metis.db_info
+E:/HPSDR/trunk/Metis/Source/Metis_V1.8/sp_rcv_ctrl.v
+	======= Total: 44 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

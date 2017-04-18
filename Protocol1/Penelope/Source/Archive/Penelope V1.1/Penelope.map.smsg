@@ -1,5 +1,0 @@
-Info (10281): Verilog HDL Declaration information at Penelope.v(495): object "ALC_i" differs only in case from object "ALC_I" in the same scope
-Info (10281): Verilog HDL Declaration information at Penelope.v(496): object "ALC_q" differs only in case from object "ALC_Q" in the same scope
-Info (10281): Verilog HDL Declaration information at Penelope.v(553): object "cic_i" differs only in case from object "cic_I" in the same scope
-Info (10281): Verilog HDL Declaration information at Penelope.v(554): object "cic_q" differs only in case from object "cic_Q" in the same scope
-Info (10281): Verilog HDL Declaration information at Penelope.v(683): object "CC_data" differs only in case from object "CC_DATA" in the same scope

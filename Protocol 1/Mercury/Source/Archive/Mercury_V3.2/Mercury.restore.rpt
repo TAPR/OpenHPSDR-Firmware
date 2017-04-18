@@ -1,0 +1,125 @@
+Restore Archived Project report for Mercury
+Fri Apr 27 18:58:32 2012
+Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Fri Apr 27 18:58:32 2012 ;
+; Revision Name                   ; Mercury                               ;
+; Top-level Entity Name           ; Mercury                               ;
+; Family                          ; Cyclone III                           ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'E:/HPSDR/trunk/Mercury_V3.2/Mercury_v3.2.qar' into the 'E:/HPSDR/trunk/Mercury_V3.2/' directory
+Info: Generated report 'Mercury.restore.rpt'
+Info (23030): Evaluation of Tcl script e:/altera/11.1sp2/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 32-bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 199 megabytes
+    Info: Processing ended: Fri Apr 27 18:58:32 2012
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++----------------------------------------------------+
+; Files Restored                                     ;
++----------------------------------------------------+
+; File Name                                          ;
++----------------------------------------------------+
+; C10_PLL.ppf                                        ;
+; C10_PLL.qip                                        ;
+; C10_PLL.v                                          ;
+; C122_PLL.ppf                                       ;
+; C122_PLL.qip                                       ;
+; C122_PLL.v                                         ;
+; CC_decoder.v                                       ;
+; FIFO.v                                             ;
+; HPF_select.v                                       ;
+; LPF_select.v                                       ;
+; Mercury.qpf                                        ;
+; Mercury.qsf                                        ;
+; Mercury.stp                                        ;
+; Mercury.v                                          ;
+; Mercury.vwf                                        ;
+; Mercury_assignment_defaults.qdf                    ;
+; NWire_rcv.stp                                      ;
+; SPI.v                                              ;
+; SP_fifo.bsf                                        ;
+; SP_fifo.qip                                        ;
+; SP_fifo.v                                          ;
+; SP_fifo_bb.v                                       ;
+; SP_fifo_inst.v                                     ;
+; TestModeChecker.v                                  ;
+; assignment_defaults.qdf                            ;
+; cic.v                                              ;
+; cic_comb.v                                         ;
+; cic_integrator.v                                   ;
+; common/I2S_xmit.v                                  ;
+; common/NWire_rcv.v                                 ;
+; common/NWire_xmit.v                                ;
+; common/clk_div.v                                   ;
+; common/clk_lrclk_gen.v                             ;
+; cordic.v                                           ;
+; fir.v                                              ;
+; fir_coeffs.v                                       ;
+; fir_coeffs_rom.hex                                 ;
+; fir_coeffs_rom.v                                   ;
+; fir_mac.v                                          ;
+; fir_shiftreg.qip                                   ;
+; fir_shiftreg.v                                     ;
+; incremental_db/compiled_partitions/Mercury.db_info ;
+; mac.v                                              ;
+; memcic.v                                           ;
+; memcic_ram.v                                       ;
+; memreceiver.v                                      ;
+; mult_24Sx24S.v                                     ;
+; oddClockDiv.v                                      ;
+; receiver.v                                         ;
+; sp_xmit_ctrl.v                                     ;
+; spectrum.stp                                       ;
+; varcic.v                                           ;
++----------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

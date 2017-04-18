@@ -1,0 +1,17 @@
+Warning (10268): Verilog HDL information at Metis.v(354): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at Metis.v(539): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at Metis.v(799): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at Metis.v(1455): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at Metis.v(1748): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at Metis.v(339): object "This_MAC" differs only in case from object "this_MAC" in the same scope
+Warning (10268): Verilog HDL information at Rx_MAC.v(328): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at Rx_MAC.v(166): object "This_MAC" differs only in case from object "this_MAC" in the same scope
+Info (10281): Verilog HDL Declaration information at Rx_MAC.v(185): object "METIS_discovery" differs only in case from object "METIS_DISCOVERY" in the same scope
+Info (10281): Verilog HDL Declaration information at Rx_MAC.v(202): object "erase" differs only in case from object "ERASE" in the same scope
+Info (10281): Verilog HDL Declaration information at Rx_MAC.v(173): object "broadcast" differs only in case from object "Broadcast" in the same scope
+Info (10281): Verilog HDL Declaration information at Tx_MAC.v(124): object "METIS_discovery" differs only in case from object "METIS_DISCOVERY" in the same scope
+Info (10281): Verilog HDL Declaration information at Tx_MAC.v(120): object "DHCP_discover" differs only in case from object "DHCP_DISCOVER" in the same scope
+Info (10281): Verilog HDL Declaration information at Tx_MAC.v(123): object "DHCP_request" differs only in case from object "DHCP_REQUEST" in the same scope
+Info (10281): Verilog HDL Declaration information at Tx_MAC.v(143): object "DHCP_request_renew" differs only in case from object "DHCP_REQUEST_RENEW" in the same scope
+Info (10281): Verilog HDL Declaration information at Tx_MAC.v(139): object "printf" differs only in case from object "PRINTF" in the same scope
+Info (10281): Verilog HDL Declaration information at Tx_MAC.v(159): object "METIS_discover_sent" differs only in case from object "Metis_discover_sent" in the same scope

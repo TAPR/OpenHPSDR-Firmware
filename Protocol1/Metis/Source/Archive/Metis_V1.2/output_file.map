@@ -1,8 +1,0 @@
-BLOCK		START ADDRESS		END ADDRESS
-
-Page_0		0x00000000		0x00057313
-Page_1		0x00100000		0x00168C98
-
-
-
-Note: All the addresses in this file are byte addresses
