@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Mercury">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Mercury|Tx_fifo:Tx_fifo|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_f2c1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

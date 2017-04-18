@@ -1,0 +1,1915 @@
+Analysis & Synthesis report for Mercury
+Tue Dec 23 21:09:24 2008
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Analysis & Synthesis RAM Summary
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. State Machine - |Mercury|CC_state
+ 10. State Machine - |Mercury|SPI:Alex_SPI_Tx|spi_state
+ 11. State Machine - |Mercury|I2SEncode:I2S|encode_state
+ 12. State Machine - |Mercury|FIR_top:FIR|state
+ 13. Registers Removed During Synthesis
+ 14. Removed Registers Triggering Further Register Optimizations
+ 15. General Register Statistics
+ 16. Inverted Register Statistics
+ 17. Registers Added for RAM Pass-Through Logic
+ 18. Multiplexer Restructuring Statistics (No Restructuring Performed)
+ 19. Source assignments for FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated
+ 20. Parameter Settings for User Entity Instance: phase_accumulator:rx_phase_accumulator
+ 21. Parameter Settings for User Entity Instance: FIR_top:FIR
+ 22. Parameter Settings for User Entity Instance: FIR_top:FIR|cbuffer_top:cbuffer_inst
+ 23. Parameter Settings for User Entity Instance: FIR_top:FIR|cROM_Sequencer:cROM_seq_inst
+ 24. Parameter Settings for User Entity Instance: FIR_top:FIR|MAC:MAC_inst_I
+ 25. Parameter Settings for User Entity Instance: FIR_top:FIR|MAC:MAC_inst_Q
+ 26. Parameter Settings for User Entity Instance: oddClockDivider:refClockDivider
+ 27. Parameter Settings for Inferred Entity Instance: FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0
+ 28. Parameter Settings for Inferred Entity Instance: FIR_top:FIR|MAC:MAC_inst_I|lpm_mult:Mult0
+ 29. Parameter Settings for Inferred Entity Instance: FIR_top:FIR|MAC:MAC_inst_Q|lpm_mult:Mult0
+ 30. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add97
+ 31. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add100
+ 32. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add93
+ 33. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add96
+ 34. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add87
+ 35. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add90
+ 36. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add81
+ 37. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add84
+ 38. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add75
+ 39. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add78
+ 40. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add69
+ 41. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add72
+ 42. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add63
+ 43. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add66
+ 44. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add57
+ 45. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add60
+ 46. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add51
+ 47. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add54
+ 48. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add45
+ 49. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add48
+ 50. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add39
+ 51. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add42
+ 52. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add33
+ 53. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add36
+ 54. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add27
+ 55. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add30
+ 56. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add21
+ 57. Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add24
+ 58. lpm_mult Parameter Settings by Entity Instance
+ 59. Analysis & Synthesis Messages
+ 60. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++------------------------------------+-----------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Dec 23 21:09:24 2008   ;
+; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
+; Revision Name                      ; Mercury                                 ;
+; Top-level Entity Name              ; Mercury                                 ;
+; Family                             ; Cyclone III                             ;
+; Total logic elements               ; 6,057                                   ;
+;     Total combinational functions  ; 5,666                                   ;
+;     Dedicated logic registers      ; 6,057                                   ;
+; Total registers                    ; 6057                                    ;
+; Total pins                         ; 63                                      ;
+; Total virtual pins                 ; 0                                       ;
+; Total memory bits                  ; 12,288                                  ;
+; Embedded Multiplier 9-bit elements ; 14                                      ;
+; Total PLLs                         ; 0                                       ;
++------------------------------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                            ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Option                                                         ; Setting            ; Default Value      ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Device                                                         ; EP3C25Q240C8       ;                    ;
+; Top-level entity name                                          ; Mercury            ; Mercury            ;
+; Family name                                                    ; Cyclone III        ; Stratix            ;
+; Restructure Multiplexers                                       ; Off                ; Auto               ;
+; Power-Up Don't Care                                            ; Off                ; On                 ;
+; Optimization Technique                                         ; Speed              ; Balanced           ;
+; Use smart compilation                                          ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                            ; Off                ; Off                ;
+; Preserve fewer node names                                      ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                      ; Off                ; Off                ;
+; Verilog Version                                                ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                   ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                       ; Auto               ; Auto               ;
+; Safe State Machine                                             ; Off                ; Off                ;
+; Extract Verilog State Machines                                 ; On                 ; On                 ;
+; Extract VHDL State Machines                                    ; On                 ; On                 ;
+; Ignore Verilog initial constructs                              ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                     ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                 ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                        ; On                 ; On                 ;
+; Parallel Synthesis                                             ; Off                ; Off                ;
+; DSP Block Balancing                                            ; Auto               ; Auto               ;
+; Maximum DSP Block Usage                                        ; -1                 ; -1                 ;
+; NOT Gate Push-Back                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                   ; Off                ; Off                ;
+; Remove Duplicate Registers                                     ; On                 ; On                 ;
+; Ignore CARRY Buffers                                           ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                         ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                          ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                      ; Off                ; Off                ;
+; Ignore LCELL Buffers                                           ; Off                ; Off                ;
+; Ignore SOFT Buffers                                            ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                 ; Off                ; Off                ;
+; Carry Chain Length                                             ; 70                 ; 70                 ;
+; Auto Carry Chains                                              ; On                 ; On                 ;
+; Auto Open-Drain Pins                                           ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                          ; Off                ; Off                ;
+; Perform gate-level register retiming                           ; Off                ; Off                ;
+; Allow register retiming to trade off Tsu/Tco with Fmax         ; On                 ; On                 ;
+; Auto ROM Replacement                                           ; On                 ; On                 ;
+; Auto RAM Replacement                                           ; On                 ; On                 ;
+; Auto DSP Block Replacement                                     ; On                 ; On                 ;
+; Auto Shift Register Replacement                                ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                  ; On                 ; On                 ;
+; Strict RAM Replacement                                         ; Off                ; Off                ;
+; Allow Synchronous Control Signals                              ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                         ; Off                ; Off                ;
+; Auto RAM Block Balancing                                       ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                              ; Off                ; Off                ;
+; Auto Resource Sharing                                          ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                  ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing            ; On                 ; On                 ;
+; Maximum Number of M4K/M9K Memory Blocks                        ; -1                 ; -1                 ;
+; Ignore translate_off and synthesis_off directives              ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report             ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                             ; Off                ; Off                ;
+; Synchronization Register Chain Length                          ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                              ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report       ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report      ; 100                ; 100                ;
+; Clock MUX Protection                                           ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                    ; Off                ; Off                ;
+; Block Design Naming                                            ; Auto               ; Auto               ;
+; SDC constraint protection                                      ; Off                ; Off                ;
+; Synthesis Effort                                               ; Auto               ; Auto               ;
+; Allows Asynchronous Clear Usage For Shift Register Replacement ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                             ; Medium             ; Medium             ;
++----------------------------------------------------------------+--------------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+
+; cic_4_1_12_nofraction.v          ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/cic_4_1_12_nofraction.v                       ;
+; SPI.v                            ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/SPI.v                                         ;
+; LPF_select.v                     ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/LPF_select.v                                  ;
+; HPF_select.v                     ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/HPF_select.v                                  ;
+; oddClockDiv.v                    ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/oddClockDiv.v                                 ;
+; cordic_VK6APH.v                  ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/cordic_VK6APH.v                               ;
+; I2S_Encoder_24bit.v              ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/I2S_Encoder_24bit.v                           ;
+; Mercury.v                        ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/Mercury.v                                     ;
+; dc_offset_correct_new.v          ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/dc_offset_correct_new.v                       ;
+; cic_10_1_3_nofraction.v          ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/cic_10_1_3_nofraction.v                       ;
+; cic_8_1_5_nofraction.v           ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/cic_8_1_5_nofraction.v                        ;
+; mac.v                            ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/mac.v                                         ;
+; FIR_top.v                        ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/FIR_top.v                                     ;
+; cbuffer_top.v                    ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/cbuffer_top.v                                 ;
+; cROM.v                           ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/cROM.v                                        ;
+; cROM_Sequencer.v                 ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/cROM_Sequencer.v                              ;
+; division.v                       ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/division.v                                    ;
+; phase_accumulator.v              ; yes             ; User Verilog HDL File        ; C:/HPSDR/trunk/Mercury/phase_accumulator.v                           ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/altsyncram.tdf          ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/stratix_ram_block.inc   ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/lpm_mux.inc             ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/lpm_decode.inc          ;
+; aglobal81.inc                    ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/aglobal81.inc           ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/a_rdenreg.inc           ;
+; altrom.inc                       ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/altrom.inc              ;
+; altram.inc                       ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/altram.inc              ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; C:/HPSDR/trunk/VK6APH/Mercury/megafunctions/altdpram.inc             ;
+; altqpram.inc                     ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/altqpram.inc            ;
+; db/altsyncram_e0j1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/HPSDR/trunk/Mercury/db/altsyncram_e0j1.tdf                        ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/lpm_mult.tdf            ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; C:/HPSDR/trunk/VK6APH/Mercury/megafunctions/lpm_add_sub.inc          ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/multcore.inc            ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/bypassff.inc            ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/altshift.inc            ;
+; db/mult_jr01.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/HPSDR/trunk/Mercury/db/mult_jr01.tdf                              ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;
+; addcore.inc                      ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/addcore.inc             ;
+; look_add.inc                     ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/look_add.inc            ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;
+; alt_mercury_add_sub.inc          ; yes             ; Megafunction                 ; c:/altera/81/quartus/libraries/megafunctions/alt_mercury_add_sub.inc ;
+; db/add_sub_umg.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/HPSDR/trunk/Mercury/db/add_sub_umg.tdf                            ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 6,057      ;
+;                                             ;            ;
+; Total combinational functions               ; 5666       ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 876        ;
+;     -- 3 input functions                    ; 3955       ;
+;     -- <=2 input functions                  ; 835        ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 1652       ;
+;     -- arithmetic mode                      ; 4014       ;
+;                                             ;            ;
+; Total registers                             ; 6057       ;
+;     -- Dedicated logic registers            ; 6057       ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 63         ;
+; Total memory bits                           ; 12288      ;
+; Embedded Multiplier 9-bit elements          ; 14         ;
+; Maximum fan-out node                        ; clk_enable ;
+; Maximum fan-out                             ; 4228       ;
+; Total fan-out                               ; 37981      ;
+; Average fan-out                             ; 3.19       ;
++---------------------------------------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                           ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Library Name ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
+; |Mercury                                       ; 5666 (251)        ; 6057 (292)   ; 12288       ; 14           ; 2       ; 6         ; 63   ; 0            ; |Mercury                                                                                          ; work         ;
+;    |FIR_top:FIR|                               ; 846 (38)          ; 417 (21)     ; 12288       ; 14           ; 2       ; 6         ; 0    ; 0            ; |Mercury|FIR_top:FIR                                                                              ; work         ;
+;       |MAC:MAC_inst_I|                         ; 111 (51)          ; 121 (121)    ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |Mercury|FIR_top:FIR|MAC:MAC_inst_I                                                               ; work         ;
+;          |lpm_mult:Mult0|                      ; 60 (0)            ; 0 (0)        ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |Mercury|FIR_top:FIR|MAC:MAC_inst_I|lpm_mult:Mult0                                                ; work         ;
+;             |mult_jr01:auto_generated|         ; 60 (60)           ; 0 (0)        ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |Mercury|FIR_top:FIR|MAC:MAC_inst_I|lpm_mult:Mult0|mult_jr01:auto_generated                       ; work         ;
+;       |MAC:MAC_inst_Q|                         ; 109 (49)          ; 121 (121)    ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |Mercury|FIR_top:FIR|MAC:MAC_inst_Q                                                               ; work         ;
+;          |lpm_mult:Mult0|                      ; 60 (0)            ; 0 (0)        ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |Mercury|FIR_top:FIR|MAC:MAC_inst_Q|lpm_mult:Mult0                                                ; work         ;
+;             |mult_jr01:auto_generated|         ; 60 (60)           ; 0 (0)        ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |Mercury|FIR_top:FIR|MAC:MAC_inst_Q|lpm_mult:Mult0|mult_jr01:auto_generated                       ; work         ;
+;       |cROM_Sequencer:cROM_seq_inst|           ; 511 (18)          ; 33 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|FIR_top:FIR|cROM_Sequencer:cROM_seq_inst                                                 ; work         ;
+;          |cROM:cROM_inst|                      ; 493 (493)         ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|FIR_top:FIR|cROM_Sequencer:cROM_seq_inst|cROM:cROM_inst                                  ; work         ;
+;       |cbuffer_top:cbuffer_inst|               ; 77 (77)           ; 121 (121)    ; 12288       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|FIR_top:FIR|cbuffer_top:cbuffer_inst                                                     ; work         ;
+;          |altsyncram:mem_rtl_0|                ; 0 (0)             ; 0 (0)        ; 12288       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0                                ; work         ;
+;             |altsyncram_e0j1:auto_generated|   ; 0 (0)             ; 0 (0)        ; 12288       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated ; work         ;
+;    |HPF_select:Alex_HPF_select|                ; 52 (52)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|HPF_select:Alex_HPF_select                                                               ; work         ;
+;    |I2SEncode:I2S|                             ; 69 (69)           ; 59 (59)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|I2SEncode:I2S                                                                            ; work         ;
+;    |LPF_select:Alex_LPF_select|                ; 83 (83)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|LPF_select:Alex_LPF_select                                                               ; work         ;
+;    |SPI:Alex_SPI_Tx|                           ; 64 (64)           ; 41 (41)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|SPI:Alex_SPI_Tx                                                                          ; work         ;
+;    |cic_10_1_3_nofraction:cic_I_1|             ; 170 (170)         ; 262 (262)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cic_10_1_3_nofraction:cic_I_1                                                            ; work         ;
+;    |cic_10_1_3_nofraction:cic_Q_1|             ; 167 (167)         ; 266 (266)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cic_10_1_3_nofraction:cic_Q_1                                                            ; work         ;
+;    |cic_4_1_12_nofraction:cic_I_3|             ; 893 (893)         ; 1303 (1303)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cic_4_1_12_nofraction:cic_I_3                                                            ; work         ;
+;    |cic_4_1_12_nofraction:cic_Q_3|             ; 892 (892)         ; 1291 (1291)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cic_4_1_12_nofraction:cic_Q_3                                                            ; work         ;
+;    |cic_8_1_5_nofraction:cic_I_2|              ; 318 (318)         ; 480 (480)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cic_8_1_5_nofraction:cic_I_2                                                             ; work         ;
+;    |cic_8_1_5_nofraction:cic_Q_2|              ; 318 (318)         ; 480 (480)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cic_8_1_5_nofraction:cic_Q_2                                                             ; work         ;
+;    |cordic_VK6APH:cordic|                      ; 1249 (955)        ; 919 (919)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic                                                                     ; work         ;
+;       |lpm_add_sub:Add100|                     ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add100                                                  ; work         ;
+;          |add_sub_umg:auto_generated|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add100|add_sub_umg:auto_generated                       ; work         ;
+;       |lpm_add_sub:Add21|                      ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add21                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add21|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add24|                      ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add24                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add24|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add27|                      ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add27                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add27|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add30|                      ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add30                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add30|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add33|                      ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add33                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add33|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add36|                      ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add36                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add36|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add39|                      ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add39                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add39|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add42|                      ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add42                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add42|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add45|                      ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add45                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add45|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add48|                      ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add48                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add48|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add51|                      ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add51                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add51|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add54|                      ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add54                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add54|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add57|                      ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add57                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add57|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add60|                      ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add60                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add60|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add63|                      ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add63                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add63|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add66|                      ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add66                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add66|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add69|                      ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add69                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add69|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add72|                      ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add72                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add72|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add75|                      ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add75                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add75|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add78|                      ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add78                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add78|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add81|                      ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add81                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add81|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add84|                      ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add84                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add84|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add87|                      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add87                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add87|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add90|                      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add90                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add90|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add93|                      ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add93                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add93|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add96|                      ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add96                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add96|add_sub_umg:auto_generated                        ; work         ;
+;       |lpm_add_sub:Add97|                      ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add97                                                   ; work         ;
+;          |add_sub_umg:auto_generated|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|cordic_VK6APH:cordic|lpm_add_sub:Add97|add_sub_umg:auto_generated                        ; work         ;
+;    |dc_offset_correct_new:dc_offset_correct_i| ; 59 (59)           ; 35 (35)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|dc_offset_correct_new:dc_offset_correct_i                                                ; work         ;
+;    |dc_offset_correct_new:dc_offset_correct_q| ; 59 (59)           ; 35 (35)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|dc_offset_correct_new:dc_offset_correct_q                                                ; work         ;
+;    |division:division_DDS|                     ; 124 (124)         ; 136 (136)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|division:division_DDS                                                                    ; work         ;
+;    |oddClockDivider:refClockDivider|           ; 20 (20)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|oddClockDivider:refClockDivider                                                          ; work         ;
+;    |phase_accumulator:rx_phase_accumulator|    ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mercury|phase_accumulator:rx_phase_accumulator                                                   ; work         ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                         ;
++-----------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; Name                                                                                                ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
++-----------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 256          ; 48           ; 256          ; 48           ; 12288 ; None ;
++-----------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 2           ;
+; Simple Multipliers (18-bit)           ; 6           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 14          ;
+; Signed Embedded Multipliers           ; 2           ;
+; Unsigned Embedded Multipliers         ; 2           ;
+; Mixed Sign Embedded Multipliers       ; 4           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------+
+; State Machine - |Mercury|CC_state                     ;
++-------------+-------------+-------------+-------------+
+; Name        ; CC_state.00 ; CC_state.10 ; CC_state.01 ;
++-------------+-------------+-------------+-------------+
+; CC_state.00 ; 0           ; 0           ; 0           ;
+; CC_state.01 ; 1           ; 0           ; 1           ;
+; CC_state.10 ; 1           ; 1           ; 0           ;
++-------------+-------------+-------------+-------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Mercury|SPI:Alex_SPI_Tx|spi_state                                                                                    ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+; Name           ; spi_state.0110 ; spi_state.0101 ; spi_state.0100 ; spi_state.0011 ; spi_state.0010 ; spi_state.0001 ; spi_state.0000 ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+; spi_state.0000 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ;
+; spi_state.0001 ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 1              ;
+; spi_state.0010 ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 1              ;
+; spi_state.0011 ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 1              ;
+; spi_state.0100 ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 1              ;
+; spi_state.0101 ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; spi_state.0110 ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------+
+; State Machine - |Mercury|I2SEncode:I2S|encode_state                                                             ;
++------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; encode_state.011 ; encode_state.010 ; encode_state.001 ; encode_state.000 ; encode_state.100 ;
++------------------+------------------+------------------+------------------+------------------+------------------+
+; encode_state.000 ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; encode_state.001 ; 0                ; 0                ; 1                ; 1                ; 0                ;
+; encode_state.010 ; 0                ; 1                ; 0                ; 1                ; 0                ;
+; encode_state.011 ; 1                ; 0                ; 0                ; 1                ; 0                ;
+; encode_state.100 ; 0                ; 0                ; 0                ; 1                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------+
+; State Machine - |Mercury|FIR_top:FIR|state                                                                ;
++------------------+-----------------+--------------+-----------------+------------------+------------------+
+; Name             ; state.ACCUM_OUT ; state.DO_MAC ; state.BEGIN_MAC ; state.IDLE_STATE ; state.STROBE_OUT ;
++------------------+-----------------+--------------+-----------------+------------------+------------------+
+; state.IDLE_STATE ; 0               ; 0            ; 0               ; 0                ; 0                ;
+; state.BEGIN_MAC  ; 0               ; 0            ; 1               ; 1                ; 0                ;
+; state.DO_MAC     ; 0               ; 1            ; 0               ; 1                ; 0                ;
+; state.ACCUM_OUT  ; 1               ; 0            ; 0               ; 1                ; 0                ;
+; state.STROBE_OUT ; 0               ; 0            ; 0               ; 1                ; 1                ;
++------------------+-----------------+--------------+-----------------+------------------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                              ;
++------------------------------------------------------------------+------------------------------------------------------------------------------+
+; Register name                                                    ; Reason for Removal                                                           ;
++------------------------------------------------------------------+------------------------------------------------------------------------------+
+; PGA~reg0                                                         ; Stuck at GND due to stuck port data_in                                       ;
+; TLV[3]                                                           ; Stuck at GND due to stuck port data_in                                       ;
+; tdata[3,5..8,13..15]                                             ; Stuck at GND due to stuck port data_in                                       ;
+; SPI:Alex_SPI_Tx|previous_Alex_data[7,16..18]                     ; Stuck at GND due to stuck port data_in                                       ;
+; FIR_top:FIR|stb_state[0]                                         ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|q0[0..2]                                    ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|i0[0..2]                                    ; Stuck at GND due to stuck port data_in                                       ;
+; TLV_data[3,5..8,13..15]                                          ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|i0[3..19]                                   ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|q1[0]                                       ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|i1[0]                                       ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|q1[1..2]                                    ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|i1[1..2]                                    ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|q2[0]                                       ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|i2[0]                                       ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|q2[1]                                       ; Stuck at GND due to stuck port data_in                                       ;
+; cordic_VK6APH:cordic|i2[1]                                       ; Stuck at GND due to stuck port data_in                                       ;
+; SPI:Alex_SPI_Tx|previous_Alex_data[19]                           ; Merged with SPI:Alex_SPI_Tx|previous_Alex_data[0]                            ;
+; SPI:Alex_SPI_Tx|previous_Alex_data[27..28]                       ; Merged with SPI:Alex_SPI_Tx|previous_Alex_data[15]                           ;
+; cic_10_1_3_nofraction:cic_Q_1|int_delay_pipe[0]                  ; Lost fanout                                                                  ;
+; cic_10_1_3_nofraction:cic_I_1|cur_count[3]                       ; Merged with cic_10_1_3_nofraction:cic_Q_1|cur_count[3]                       ;
+; cic_10_1_3_nofraction:cic_I_1|cur_count[2]                       ; Merged with cic_10_1_3_nofraction:cic_Q_1|cur_count[2]                       ;
+; cic_10_1_3_nofraction:cic_I_1|cur_count[1]                       ; Merged with cic_10_1_3_nofraction:cic_Q_1|cur_count[1]                       ;
+; cic_10_1_3_nofraction:cic_I_1|cur_count[0]                       ; Merged with cic_10_1_3_nofraction:cic_Q_1|cur_count[0]                       ;
+; cic_10_1_3_nofraction:cic_I_1|int_delay_pipe[1]                  ; Merged with cic_10_1_3_nofraction:cic_Q_1|int_delay_pipe[1]                  ;
+; tdata[4]                                                         ; Merged with tdata[2]                                                         ;
+; FIR_top:FIR|buff_rden                                            ; Merged with FIR_top:FIR|mac_wren                                             ;
+; cordic_VK6APH:cordic|i1[3]                                       ; Merged with cordic_VK6APH:cordic|q1[3]                                       ;
+; TLV_data[4]                                                      ; Merged with TLV_data[2]                                                      ;
+; cordic_VK6APH:cordic|i2[2]                                       ; Merged with cordic_VK6APH:cordic|q2[2]                                       ;
+; cordic_VK6APH:cordic|i3[0]                                       ; Merged with cordic_VK6APH:cordic|q3[0]                                       ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[2]             ; Merged with FIR_top:FIR|cbuffer_top:cbuffer_inst|rd_pointer[0]               ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[4]             ; Merged with FIR_top:FIR|cbuffer_top:cbuffer_inst|rd_pointer[1]               ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[6]             ; Merged with FIR_top:FIR|cbuffer_top:cbuffer_inst|rd_pointer[2]               ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[8]             ; Merged with FIR_top:FIR|cbuffer_top:cbuffer_inst|rd_pointer[3]               ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[10]            ; Merged with FIR_top:FIR|cbuffer_top:cbuffer_inst|rd_pointer[4]               ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[12]            ; Merged with FIR_top:FIR|cbuffer_top:cbuffer_inst|rd_pointer[5]               ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[14]            ; Merged with FIR_top:FIR|cbuffer_top:cbuffer_inst|rd_pointer[6]               ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[16]            ; Merged with FIR_top:FIR|cbuffer_top:cbuffer_inst|rd_pointer[7]               ;
+; FIR_top:FIR|cROM_Sequencer:cROM_seq_inst|cROM:cROM_inst|data[21] ; Merged with FIR_top:FIR|cROM_Sequencer:cROM_seq_inst|cROM:cROM_inst|data[23] ;
+; FIR_top:FIR|cROM_Sequencer:cROM_seq_inst|cROM:cROM_inst|data[23] ; Lost fanout                                                                  ;
+; SPI:Alex_SPI_Tx|spi_state~12                                     ; Lost fanout                                                                  ;
+; SPI:Alex_SPI_Tx|spi_state~13                                     ; Lost fanout                                                                  ;
+; SPI:Alex_SPI_Tx|spi_state~14                                     ; Lost fanout                                                                  ;
+; SPI:Alex_SPI_Tx|spi_state~15                                     ; Lost fanout                                                                  ;
+; I2SEncode:I2S|encode_state~7                                     ; Lost fanout                                                                  ;
+; I2SEncode:I2S|encode_state~8                                     ; Lost fanout                                                                  ;
+; FIR_top:FIR|state~16                                             ; Lost fanout                                                                  ;
+; FIR_top:FIR|state~17                                             ; Lost fanout                                                                  ;
+; FIR_top:FIR|state~19                                             ; Lost fanout                                                                  ;
+; FIR_top:FIR|state~20                                             ; Lost fanout                                                                  ;
+; FIR_top:FIR|state~21                                             ; Lost fanout                                                                  ;
+; FIR_top:FIR|state~22                                             ; Lost fanout                                                                  ;
+; FIR_top:FIR|state~23                                             ; Lost fanout                                                                  ;
+; Total Number of Removed Registers = 94                           ;                                                                              ;
++------------------------------------------------------------------+------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                  ;
++----------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name              ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++----------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; cordic_VK6APH:cordic|i0[3] ; Stuck at GND              ; cordic_VK6APH:cordic|q1[0], cordic_VK6APH:cordic|i1[0], cordic_VK6APH:cordic|q1[1], ;
+;                            ; due to stuck port data_in ; cordic_VK6APH:cordic|q1[2], cordic_VK6APH:cordic|i1[1], cordic_VK6APH:cordic|i1[2], ;
+;                            ;                           ; cordic_VK6APH:cordic|q2[0], cordic_VK6APH:cordic|i2[0], cordic_VK6APH:cordic|q2[1], ;
+;                            ;                           ; cordic_VK6APH:cordic|i2[1]                                                          ;
+; tdata[3]                   ; Stuck at GND              ; TLV_data[3]                                                                         ;
+;                            ; due to stuck port data_in ;                                                                                     ;
+; tdata[5]                   ; Stuck at GND              ; TLV_data[5]                                                                         ;
+;                            ; due to stuck port data_in ;                                                                                     ;
+; tdata[6]                   ; Stuck at GND              ; TLV_data[6]                                                                         ;
+;                            ; due to stuck port data_in ;                                                                                     ;
+; tdata[7]                   ; Stuck at GND              ; TLV_data[7]                                                                         ;
+;                            ; due to stuck port data_in ;                                                                                     ;
+; tdata[8]                   ; Stuck at GND              ; TLV_data[8]                                                                         ;
+;                            ; due to stuck port data_in ;                                                                                     ;
+; tdata[13]                  ; Stuck at GND              ; TLV_data[13]                                                                        ;
+;                            ; due to stuck port data_in ;                                                                                     ;
+; tdata[14]                  ; Stuck at GND              ; TLV_data[14]                                                                        ;
+;                            ; due to stuck port data_in ;                                                                                     ;
+; tdata[15]                  ; Stuck at GND              ; TLV_data[15]                                                                        ;
+;                            ; due to stuck port data_in ;                                                                                     ;
++----------------------------+---------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 6057  ;
+; Number of registers using Synchronous Clear  ; 367   ;
+; Number of registers using Synchronous Load   ; 217   ;
+; Number of registers using Asynchronous Clear ; 4082  ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 2793  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                  ;
++---------------------------------------------------------------------+---------+
+; Inverted Register                                                   ; Fan out ;
++---------------------------------------------------------------------+---------+
+; FIR_top:FIR|cROM_Sequencer:cROM_seq_inst|cROM:cROM_inst|data[23]~55 ; 1       ;
+; Total number of inverted registers = 1                              ;         ;
++---------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Registers Added for RAM Pass-Through Logic                                                         ;
++-------------------------------------------------------+--------------------------------------------+
+; Register Name                                         ; RAM Name                                   ;
++-------------------------------------------------------+--------------------------------------------+
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[0]  ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[1]  ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[2]  ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[3]  ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[4]  ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[5]  ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[6]  ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[7]  ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[8]  ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[9]  ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[10] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[11] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[12] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[13] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[14] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[15] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[16] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[17] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[18] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[19] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[20] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[21] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[22] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[23] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[24] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[25] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[26] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[27] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[28] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[29] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[30] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[31] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[32] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[33] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[34] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[35] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[36] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[37] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[38] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[39] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[40] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[41] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[42] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[43] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[44] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[45] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[46] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[47] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[48] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[49] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[50] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[51] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[52] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[53] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[54] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[55] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[56] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[57] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[58] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[59] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[60] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[61] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[62] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[63] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
+; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem_0_bypass[64] ; FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0 ;
++-------------------------------------------------------+--------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (No Restructuring Performed)                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; 3:1                ; 194 bits  ; 388 LEs       ; 194 LEs              ; 194 LEs                ; Yes        ; |Mercury|FIR_top:FIR|MAC:MAC_inst_I|accum_temp[17]                    ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Mercury|temp_ADC[10]                                                 ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |Mercury|division:division_DDS|qr[87]                                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Mercury|FIR_top:FIR|cROM_Sequencer:cROM_seq_inst|sequence_counter[7] ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; Yes        ; |Mercury|tdata[9]                                                     ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; Yes        ; |Mercury|bit_cnt[1]                                                   ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Mercury|SPI:Alex_SPI_Tx|data_count[0]                                ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |Mercury|bits[4]                                                      ;
+; 5:1                ; 24 bits   ; 72 LEs        ; 24 LEs               ; 48 LEs                 ; Yes        ; |Mercury|I2SEncode:I2S|data[7]                                        ;
+; 6:1                ; 9 bits    ; 36 LEs        ; 9 LEs                ; 27 LEs                 ; Yes        ; |Mercury|FIR_top:FIR|cycle_counter[7]                                 ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |Mercury|I2SEncode:I2S|bit_count[4]                                   ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Mercury|FIR_top:FIR|cbuffer_top:cbuffer_inst|rd_pointer~22           ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; No         ; |Mercury|LPF_select:Alex_LPF_select|LPF[2]                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; No         ; |Mercury|Alex_data[2]                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Source assignments for FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0|altsyncram_e0j1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                ;
++---------------------------------+--------------------+------+---------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                 ;
++---------------------------------+--------------------+------+---------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: phase_accumulator:rx_phase_accumulator ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; RESOLUTION     ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_top:FIR ;
++----------------+-----------+-----------------------------+
+; Parameter Name ; Value     ; Type                        ;
++----------------+-----------+-----------------------------+
+; INPUT_WIDTH    ; 24        ; Signed Integer              ;
+; OUTPUT_WIDTH   ; 48        ; Signed Integer              ;
+; TAPS           ; 100000000 ; Unsigned Binary             ;
+; IDLE_STATE     ; 00000000  ; Unsigned Binary             ;
+; BEGIN_MAC      ; 00000001  ; Unsigned Binary             ;
+; DO_MAC         ; 00000010  ; Unsigned Binary             ;
+; ACCUM_OUT      ; 00000011  ; Unsigned Binary             ;
+; STROBE_OUT     ; 00000100  ; Unsigned Binary             ;
++----------------+-----------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_top:FIR|cbuffer_top:cbuffer_inst ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; DATA_WIDTH     ; 48    ; Signed Integer                                           ;
+; ADDR_WIDTH     ; 8     ; Signed Integer                                           ;
+; RAM_DEPTH      ; 256   ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_top:FIR|cROM_Sequencer:cROM_seq_inst ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; COEF_WIDTH     ; 24    ; Signed Integer                                               ;
+; TAPS           ; 256   ; Signed Integer                                               ;
+; MAX_ADR        ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_top:FIR|MAC:MAC_inst_I ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_top:FIR|MAC:MAC_inst_Q ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: oddClockDivider:refClockDivider ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; DIVIDE_RATE    ; 125   ; Signed Integer                                      ;
+; COUNTER_WIDTH  ; 7     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0 ;
++------------------------------------+----------------------+------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                           ;
++------------------------------------+----------------------+------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                        ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                 ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                        ;
+; WIDTH_A                            ; 48                   ; Untyped                                        ;
+; WIDTHAD_A                          ; 8                    ; Untyped                                        ;
+; NUMWORDS_A                         ; 256                  ; Untyped                                        ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                        ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                        ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                        ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                        ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                        ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                        ;
+; WIDTH_B                            ; 48                   ; Untyped                                        ;
+; WIDTHAD_B                          ; 8                    ; Untyped                                        ;
+; NUMWORDS_B                         ; 256                  ; Untyped                                        ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                        ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                        ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                        ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                        ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                        ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                        ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                        ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                        ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                        ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                        ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                        ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                        ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                        ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                        ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped                                        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                        ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                        ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                        ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                        ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                        ;
+; DEVICE_FAMILY                      ; Cyclone III          ; Untyped                                        ;
+; CBXI_PARAMETER                     ; altsyncram_e0j1      ; Untyped                                        ;
++------------------------------------+----------------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FIR_top:FIR|MAC:MAC_inst_I|lpm_mult:Mult0 ;
++------------------------------------------------+-------------+-----------------------------+
+; Parameter Name                                 ; Value       ; Type                        ;
++------------------------------------------------+-------------+-----------------------------+
+; AUTO_CARRY_CHAINS                              ; ON          ; AUTO_CARRY                  ;
+; IGNORE_CARRY_BUFFERS                           ; OFF         ; IGNORE_CARRY                ;
+; AUTO_CASCADE_CHAINS                            ; ON          ; AUTO_CASCADE                ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF         ; IGNORE_CASCADE              ;
+; LPM_WIDTHA                                     ; 24          ; Untyped                     ;
+; LPM_WIDTHB                                     ; 24          ; Untyped                     ;
+; LPM_WIDTHP                                     ; 48          ; Untyped                     ;
+; LPM_WIDTHR                                     ; 48          ; Untyped                     ;
+; LPM_WIDTHS                                     ; 1           ; Untyped                     ;
+; LPM_REPRESENTATION                             ; SIGNED      ; Untyped                     ;
+; LPM_PIPELINE                                   ; 0           ; Untyped                     ;
+; LATENCY                                        ; 0           ; Untyped                     ;
+; INPUT_A_IS_CONSTANT                            ; NO          ; Untyped                     ;
+; INPUT_B_IS_CONSTANT                            ; NO          ; Untyped                     ;
+; USE_EAB                                        ; OFF         ; Untyped                     ;
+; MAXIMIZE_SPEED                                 ; 5           ; Untyped                     ;
+; DEVICE_FAMILY                                  ; Cyclone III ; Untyped                     ;
+; CARRY_CHAIN                                    ; MANUAL      ; Untyped                     ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT         ; TECH_MAPPER_APEX20K         ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO        ; Untyped                     ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0           ; Untyped                     ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0           ; Untyped                     ;
+; CBXI_PARAMETER                                 ; mult_jr01   ; Untyped                     ;
+; INPUT_A_FIXED_VALUE                            ; Bx          ; Untyped                     ;
+; INPUT_B_FIXED_VALUE                            ; Bx          ; Untyped                     ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF         ; Untyped                     ;
++------------------------------------------------+-------------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FIR_top:FIR|MAC:MAC_inst_Q|lpm_mult:Mult0 ;
++------------------------------------------------+-------------+-----------------------------+
+; Parameter Name                                 ; Value       ; Type                        ;
++------------------------------------------------+-------------+-----------------------------+
+; AUTO_CARRY_CHAINS                              ; ON          ; AUTO_CARRY                  ;
+; IGNORE_CARRY_BUFFERS                           ; OFF         ; IGNORE_CARRY                ;
+; AUTO_CASCADE_CHAINS                            ; ON          ; AUTO_CASCADE                ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF         ; IGNORE_CASCADE              ;
+; LPM_WIDTHA                                     ; 24          ; Untyped                     ;
+; LPM_WIDTHB                                     ; 24          ; Untyped                     ;
+; LPM_WIDTHP                                     ; 48          ; Untyped                     ;
+; LPM_WIDTHR                                     ; 48          ; Untyped                     ;
+; LPM_WIDTHS                                     ; 1           ; Untyped                     ;
+; LPM_REPRESENTATION                             ; SIGNED      ; Untyped                     ;
+; LPM_PIPELINE                                   ; 0           ; Untyped                     ;
+; LATENCY                                        ; 0           ; Untyped                     ;
+; INPUT_A_IS_CONSTANT                            ; NO          ; Untyped                     ;
+; INPUT_B_IS_CONSTANT                            ; NO          ; Untyped                     ;
+; USE_EAB                                        ; OFF         ; Untyped                     ;
+; MAXIMIZE_SPEED                                 ; 5           ; Untyped                     ;
+; DEVICE_FAMILY                                  ; Cyclone III ; Untyped                     ;
+; CARRY_CHAIN                                    ; MANUAL      ; Untyped                     ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT         ; TECH_MAPPER_APEX20K         ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO        ; Untyped                     ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0           ; Untyped                     ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0           ; Untyped                     ;
+; CBXI_PARAMETER                                 ; mult_jr01   ; Untyped                     ;
+; INPUT_A_FIXED_VALUE                            ; Bx          ; Untyped                     ;
+; INPUT_B_FIXED_VALUE                            ; Bx          ; Untyped                     ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF         ; Untyped                     ;
++------------------------------------------------+-------------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add97 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add100 ;
++------------------------+-------------+---------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                              ;
++------------------------+-------------+---------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                           ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                           ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                           ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                           ;
+; LPM_PIPELINE           ; 0           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                           ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                           ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                           ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                           ;
+; USE_WYS                ; OFF         ; Untyped                                           ;
+; STYLE                  ; FAST        ; Untyped                                           ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                    ;
++------------------------+-------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add93 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add96 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add87 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add90 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add81 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add84 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add75 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add78 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add69 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add72 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add63 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add66 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add57 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add60 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add51 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add54 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add45 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add48 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add39 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add42 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add33 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add36 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add27 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add30 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add21 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cordic_VK6APH:cordic|lpm_add_sub:Add24 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 20          ; Untyped                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                          ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                          ;
+; LPM_PIPELINE           ; 0           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                          ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                          ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                               ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; USE_WYS                ; OFF         ; Untyped                                          ;
+; STYLE                  ; FAST        ; Untyped                                          ;
+; CBXI_PARAMETER         ; add_sub_umg ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                    ;
++---------------------------------------+-------------------------------------------+
+; Name                                  ; Value                                     ;
++---------------------------------------+-------------------------------------------+
+; Number of entity instances            ; 2                                         ;
+; Entity Instance                       ; FIR_top:FIR|MAC:MAC_inst_I|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 24                                        ;
+;     -- LPM_WIDTHB                     ; 24                                        ;
+;     -- LPM_WIDTHP                     ; 48                                        ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                    ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                        ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                        ;
+;     -- USE_EAB                        ; OFF                                       ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                      ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                        ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                        ;
+; Entity Instance                       ; FIR_top:FIR|MAC:MAC_inst_Q|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 24                                        ;
+;     -- LPM_WIDTHB                     ; 24                                        ;
+;     -- LPM_WIDTHP                     ; 48                                        ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                    ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                        ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                        ;
+;     -- USE_EAB                        ; OFF                                       ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                      ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                        ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                        ;
++---------------------------------------+-------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Tue Dec 23 21:08:40 2008
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mercury -c Mercury
+Info: Found 1 design units, including 1 entities, in source file cic_2_1_11_nofraction.v
+    Info: Found entity 1: cic_2_1_11_nofraction
+Info: Found 1 design units, including 1 entities, in source file cic_4_1_12_nofraction.v
+    Info: Found entity 1: cic_4_1_12_nofraction
+Info: Found 1 design units, including 1 entities, in source file cordic_16.v
+    Info: Found entity 1: cordic_16
+Info: Found 1 design units, including 1 entities, in source file FIFO.v
+    Info: Found entity 1: FIFO
+Info: Found 1 design units, including 1 entities, in source file SPI.v
+    Info: Found entity 1: SPI
+Info: Found 1 design units, including 1 entities, in source file LPF_select.v
+    Info: Found entity 1: LPF_select
+Info: Found 1 design units, including 1 entities, in source file HPF_select.v
+    Info: Found entity 1: HPF_select
+Info: Found 1 design units, including 1 entities, in source file oddClockDiv.v
+    Info: Found entity 1: oddClockDivider
+Info: Found 1 design units, including 1 entities, in source file cordic_VK6APH.v
+    Info: Found entity 1: cordic_VK6APH
+Info: Found 1 design units, including 1 entities, in source file I2S_Encoder_24bit.v
+    Info: Found entity 1: I2SEncode
+Info: Found 1 design units, including 1 entities, in source file Mercury.v
+    Info: Found entity 1: Mercury
+Info: Found 1 design units, including 1 entities, in source file dc_offset_correct_new.v
+    Info: Found entity 1: dc_offset_correct_new
+Info: Found 1 design units, including 1 entities, in source file cic_10_1_3_nofraction.v
+    Info: Found entity 1: cic_10_1_3_nofraction
+Info: Found 1 design units, including 1 entities, in source file cic_8_1_5_nofraction.v
+    Info: Found entity 1: cic_8_1_5_nofraction
+Info: Found 1 design units, including 1 entities, in source file mac.v
+    Info: Found entity 1: MAC
+Info: Found 1 design units, including 1 entities, in source file FIR_top.v
+    Info: Found entity 1: FIR_top
+Info: Found 1 design units, including 1 entities, in source file cbuffer_top.v
+    Info: Found entity 1: cbuffer_top
+Info: Found 1 design units, including 1 entities, in source file cROM.v
+    Info: Found entity 1: cROM
+Info: Found 1 design units, including 1 entities, in source file cROM_Sequencer.v
+    Info: Found entity 1: cROM_Sequencer
+Info: Found 1 design units, including 1 entities, in source file division.v
+    Info: Found entity 1: division
+Info: Found 1 design units, including 1 entities, in source file phase_accumulator.v
+    Info: Found entity 1: phase_accumulator
+Info: Elaborating entity "Mercury" for the top level hierarchy
+Info: Elaborating entity "division" for hierarchy "division:division_DDS"
+Info: Elaborating entity "phase_accumulator" for hierarchy "phase_accumulator:rx_phase_accumulator"
+Info: Elaborating entity "cordic_VK6APH" for hierarchy "cordic_VK6APH:cordic"
+Info: Elaborating entity "cic_10_1_3_nofraction" for hierarchy "cic_10_1_3_nofraction:cic_I_1"
+Warning (10230): Verilog HDL assignment warning at cic_10_1_3_nofraction.v(151): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at cic_10_1_3_nofraction.v(157): truncated value with size 32 to match size of target (1)
+Info: Elaborating entity "cic_8_1_5_nofraction" for hierarchy "cic_8_1_5_nofraction:cic_I_2"
+Warning (10230): Verilog HDL assignment warning at cic_8_1_5_nofraction.v(191): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at cic_8_1_5_nofraction.v(197): truncated value with size 32 to match size of target (1)
+Info: Elaborating entity "cic_4_1_12_nofraction" for hierarchy "cic_4_1_12_nofraction:cic_I_3"
+Warning (10230): Verilog HDL assignment warning at cic_4_1_12_nofraction.v(320): truncated value with size 32 to match size of target (2)
+Warning (10230): Verilog HDL assignment warning at cic_4_1_12_nofraction.v(326): truncated value with size 32 to match size of target (1)
+Info: Elaborating entity "FIR_top" for hierarchy "FIR_top:FIR"
+Warning (10230): Verilog HDL assignment warning at FIR_top.v(144): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at FIR_top.v(154): truncated value with size 32 to match size of target (9)
+Info: Elaborating entity "cbuffer_top" for hierarchy "FIR_top:FIR|cbuffer_top:cbuffer_inst"
+Warning (10230): Verilog HDL assignment warning at cbuffer_top.v(61): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at cbuffer_top.v(64): truncated value with size 32 to match size of target (8)
+Info: Elaborating entity "cROM_Sequencer" for hierarchy "FIR_top:FIR|cROM_Sequencer:cROM_seq_inst"
+Warning (10230): Verilog HDL assignment warning at cROM_Sequencer.v(50): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at cROM_Sequencer.v(52): truncated value with size 32 to match size of target (8)
+Info: Elaborating entity "cROM" for hierarchy "FIR_top:FIR|cROM_Sequencer:cROM_seq_inst|cROM:cROM_inst"
+Info: Elaborating entity "MAC" for hierarchy "FIR_top:FIR|MAC:MAC_inst_I"
+Info: Elaborating entity "dc_offset_correct_new" for hierarchy "dc_offset_correct_new:dc_offset_correct_i"
+Warning (10230): Verilog HDL assignment warning at dc_offset_correct_new.v(41): truncated value with size 40 to match size of target (35)
+Info: Elaborating entity "I2SEncode" for hierarchy "I2SEncode:I2S"
+Info: Elaborating entity "LPF_select" for hierarchy "LPF_select:Alex_LPF_select"
+Info: Elaborating entity "HPF_select" for hierarchy "HPF_select:Alex_HPF_select"
+Info: Elaborating entity "SPI" for hierarchy "SPI:Alex_SPI_Tx"
+Info: Elaborating entity "oddClockDivider" for hierarchy "oddClockDivider:refClockDivider"
+Warning (10230): Verilog HDL assignment warning at oddClockDiv.v(50): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at oddClockDiv.v(60): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at oddClockDiv.v(61): truncated value with size 32 to match size of target (1)
+Warning: Clock multiplexers are found and protected
+    Warning: Found clock multiplexer reference
+Warning: Inferred RAM node "FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Info: Inferred 1 megafunctions from design logic
+    Info: Inferred altsyncram megafunction from the following design logic: "FIR_top:FIR|cbuffer_top:cbuffer_inst|mem~0" 
+        Info: Parameter OPERATION_MODE set to DUAL_PORT
+        Info: Parameter WIDTH_A set to 48
+        Info: Parameter WIDTHAD_A set to 8
+        Info: Parameter NUMWORDS_A set to 256
+        Info: Parameter WIDTH_B set to 48
+        Info: Parameter WIDTHAD_B set to 8
+        Info: Parameter NUMWORDS_B set to 256
+        Info: Parameter ADDRESS_ACLR_A set to NONE
+        Info: Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info: Parameter ADDRESS_ACLR_B set to NONE
+        Info: Parameter OUTDATA_ACLR_B set to NONE
+        Info: Parameter ADDRESS_REG_B set to CLOCK0
+        Info: Parameter INDATA_ACLR_A set to NONE
+        Info: Parameter WRCONTROL_ACLR_A set to NONE
+        Info: Parameter RAM_BLOCK_TYPE set to AUTO
+        Info: Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+Info: Inferred 30 megafunctions from design logic
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "FIR_top:FIR|MAC:MAC_inst_I|Mult0"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "FIR_top:FIR|MAC:MAC_inst_Q|Mult0"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add97"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add100"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add93"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add96"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add87"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add90"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add81"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add84"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add75"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add78"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add69"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add72"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add63"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add66"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add57"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add60"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add51"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add54"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add45"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add48"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add39"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add42"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add33"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add36"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add27"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add30"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add21"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "cordic_VK6APH:cordic|Add24"
+Info: Elaborated megafunction instantiation "FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0"
+Info: Instantiated megafunction "FIR_top:FIR|cbuffer_top:cbuffer_inst|altsyncram:mem_rtl_0" with the following parameter:
+    Info: Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info: Parameter "WIDTH_A" = "48"
+    Info: Parameter "WIDTHAD_A" = "8"
+    Info: Parameter "NUMWORDS_A" = "256"
+    Info: Parameter "WIDTH_B" = "48"
+    Info: Parameter "WIDTHAD_B" = "8"
+    Info: Parameter "NUMWORDS_B" = "256"
+    Info: Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info: Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info: Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info: Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info: Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info: Parameter "INDATA_ACLR_A" = "NONE"
+    Info: Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info: Parameter "RAM_BLOCK_TYPE" = "AUTO"
+    Info: Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_e0j1.tdf
+    Info: Found entity 1: altsyncram_e0j1
+Info: Elaborated megafunction instantiation "FIR_top:FIR|MAC:MAC_inst_I|lpm_mult:Mult0"
+Info: Instantiated megafunction "FIR_top:FIR|MAC:MAC_inst_I|lpm_mult:Mult0" with the following parameter:
+    Info: Parameter "LPM_WIDTHA" = "24"
+    Info: Parameter "LPM_WIDTHB" = "24"
+    Info: Parameter "LPM_WIDTHP" = "48"
+    Info: Parameter "LPM_WIDTHR" = "48"
+    Info: Parameter "LPM_WIDTHS" = "1"
+    Info: Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info: Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info: Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info: Parameter "MAXIMIZE_SPEED" = "5"
+    Info: Parameter "DEDICATED_MULTIPLIER_CIRCUITRY" = "AUTO"
+Info: Found 1 design units, including 1 entities, in source file db/mult_jr01.tdf
+    Info: Found entity 1: mult_jr01
+Info: Elaborated megafunction instantiation "cordic_VK6APH:cordic|lpm_add_sub:Add97"
+Info: Instantiated megafunction "cordic_VK6APH:cordic|lpm_add_sub:Add97" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "20"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "NO"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_umg.tdf
+    Info: Found entity 1: add_sub_umg
+Info: Ignored 336 buffer(s)
+    Info: Ignored 336 SOFT buffer(s)
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "CMODE" is stuck at VCC
+    Warning (13410): Pin "SHDN" is stuck at GND
+    Warning (13410): Pin "PGA" is stuck at GND
+    Warning (13410): Pin "INIT_DONE" is stuck at GND
+    Warning (13410): Pin "TEST3" is stuck at GND
+    Warning (13410): Pin "DEBUG_LED1" is stuck at VCC
+    Warning (13410): Pin "DEBUG_LED2" is stuck at VCC
+Info: 15 registers lost all their fanouts during netlist optimizations. The first 15 are displayed below.
+    Info: Register "cic_10_1_3_nofraction:cic_Q_1|int_delay_pipe[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "FIR_top:FIR|cROM_Sequencer:cROM_seq_inst|cROM:cROM_inst|data[23]" lost all its fanouts during netlist optimizations.
+    Info: Register "SPI:Alex_SPI_Tx|spi_state~12" lost all its fanouts during netlist optimizations.
+    Info: Register "SPI:Alex_SPI_Tx|spi_state~13" lost all its fanouts during netlist optimizations.
+    Info: Register "SPI:Alex_SPI_Tx|spi_state~14" lost all its fanouts during netlist optimizations.
+    Info: Register "SPI:Alex_SPI_Tx|spi_state~15" lost all its fanouts during netlist optimizations.
+    Info: Register "I2SEncode:I2S|encode_state~7" lost all its fanouts during netlist optimizations.
+    Info: Register "I2SEncode:I2S|encode_state~8" lost all its fanouts during netlist optimizations.
+    Info: Register "FIR_top:FIR|state~16" lost all its fanouts during netlist optimizations.
+    Info: Register "FIR_top:FIR|state~17" lost all its fanouts during netlist optimizations.
+    Info: Register "FIR_top:FIR|state~19" lost all its fanouts during netlist optimizations.
+    Info: Register "FIR_top:FIR|state~20" lost all its fanouts during netlist optimizations.
+    Info: Register "FIR_top:FIR|state~21" lost all its fanouts during netlist optimizations.
+    Info: Register "FIR_top:FIR|state~22" lost all its fanouts during netlist optimizations.
+    Info: Register "FIR_top:FIR|state~23" lost all its fanouts during netlist optimizations.
+Info: Implemented 7641 device resources after synthesis - the final resource count might be different
+    Info: Implemented 26 input pins
+    Info: Implemented 36 output pins
+    Info: Implemented 1 bidirectional pins
+    Info: Implemented 7516 logic cells
+    Info: Implemented 48 RAM segments
+    Info: Implemented 14 DSP elements
+Info: Generated suppressed messages file C:/HPSDR/trunk/Mercury/Mercury.map.smsg
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 190 megabytes
+    Info: Processing ended: Tue Dec 23 21:09:25 2008
+    Info: Elapsed time: 00:00:45
+    Info: Total CPU time (on all processors): 00:00:42
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/HPSDR/trunk/Mercury/Mercury.map.smsg.
+
+

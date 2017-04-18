@@ -1,0 +1,245 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'FPGA_CLK6IN'
+Slack : -11.829
+TNS   : -7257.945
+
+Type  : Slow 1200mV 85C Model Setup 'FIR_top:FIR|strobe_out'
+Slack : -6.685
+TNS   : -385.943
+
+Type  : Slow 1200mV 85C Model Setup 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : -5.143
+TNS   : -5808.288
+
+Type  : Slow 1200mV 85C Model Setup 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : -4.916
+TNS   : -2945.931
+
+Type  : Slow 1200mV 85C Model Setup 'C17'
+Slack : -3.690
+TNS   : -30.479
+
+Type  : Slow 1200mV 85C Model Setup 'BCLK'
+Slack : -3.577
+TNS   : -240.615
+
+Type  : Slow 1200mV 85C Model Setup 'index'
+Slack : -1.712
+TNS   : -12.426
+
+Type  : Slow 1200mV 85C Model Hold 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FPGA_CLK6IN'
+Slack : 0.526
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'BCLK'
+Slack : 0.526
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'C17'
+Slack : 0.526
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : 0.543
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'index'
+Slack : 0.543
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FIR_top:FIR|strobe_out'
+Slack : 0.776
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : -4.571
+TNS   : -7183.032
+
+Type  : Slow 1200mV 85C Model Recovery 'FPGA_CLK6IN'
+Slack : -4.081
+TNS   : -2144.183
+
+Type  : Slow 1200mV 85C Model Recovery 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : -3.731
+TNS   : -3539.147
+
+Type  : Slow 1200mV 85C Model Removal 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : 4.242
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'FPGA_CLK6IN'
+Slack : 4.569
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : 5.081
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FPGA_CLK6IN'
+Slack : -10.700
+TNS   : -6551.042
+
+Type  : Slow 1200mV 0C Model Setup 'FIR_top:FIR|strobe_out'
+Slack : -5.905
+TNS   : -344.493
+
+Type  : Slow 1200mV 0C Model Setup 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : -4.813
+TNS   : -5298.323
+
+Type  : Slow 1200mV 0C Model Setup 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : -4.387
+TNS   : -2643.501
+
+Type  : Slow 1200mV 0C Model Setup 'C17'
+Slack : -3.375
+TNS   : -26.881
+
+Type  : Slow 1200mV 0C Model Setup 'BCLK'
+Slack : -3.198
+TNS   : -214.015
+
+Type  : Slow 1200mV 0C Model Setup 'index'
+Slack : -1.565
+TNS   : -10.828
+
+Type  : Slow 1200mV 0C Model Hold 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FPGA_CLK6IN'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'BCLK'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'C17'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'index'
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FIR_top:FIR|strobe_out'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : -4.150
+TNS   : -6524.516
+
+Type  : Slow 1200mV 0C Model Recovery 'FPGA_CLK6IN'
+Slack : -3.730
+TNS   : -1961.179
+
+Type  : Slow 1200mV 0C Model Recovery 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : -3.346
+TNS   : -3175.435
+
+Type  : Slow 1200mV 0C Model Removal 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : 3.704
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'FPGA_CLK6IN'
+Slack : 4.069
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : 4.507
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FPGA_CLK6IN'
+Slack : -4.775
+TNS   : -2070.217
+
+Type  : Fast 1200mV 0C Model Setup 'FIR_top:FIR|strobe_out'
+Slack : -2.912
+TNS   : -165.891
+
+Type  : Fast 1200mV 0C Model Setup 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : -2.235
+TNS   : -2144.822
+
+Type  : Fast 1200mV 0C Model Setup 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : -1.634
+TNS   : -819.783
+
+Type  : Fast 1200mV 0C Model Setup 'BCLK'
+Slack : -1.569
+TNS   : -72.526
+
+Type  : Fast 1200mV 0C Model Setup 'C17'
+Slack : -1.010
+TNS   : -3.452
+
+Type  : Fast 1200mV 0C Model Setup 'index'
+Slack : -0.168
+TNS   : -0.924
+
+Type  : Fast 1200mV 0C Model Hold 'FPGA_CLK6IN'
+Slack : 0.131
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'C17'
+Slack : 0.213
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'BCLK'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'index'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FIR_top:FIR|strobe_out'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : -2.047
+TNS   : -3208.389
+
+Type  : Fast 1200mV 0C Model Recovery 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : -1.670
+TNS   : -1581.447
+
+Type  : Fast 1200mV 0C Model Recovery 'FPGA_CLK6IN'
+Slack : -1.468
+TNS   : -769.787
+
+Type  : Fast 1200mV 0C Model Removal 'FPGA_CLK6IN'
+Slack : 2.107
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'cic_10_1_3_nofraction:cic_Q_1|ce_out_reg'
+Slack : 2.319
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'cic_8_1_5_nofraction:cic_I_2|ce_out_reg'
+Slack : 2.697
+TNS   : 0.000
+
+------------------------------------------------------------

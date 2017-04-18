@@ -1,0 +1,165 @@
+
+<!--
+This XML file (created on Tue Aug 15 16:44:56 2006) contains limited information
+from the compilation of logic designs using Quartus II software (BUT NOT THE
+LOGIC DESIGN FILES) that will be transmitted to Altera Corporation through
+operation of the "TalkBack" feature.  To enable/disable this feature, run
+qtb_install.exe located in your quartus/bin folder.  For more information, go
+to www.altera.com/products/software/download/dnl-download_license.html
+-->
+<talkback>
+<ver>6.0</ver>
+<schema>quartus_version_6.0_build_202.xsd</schema>
+<license>
+	<host_id>0013d3f4cf33</host_id>
+	<t_guard>T000092992</t_guard>
+	<nic_id>0013d3f4cf33</nic_id>
+	<cdrive_id>d86310c5</cdrive_id>
+</license>
+<tool>
+	<name>Quartus II</name>
+	<version>6.0</version>
+	<build>Build 202</build>
+	<service_pack_label>1</service_pack_label>
+	<binary_type>32</binary_type>
+	<module>quartus_sim</module>
+	<edition>Web Edition</edition>
+	<eval>Licensed</eval>
+	<compilation_end_time>Tue Aug 15 16:44:56 2006</compilation_end_time>
+</tool>
+<machine>
+	<os>Windows XP</os>
+	<cpu>
+		<proc_count>1</proc_count>
+		<cpu_freq units="MHz">2193</cpu_freq>
+	</cpu>
+	<ram units="MB">960</ram>
+</machine>
+<project>C:/FPGA/Mercury/Mercury</project>
+<revision>Mercury</revision>
+<compilation_summary>
+	<flow_status>Successful - Tue Aug 15 16:44:56 2006</flow_status>
+	<simulator_setting_name>Mercury</simulator_setting_name>
+	<top_level_entity_name>Mercury</top_level_entity_name>
+</compilation_summary>
+<mep_data>
+	<command_line>quartus_sim --read_settings_files=on --write_settings_files=off Mercury -c Mercury</command_line>
+</mep_data>
+<messages>
+	<warning>Warning: Found clock high time violation at 31207.86 ns on register &quot;|Mercury|Tx_fifo:Tx_fifo|dcfifo:dcfifo_component|dcfifo_f2c1:auto_generated|altsyncram_tpu:fifo_ram|altsyncram_8ec1:altsyncram4|q_a[3]~_SIM_96PORT_B_ADDRESS2&quot;</warning>
+	<warning>Warning: Found clock high time violation at 31207.86 ns on register &quot;|Mercury|Tx_fifo:Tx_fifo|dcfifo:dcfifo_component|dcfifo_f2c1:auto_generated|altsyncram_tpu:fifo_ram|altsyncram_8ec1:altsyncram4|q_a[3]~_SIM_96PORT_B_ADDRESS1&quot;</warning>
+	<warning>Warning: Found clock high time violation at 31207.86 ns on register &quot;|Mercury|Tx_fifo:Tx_fifo|dcfifo:dcfifo_component|dcfifo_f2c1:auto_generated|altsyncram_tpu:fifo_ram|altsyncram_8ec1:altsyncram4|q_a[3]~_SIM_96PORT_B_ADDRESS0&quot;</warning>
+	<warning>Warning: Found clock high time violation at 31207.86 ns on register &quot;|Mercury|Tx_fifo:Tx_fifo|dcfifo:dcfifo_component|dcfifo_f2c1:auto_generated|altsyncram_tpu:fifo_ram|altsyncram_8ec1:altsyncram4|q_a[3]~_SIM_96PORT_B_READ_ENABLE&quot;</warning>
+	<warning>Warning: Found clock high time violation at 31207.86 ns on register &quot;|Mercury|Tx_fifo:Tx_fifo|dcfifo:dcfifo_component|dcfifo_f2c1:auto_generated|altsyncram_tpu:fifo_ram|altsyncram_8ec1:altsyncram4|q_a[5]~_SIM_97PORT_B_ADDRESS10&quot;</warning>
+	<info>Info: Quartus II Simulator was successful. 0 errors, 1020 warnings</info>
+	<info>Info: Elapsed time: 00:00:32</info>
+	<info>Info: Processing ended: Tue Aug 15 16:44:56 2006</info>
+	<info>Info: Vector file Mercury.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.</info>
+	<info>Info: Number of transitions in simulation is 2553367</info>
+</messages>
+<simulator_settings>
+	<row>
+		<option>Simulation mode</option>
+		<setting>Timing</setting>
+		<default_value>Timing</default_value>
+	</row>
+	<row>
+		<option>Start time</option>
+		<setting units="ns">0</setting>
+		<default_value units="ns">0</default_value>
+	</row>
+	<row>
+		<option>Vector input source</option>
+		<setting>Mercury.vwf</setting>
+	</row>
+	<row>
+		<option>Add pins automatically to simulation output waveforms</option>
+		<setting>Off</setting>
+		<default_value>On</default_value>
+	</row>
+	<row>
+		<option>Check outputs</option>
+		<setting>Off</setting>
+		<default_value>Off</default_value>
+	</row>
+	<row>
+		<option>Report simulation coverage</option>
+		<setting>On</setting>
+		<default_value>On</default_value>
+	</row>
+	<row>
+		<option>Display complete 1/0 value coverage report</option>
+		<setting>On</setting>
+		<default_value>On</default_value>
+	</row>
+	<row>
+		<option>Display missing 1-value coverage report</option>
+		<setting>On</setting>
+		<default_value>On</default_value>
+	</row>
+	<row>
+		<option>Display missing 0-value coverage report</option>
+		<setting>On</setting>
+		<default_value>On</default_value>
+	</row>
+	<row>
+		<option>Detect setup and hold time violations</option>
+		<setting>Off</setting>
+		<default_value>Off</default_value>
+	</row>
+	<row>
+		<option>Detect glitches</option>
+		<setting>Off</setting>
+		<default_value>Off</default_value>
+	</row>
+	<row>
+		<option>Disable timing delays in Timing Simulation</option>
+		<setting>Off</setting>
+		<default_value>Off</default_value>
+	</row>
+	<row>
+		<option>Generate Signal Activity File</option>
+		<setting>Off</setting>
+		<default_value>Off</default_value>
+	</row>
+	<row>
+		<option>Group bus channels in simulation results</option>
+		<setting>Off</setting>
+		<default_value>Off</default_value>
+	</row>
+	<row>
+		<option>Preserve fewer signal transitions to reduce memory requirements</option>
+		<setting>On</setting>
+		<default_value>On</default_value>
+	</row>
+	<row>
+		<option>Trigger vector comparison with the specified mode</option>
+		<setting>INPUT_EDGE</setting>
+		<default_value>INPUT_EDGE</default_value>
+	</row>
+	<row>
+		<option>Disable setup and hold time violations detection in input registers of bi-directional pins</option>
+		<setting>Off</setting>
+		<default_value>Off</default_value>
+	</row>
+	<row>
+		<option>Overwrite Waveform Inputs With Simulation Outputs</option>
+		<setting>Off</setting>
+	</row>
+	<row>
+		<option>Glitch Filtering</option>
+		<setting>Off</setting>
+		<default_value>Off</default_value>
+	</row>
+</simulator_settings>
+<simulator_summary>
+	<simulation_start_time>0 ps</simulation_start_time>
+	<simulation_end_time>100.0 us</simulation_end_time>
+	<simulation_netlist_size>1283 nodes</simulation_netlist_size>
+	<simulation_coverage>     62.19 %</simulation_coverage>
+	<total_number_of_transitions>2553367</total_number_of_transitions>
+	<simulation_breakpoints>0</simulation_breakpoints>
+	<family>Cyclone II</family>
+	<device>EP2C5Q208C8</device>
+</simulator_summary>
+</talkback>
