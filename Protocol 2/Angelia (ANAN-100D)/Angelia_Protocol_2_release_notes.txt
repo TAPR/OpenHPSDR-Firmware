@@ -427,3 +427,18 @@ Angelia_NP release notes:
 		- changed FW version to 11.5
 		- removed all max/min delay constraints from Orion.sdc
 		- retimed/compiled iteratively until timing closed
+
+	Apr 23	- implemented peak detection for AIN1 (FWD_PWR) and AIN2 (REV_PWR) as follows:
+			-created userADC_clk, 30.72MHz clock for Angelia_ADC.v which provides a 7.68MHz clock to 
+				the ADC78H90 chip, increasing its previous sampling rate x10
+			-replaced Angelia_ADC.v with version from Orion_MkII_v1.6 firmware
+			-replaced CC_encoder.v with version from Orion_MkII_NP_v1.2 firmware
+			- replaced Ethernet/sdr_send.v with version from Orion_MkII_NP_v1.2
+			-added pk_detect_reset and pk_detect_ack to Angelia.v
+			-added user_analog1 and user_analog2 (deleted user_analog) to Orion.v
+		- added debounce_PTT to FPGA_PTT to fix bug with external PTT IN via pin13 on ANAN-100D accessory jack
+		- added userADC_clk as a 30.72MHz generated clock to Angelia.sdc
+		- changed PHY Rx clock skew settings values[6] = 16'h70FF (from 16'hF0FF)
+		- changed FW version number to v11.6
+		- removed all max/min delay constraints from Orion.sdc
+		- retimed/compiled iteratively until timing closed
