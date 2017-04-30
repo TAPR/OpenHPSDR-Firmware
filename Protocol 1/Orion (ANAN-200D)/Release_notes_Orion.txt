@@ -209,3 +209,10 @@ Change log:
 		- removed all max_delay and min_delay constraints from Orion.sdc
 		- retimed/compiled iteratively until timing closed
 				
+	Apr 18   - removed C122_SHIFT_PLL
+				- set ref clock for Tx DAC (DACD) data to negegde _122MHz				
+   	Apr 21	- changed ref clock for Tx DAC data (DACD) to negedge of C122_clk to 
+			fix PureSignal functionality on some machines
+		- changed FW version number to v4.9
+		- removed all max_delay and min_delay constraints from Orion.sdc
+		- retimed/compiled iteratively until timing closed
