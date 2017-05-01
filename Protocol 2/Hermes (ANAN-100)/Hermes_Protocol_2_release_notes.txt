@@ -153,3 +153,15 @@ Hermes Protocol 2 release notes:
 		- removed all max/min delay constraints from Hermes.sdc
 		- retimed/compiled iteratively until timing closed					
 					
+	Apr 27	- forced "Allow 1GB" (1000T) feature, i.e.,. set MODE2 = 1'b1
+		- replaced Rx_fifo_ctrl0.v, Mux_clear.v, and added cdc_mcp #(8) SyncRx_inst with versions from Angelia_Protocol_2_v11.6
+		- regenerated Rx_fifo and Tx1_IQ megafunctions adding an extra bit in the "word used" parameter
+		- increased sizes by 1 bit for these declarations: 
+			wire [11:0] Rx_used[0:NR-1];
+			wire [12:0] write_used;							
+		- added fifo_clear and convert_state declarations to Hermes.v
+		- changed PHY Rx clock skew setting to values[6] <= 16'h90FF in phy_cfg.v
+		- changed version number to v10.4
+		- removed all max/min delay constraints from Hermes.sdc
+		- retimed/compiled iteratively until timing closed					
+				
