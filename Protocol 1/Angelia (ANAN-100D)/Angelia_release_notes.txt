@@ -53,3 +53,8 @@ Angelia_v5.7 release notes
 		- changed FW version number to v5.8
 		- removed all max_delay and min_delay constraints from Orion.sdc
 		- retimed/compiled iteratively until timing closed
+
+	Jul 18	- fixed 6-rcvr & 7-rcvr operations by adding 6-rcvr and 7-rcvr options to numloops and pads in Angelia_Tx_fifo_cntrl.v 
+		- changed version number to v5.9
+		- recompiled, retimed, closed timing. 
+
