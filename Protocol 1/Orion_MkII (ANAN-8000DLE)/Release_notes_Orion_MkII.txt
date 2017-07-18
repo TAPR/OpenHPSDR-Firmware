@@ -75,3 +75,8 @@ Orion MkII release notes
 				changes to Orion_Tx_fifo_ctl.v, Orion_ADC.v, and Orion.v to accommodate the peak detect feature
 		- changed FW version to v1.6
 		- closed timing
+
+	Jul 18	- fixed 6-rcvr & 7-rcvr operations by adding 6-rcvr and 7-rcvr options to numloops and 
+			pads in Orion_Tx_fifo_cntrl.v 
+		- changed version number to v1.7
+		- recompiled, retimed, closed timing. 
