@@ -80,3 +80,17 @@ Orion MkII release notes
 			pads in Orion_Tx_fifo_cntrl.v 
 		- changed version number to v1.7
 		- recompiled, retimed, closed timing. 
+
+	Sep 11	- replaced tx_atten.mif and tx_dac.mif to fix drive level problem
+		- changed FW version to v1.8
+		- compiled using V16.1
+
+	Oct 23	- added C122_Rx_1_in to control bit 11 of the Alex control word to support 7000DLE
+		- set ADC2 attenuator (attenuator2) to max value of 31 (5'b1_1111) during transmit to support 7000DLE
+		- added C122_6m_auto_preamp and C122_6m_auto_preamp2 to disable 6m preamps when in tx mode when Alex 
+			settings are under automatic firmware control
+		- changed FW version number to v1.9
+		- re-timed and re-compiled using Quarus Prime Lite v16.1
+						
+						
+
