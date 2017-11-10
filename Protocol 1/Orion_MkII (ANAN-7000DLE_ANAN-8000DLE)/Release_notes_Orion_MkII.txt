@@ -90,7 +90,12 @@ Orion MkII release notes
 		- added C122_6m_auto_preamp and C122_6m_auto_preamp2 to disable 6m preamps when in tx mode when Alex 
 			settings are under automatic firmware control
 		- changed FW version number to v1.9
-		- re-timed and re-compiled using Quarus Prime Lite v16.1
+		- re-timed and re-compiled using Quartus Prime Lite v16.1
 						
+	Nov 10   - added bias_ctrl to control pin 10 (BUFF_OUT) of J16  via U20 and FPGA pin AH30 (BUFF_OUF_FPGA) and
+			set it low to enable PA bias on the 7000DLE
+		- assigned FPGA pin AH30 to bias_ctrl
+		- changed FW version number to v2.0
+		- recompiled using Quartus Prime Lite v16.1
 						
 
