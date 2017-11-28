@@ -103,4 +103,9 @@ Orion MkII release notes
 			new set_max_delay constraints as needed	to fix board-dependent issues on 7000DLE and 8000DLE					
 		- recompiled using Quartus Prime lite v16.1
 			
+	Nov 28  - replaced Orion_Tx_fifo_ctrl.v with file from v1.7 to fix Rx6/Rx7 bug
+		- modified Rx2 freq switching to implement common_Merc_freq option in C&C commands
+		- modified Rx5 freq switching to allow software adjustment of freq when PureSignal is inactive
+		- changed FW version to v2.2
+		- retimed, recompiled
 
