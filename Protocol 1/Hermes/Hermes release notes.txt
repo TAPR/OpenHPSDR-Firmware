@@ -1,4 +1,1 @@
-20 Mar 2017	- modified SPI.v to send Alex data word twice each time the data word changes
-		- changed version number to v3.2
-		- removed all max_delay and min_delay constraints from Hermes.sdc
-		- re-timed/re-compiled iteratively until timing closed
+30 Dec 2017 - Fixed error in ET/EER code whereby envelope signal was not always generated.
