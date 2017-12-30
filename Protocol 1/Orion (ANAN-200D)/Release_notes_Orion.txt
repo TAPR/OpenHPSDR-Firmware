@@ -216,3 +216,18 @@ Change log:
 		- changed FW version number to v4.9
 		- removed all max_delay and min_delay constraints from Orion.sdc
 		- retimed/compiled iteratively until timing closed
+
+	Jul 18	- fixed 6-rcvr & 7-rcvr operations by adding 6-rcvr and 7-rcvr options to numloops and pads in Orion_Tx_fifo_cntrl.v 
+		- changed version number to v5.0
+		- recompiled, retimed, closed timing. 
+				
+	Nov 29  - implemented PS_enabled C&C bit (C2[6] when C0=0010_010x) to allow Rx5 freq to be modified during Tx and Rx
+			when PureSignal is inactive
+		- changed FW version number to v5.1
+		- removed all set_max_delay constraints from Orion.sdc, recompiled, added new set_max_delay
+			constraints as needed to close timing
+		- compiled using Quartus Prime Lite v16.1
+
+	Dec 1   - simplified Rx5 freq switching to make PureSignal more robust wrt individual board timing differences
+		- changed FW version number to v5.2
+		- recompiled using Quarus Prime Lite v16.1

@@ -75,3 +75,37 @@ Orion MkII release notes
 				changes to Orion_Tx_fifo_ctl.v, Orion_ADC.v, and Orion.v to accommodate the peak detect feature
 		- changed FW version to v1.6
 		- closed timing
+
+	Jul 18	- fixed 6-rcvr & 7-rcvr operations by adding 6-rcvr and 7-rcvr options to numloops and 
+			pads in Orion_Tx_fifo_cntrl.v 
+		- changed version number to v1.7
+		- recompiled, retimed, closed timing. 
+
+	Sep 11	- replaced tx_atten.mif and tx_dac.mif to fix drive level problem
+		- changed FW version to v1.8
+		- compiled using V16.1
+
+	Oct 23	- added C122_Rx_1_in to control bit 11 of the Alex control word to support 7000DLE
+		- set ADC2 attenuator (attenuator2) to max value of 31 (5'b1_1111) during transmit to support 7000DLE
+		- added C122_6m_auto_preamp and C122_6m_auto_preamp2 to disable 6m preamps when in tx mode when Alex 
+			settings are under automatic firmware control
+		- changed FW version number to v1.9
+		- re-timed and re-compiled using Quartus Prime Lite v16.1
+						
+	Nov 10   - added bias_ctrl to control pin 10 (BUFF_OUT) of J16  via U20 and FPGA pin AH30 (BUFF_OUF_FPGA) and
+			set it low to enable PA bias on the 7000DLE
+		- assigned FPGA pin AH30 to bias_ctrl
+		- changed FW version number to v2.0
+		- recompiled using Quartus Prime Lite v16.1
+	
+	Nov 17  - changed FW version number to v2.1
+		- removed all set_max_delay constraints from Orion.sdc, recompiled, added
+			new set_max_delay constraints as needed	to fix board-dependent issues on 7000DLE and 8000DLE					
+		- recompiled using Quartus Prime lite v16.1
+			
+	Nov 28  - replaced Orion_Tx_fifo_ctrl.v with file from v1.7 to fix Rx6/Rx7 bug
+		- modified Rx2 freq switching to implement common_Merc_freq option in C&C commands
+		- modified Rx5 freq switching to allow software adjustment of freq when PureSignal is inactive
+		- changed FW version to v2.2
+		- retimed, recompiled
+
