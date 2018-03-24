@@ -108,4 +108,10 @@ Orion MkII release notes
 		- modified Rx5 freq switching to allow software adjustment of freq when PureSignal is inactive
 		- changed FW version to v2.2
 		- retimed, recompiled
+		
+2018   Mar 21   - recompiled using Quartus Prime Lite V17.0
+		- Moved HPF start point from 1.5MHz to 1.8MHz to cover more of MW band
+		- Fixed bug in iambic.v that corrupted speed change whilst character being sent.
+		- changed FW version to V2.3
+								
 
