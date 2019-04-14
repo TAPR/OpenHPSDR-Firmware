@@ -164,4 +164,14 @@ Hermes Protocol 2 release notes:
 		- changed version number to v10.4
 		- removed all max/min delay constraints from Hermes.sdc
 		- retimed/compiled iteratively until timing closed					
-				
+
+2018    Dec 7 - (N1GP) Merged in Angelia changes worked on with Phil to help improve Pure Signal
+                 - Changed FW version number to v1.5 
+
+2019    Mar 30 - (N1GP) Worked with Chris/W2PA and Doug/W5WC on an issue with FPGA_PTT
+                   coming in late and cutting off the beginning of the CW_char.
+                   Or'd FPGA_PTT with Alex_data[27] assigned to runsafe_Alex_data,
+                   QSK much improved.
+                 - Added latching of data in initial states of SPI, TLV320_SPI, and Attenuator
+                 - Added _122_90 to the ADC timing
+                 - Changed FW version number to v1.6 
