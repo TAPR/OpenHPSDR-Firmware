@@ -442,3 +442,42 @@ Angelia_NP release notes:
 		- changed FW version number to v11.6
 		- removed all max/min delay constraints from Orion.sdc
 		- retimed/compiled iteratively until timing closed
+
+        May 20  - recompiled using Quartus V17.0. Auto update of all Megafunctions.
+                              - replaced max clock delays for RX_clock with mulitpath
+            21  - used icmp.v and icmp_fifo.v from Hermes-Lite project. Ping sometimes works, when fails payload is wrong.
+                              - updated dhcp.v from Hermes-Lite project. Works OK.
+
+2018    Feb  10  - Merged files from Hermes-Lite project and those provided by Rick, N1GP.
+                                   - Fixed bug that caused non response to Discovery request.
+                                   - retimed
+                                   - set version to 11.7
+                                   - Archived project as Angelia_Protocol_2_v11.7-Quartus-17
+                                   - removed almost_full and almost_empty flags since no longer required by Simon, G4ELI, SDR-Radio software
+                                   - corrected text explaining external 10MHz reference operation
+                                   - released as 11.7 and archived as before.
+        Mar    3 - set Rx1 input = DAC data for Thetis debug testing
+                         - // Remove ability for other than Rx1 to receive DAC data since not supported by other HW at the moment.
+                                   - Modified sdr_send so that phy_ready requires no pending data from Rx0 fifo.
+                                   - Rx1 now has input data selectable again.
+                                   - Added Samplerate input to mux_clear to reset code if sample rate changes
+                                   - modified mux_clear such that either Mux or SampleRate changing state runs code.
+                                   - Remove ability for other than Rx1 to receive DAC data since not supported by other HW at the moment.
+                                 4 - Remove fifo_empty from mux_clear since can hang in that state otherwise.
+                                   - Added mux_clear fifo_clear output to reset DDC0 and DDC1 - no improvement.
+                                 7 - Testing Diverstity - set DEBUG_LED10 = C122_SyncRx[0][1] to confirm signal from Thetis - looks OK.
+                                10 - Force DDC0 and DDC1 to have same sampling rate when Mux active
+                              - set DEBUG_LED10 to indicate amplitude difference between DDC0 and DDC1 when in Mux mode.
+
+2019    Mar  2 - (N1GP) Worked with Chris/W2PA and Doug/W5WC on an issue with FPGA_PTT
+                           coming in late and cutting off the beginning of the CW_char.
+                           Or'd FPGA_PTT with Alex_data[27] assigned to runsafe_Alex_data,
+                           added mixing of rx audio with sidetone during CW_PTT and break_in,
+                           QSK much improved.
+                         - Added latching of data in initial states of SPI, TLV320_SPI, and Attenuator.
+                         - Added a checksum in the send_more reply to a Host programmer to validate image transfer.
+
+2019    Mar 30 - (N1GP) Changed to 4 rx's as it's easier to compile and make timing.
+                           Upgraded to Quartus 18.1
+                         - Changed FW version number to v1.18
+
