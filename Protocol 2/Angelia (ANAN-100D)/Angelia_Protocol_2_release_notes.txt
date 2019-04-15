@@ -479,8 +479,8 @@ Angelia_NP release notes:
 
 2019    Mar 30 - (N1GP) Changed to 4 rx's as it's easier to compile and make timing.
                            Upgraded to Quartus 18.1
-                         - Changed FW version number to v1.18
+                         - Changed FW version number to v11.8
 
 2019    Apr 14 - (N1GP) Fixed an issue with Mic Boost (and others) in TLV320_SPI
-                         - Changed FW version number to v1.19 
+                         - Changed FW version number to v11.9 
 
