@@ -481,3 +481,6 @@ Angelia_NP release notes:
                            Upgraded to Quartus 18.1
                          - Changed FW version number to v1.18
 
+2019    Apr 14 - (N1GP) Fixed an issue with Mic Boost (and others) in TLV320_SPI
+                         - Changed FW version number to v1.19 
+
