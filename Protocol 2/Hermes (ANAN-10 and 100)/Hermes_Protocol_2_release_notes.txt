@@ -177,5 +177,5 @@ Hermes Protocol 2 release notes:
                  - Changed FW version number to v10.6 
 
 2019    Apr 14 - (N1GP) Fixed an issue with Mic Boost (and others) in TLV320_SPI
-                         - Changed FW version number to v1.07
+                         - Changed FW version number to v10.7
 
