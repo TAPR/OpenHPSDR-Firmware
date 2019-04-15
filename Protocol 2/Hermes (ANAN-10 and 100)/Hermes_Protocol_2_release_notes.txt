@@ -166,7 +166,7 @@ Hermes Protocol 2 release notes:
 		- retimed/compiled iteratively until timing closed					
 
 2018    Dec 7 - (N1GP) Merged in Angelia changes worked on with Phil to help improve Pure Signal
-                 - Changed FW version number to v1.5 
+                 - Changed FW version number to v10.5 
 
 2019    Mar 30 - (N1GP) Worked with Chris/W2PA and Doug/W5WC on an issue with FPGA_PTT
                    coming in late and cutting off the beginning of the CW_char.
@@ -174,4 +174,8 @@ Hermes Protocol 2 release notes:
                    QSK much improved.
                  - Added latching of data in initial states of SPI, TLV320_SPI, and Attenuator
                  - Added _122_90 to the ADC timing
-                 - Changed FW version number to v1.6 
+                 - Changed FW version number to v10.6 
+
+2019    Apr 14 - (N1GP) Fixed an issue with Mic Boost (and others) in TLV320_SPI
+                         - Changed FW version number to v1.07
+
