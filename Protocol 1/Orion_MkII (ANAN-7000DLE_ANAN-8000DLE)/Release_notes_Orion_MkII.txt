@@ -114,4 +114,25 @@ Orion MkII release notes
 		- Fixed bug in iambic.v that corrupted speed change whilst character being sent.
 		- changed FW version to V2.3
 								
+	Apr 30  - updated macrofunctions to Quartus Prime Lite v17.1 versions
+		- modified C122_HPF switching by adding C122_HPF_PRESET and 
+		  	switching C122_LPF to BYPASS on TX for PureSignal support				  
+		- changed 6m LNA logic in HPF_select.v to make it active when rx frequency is greater than 21 MHz
+		- changed version number to v2.4
+		- retimed, recompiled using Quartus Prime Lite v17.1
+
+- - - switched to Quaruts Prime Lite v18.1 - - - - 
+
+2018		Apr 19   - (N1GP) Fixed a bug with SPI.v not sending twice correctly.
+2018		May 19   - (N1GP) Updated ASMI.v and Orion.v for ECPQ128A using J14 to distinguish from ECPS128
+2018		Dec 2    - (N1GP) Changed 6m LNA logic back to make it active when rx frequency is greater than 35 MHz as in v2.3
+						- NOTE: comments in bpf2_select.v and HPF_select.v said 27 MHz but was really 35 MHz
+						- changed firmware version to v2.5
+
+2019	           	May 3 - (K5SO) replaced Orion.v with N1GP version of Orion.v 
+		         - changed firmware version number to v2.6
+		          - retimed, recompiled
+
+		
+
 
