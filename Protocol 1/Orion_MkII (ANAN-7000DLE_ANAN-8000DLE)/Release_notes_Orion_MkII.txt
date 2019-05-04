@@ -133,6 +133,10 @@ Orion MkII release notes
 		         - changed firmware version number to v2.6
 		          - retimed, recompiled
 
-		
-
+		May 4	- (K5SO) replaced Orion.sdc timing constraint file with Orion.sdc from v2.3 and edited as follows:
+			- removed all Set_Max_Delay and Set_Min_Delay constraints in the Orion.sdc file
+			- removed previous ASMI I/O constraints and added constraints for the "unconstrained" ASMI I/O paths
+			- applied a false_path constraint to MODE2 paths
+			- changed firmware version number to v2.7
+			- re-timed design
 
