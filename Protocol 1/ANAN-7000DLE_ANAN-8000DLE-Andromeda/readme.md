@@ -1,11 +1,16 @@
-All 7000DLE and Andromeda's shipped from Apache after 1 July 2022, those with serial numbers DX8300497A and higher, are shipped with, and require, different firmware than all other 7000 variants.
+IMPORTANT
 
-This was caused by parts availability/obsolescence issues that forced a change to the FPGA part number.
+All 7000DLE, 8000DLE and Andromeda units shipped from Apache BEFORE 1 July 2022, with serial numbers lower than DX8300497A, use Orion MKII firmware.
 
-The older boards used an EP4CGX150F896. The new boards use an EP4CE115F29C8N.
+All 7000DLE and Andromeda units shipped from Apache AFTER 1 July 2022, with serial numbers DX8300497A or higher, use Orion MKIII firmware.
 
-The newer boards are known as the Orion MKIII. There were also part number changes associated with the PHY and VCXO chips but that does not affect firmware. The boards are otherwise identical to the MKII
 
-For Protocol 1, you MUST use the MKIII firmware.
+DIFFERENCES BETWEEN MKII and MKIII
 
-There aren't any functional changes in this firmware, but it had to be recompiled/rebuilt to work with the new part number.
+As of 1 July 2020, parts availability/obsolescence issues forced a change to the FPGA part number.
+
+The MKII boards built before 1 July 2020 use an EP4CGX150F896. The MKIII boards built after 1 July 2020 use an EP4CE115F29C8N.
+
+The MKIII also have part number changes associated with the PHY and VCXO chips but that does not affect firmware. The the MKII and MKIII boards are otherwise identical.
+
+The MKII and MKIII firmware is otherwise identical, the MKIII version has only administrative changes necessary to work with the different FPGA.
