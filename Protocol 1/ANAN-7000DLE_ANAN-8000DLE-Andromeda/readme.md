@@ -1,16 +1,27 @@
-IMPORTANT
+Updated 16 January 2023
 
-All 7000DLE, 8000DLE and Andromeda units shipped from Apache BEFORE 1 July 2022, with serial numbers lower than DX8300497A, use Orion MKII firmware.
+IMPORTANT IMPORTANT IMPORTANT
 
-All 7000DLE and Andromeda units shipped from Apache AFTER 1 July 2022, with serial numbers DX8300497A or higher, use Orion MKIII firmware.
+As of this update, Apache has now shipped three different hardware versions of the Orion MKII SDR board. Prior to downloading, please carefully select the correct firmware in accordance with the following breakdown.
 
+DOWNLOAD FIRMWARE FOR THE CYCLONE IV EP4CGX150F896 FPGA IF YOU HAVE A
 
-DIFFERENCES BETWEEN MKII and MKIII
+- ANAN-8000DLE (original version, 200W, not MKII)
+- ANAN-7000DLE (original version, not MKII or MKIII)
+- ANAN-7000DLE MKII, no serial number or serial number lower than DX8300497A
+- Andromeda with serial number lower than DX8300497A (only 5 units built)
 
-As of 1 July 2020, parts availability/obsolescence issues forced a change to the FPGA part number.
+DOWNLOAD FIRMWARE FOR THE CYCLONE IV EP4CE115F29C8N FPGA IF YOU HAVE A
 
-The MKII boards built before 1 July 2020 use an EP4CGX150F896. The MKIII boards built after 1 July 2020 use an EP4CE115F29C8N.
+- ANAN-7000DLE MKII serial number DX8300497A or higher
+- Andromeda with serial number ending in -CIV
 
-The MKIII also have part number changes associated with the PHY and VCXO chips but that does not affect firmware. The the MKII and MKIII boards are otherwise identical.
+DOWNLOAD FIRMWARE FOR THE CYCLONE V 5CEFA9F31 FPGA IF YOU HAVE A
 
-The MKII and MKIII firmware is otherwise identical, the MKIII version has only administrative changes necessary to work with the different FPGA.
+- ANAN-7000DLE MKIII all serial numbers
+- Andromeda serial number ending in -CV
+- ANAN-8000DLE MKII (500W)
+
+Firmware loading instructions can be found here:
+
+https://community.apache-labs.com/viewtopic.php?f=18&t=2333

@@ -1,3 +1,0 @@
-Warning (10268): Verilog HDL information at Bootloader.v(868): always construct contains both blocking and non-blocking assignments
-Info (10281): Verilog HDL Declaration information at Bootloader.v(392): object "erase" differs only in case from object "ERASE" in the same scope
-Info (10281): Verilog HDL Declaration information at Bootloader.v(293): object "reset" differs only in case from object "RESET" in the same scope

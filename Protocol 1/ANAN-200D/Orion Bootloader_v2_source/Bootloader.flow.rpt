@@ -1,0 +1,156 @@
+Flow report for Bootloader
+Thu Mar 05 08:30:49 2015
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Thu Mar 05 08:30:43 2015      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; Bootloader                                 ;
+; Top-level Entity Name              ; Bootloader                                 ;
+; Family                             ; Cyclone IV GX                              ;
+; Device                             ; EP4CGX150DF31C7                            ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 1,940 / 149,760 ( 1 % )                    ;
+;     Total combinational functions  ; 1,622 / 149,760 ( 1 % )                    ;
+;     Dedicated logic registers      ; 1,291 / 149,760 ( < 1 % )                  ;
+; Total registers                    ; 1292                                       ;
+; Total pins                         ; 38 / 508 ( 7 % )                           ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 12,416 / 6,635,520 ( < 1 % )               ;
+; Embedded Multiplier 9-bit elements ; 0 / 720 ( 0 % )                            ;
+; Total GXB Receiver Channel PCS     ; 0 / 8 ( 0 % )                              ;
+; Total GXB Receiver Channel PMA     ; 0 / 8 ( 0 % )                              ;
+; Total GXB Transmitter Channel PCS  ; 0 / 8 ( 0 % )                              ;
+; Total GXB Transmitter Channel PMA  ; 0 / 8 ( 0 % )                              ;
+; Total PLLs                         ; 1 / 8 ( 13 % )                             ;
++------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/05/2015 08:30:00 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Bootloader          ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; ALLOW_POWER_UP_DONT_CARE            ; Off                             ; On            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 229044586102307.142556940040764 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; ALTREMOTE_UPDATE                ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; FIFO                            ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; ALTPLL                          ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; FIFO                            ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; ALTASMI_PARALLEL                ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 11.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
+; MISC_FILE                           ; Remote_inst.v                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; PHY_fifo.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; PLL_clocks.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; PLL_clocks.ppf                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; Rx_fifo.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; ASMI2.bsf                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; ASMI2_inst.v                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; ASMI2_bb.v                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; ASMI2.inc                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; ASMI2.cmp                       ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing               ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing               ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                      ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                      ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; Angelia     ; Top            ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; OzyII       ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; Angelia     ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; Angelia     ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; OzyII       ; Top            ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                             ; --            ; --          ; eda_blast_fpga ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 573 MB              ; 00:00:07                           ;
+; Fitter                    ; 00:00:26     ; 1.0                     ; 1109 MB             ; 00:00:26                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 534 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 663 MB              ; 00:00:04                           ;
+; Total                     ; 00:00:43     ; --                      ; --                  ; 00:00:43                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; i7               ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; i7               ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; i7               ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; i7               ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Bootloader -c Bootloader
+quartus_fit --read_settings_files=off --write_settings_files=off Bootloader -c Bootloader
+quartus_asm --read_settings_files=off --write_settings_files=off Bootloader -c Bootloader
+quartus_sta Bootloader -c Bootloader
+
+
+

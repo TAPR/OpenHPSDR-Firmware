@@ -1,0 +1,106 @@
+Restore Archived Project report for Bootloader
+Mon Jan 27 08:15:06 2014
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 Service Pack 0.dp2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Mon Jan 27 08:15:06 2014 ;
+; Revision Name                   ; Bootloader                            ;
+; Top-level Entity Name           ; Bootloader                            ;
+; Family                          ; Cyclone IV GX                         ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/Joe Martin/Desktop/Bootloader_27-01-2014.qar' into the 'C:/Users/Joe Martin/Desktop/Bootloader_27-01-2014_restored/' directory
+Info: Generated report 'Bootloader.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/altera/13.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 32-bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 232 megabytes
+    Info: Processing ended: Mon Jan 27 08:15:06 2014
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-------------------------------------------------------+
+; Files Restored                                        ;
++-------------------------------------------------------+
+; File Name                                             ;
++-------------------------------------------------------+
+; ASMI2.bsf                                             ;
+; ASMI2.cmp                                             ;
+; ASMI2.inc                                             ;
+; ASMI2.qip                                             ;
+; ASMI2.v                                               ;
+; ASMI2_bb.v                                            ;
+; ASMI2_inst.v                                          ;
+; Bootloader.qpf                                        ;
+; Bootloader.qsf                                        ;
+; Bootloader.sdc                                        ;
+; Bootloader.v                                          ;
+; Bootloader_assignment_defaults.qdf                    ;
+; CRC32.v                                               ;
+; EEPROM.v                                              ;
+; Led_control.v                                         ;
+; Led_flash.v                                           ;
+; MDIO.v                                                ;
+; PHY_fifo.bsf                                          ;
+; PHY_fifo.qip                                          ;
+; PHY_fifo.v                                            ;
+; PLL_clocks.bsf                                        ;
+; PLL_clocks.ppf                                        ;
+; PLL_clocks.qip                                        ;
+; PLL_clocks.v                                          ;
+; Reconfigure.v                                         ;
+; Remote.qip                                            ;
+; Remote.v                                              ;
+; Remote_inst.v                                         ;
+; Rx_fifo.bsf                                           ;
+; Rx_fifo.qip                                           ;
+; Rx_fifo.v                                             ;
+; assignment_defaults.qdf                               ;
+; incremental_db/compiled_partitions/Bootloader.db_info ;
++-------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
