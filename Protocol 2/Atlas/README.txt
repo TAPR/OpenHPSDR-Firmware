@@ -19,4 +19,6 @@ jumpers on J5 are necessary. No jumpers on 1st Mercury board J5.
 bottom  0 0 X 0 0 0 0 0 0 0 top
         0 0 X 0 0 0 0 0 0 0
 
+The order that I have my boards is (left to right): excalibur | mercury2 | mercury1 | metis | pennylane
+
 This firmware is experimental and is provided for testing, YMMV.
