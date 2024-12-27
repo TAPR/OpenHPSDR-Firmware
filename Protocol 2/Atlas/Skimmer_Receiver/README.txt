@@ -16,5 +16,17 @@ CW Skimmer / Skimmer Server:
 SparkSDR:
 	https://www.sparksdr.com
 
-This firmware provides up to 8 receiver slices (or DDCs) @ 192ksps. It is Protocol 2
+This firmware provides up to 8 receiver slices (or DDCs) @ 192ksps (only). It is Protocol 2
 based.
+
+Metis   v5.0
+Mercury v0.1
+====================================================================================
+
+12/27/2024 - N1GP
+
+Found misconfigured Atlas bus pins which caused one of the DDC's to be
+non-functional.
+
+Metis   v5.1
+Mercury v0.2
