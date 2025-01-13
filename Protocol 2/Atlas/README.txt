@@ -1,9 +1,7 @@
 This protocol 2 implementation of Atlas supports 1 or 2 Mercurys, a PennyLane, and a Metis board.
-Pure Signal is working with Penny providing the 10MHz clock and with 2 Mercury boards Diversity
-is supported. Mercury provides 48-384ksps and Metis ethernet is fixed at GigE.
+Pure Signal is working with Penny providing the 10MHz and 122.88MHz clocks and with 2 Mercury boards Diversity is supported. Mercury provides 2 RX's per board @ 48-384ksps and Metis ethernet is fixed at GigE.
 
-In order for PureSignal to work, the 10MHz clock from PennyLane should be chosen as the source.
-Excalibur or Atlas 10MHz also works as the source.
+In order for PureSignal to work, the 10MHz and 122.88MHz clocks from PennyLane should be chosen as the source. Excalibur or Atlas 10MHz also works as the source.
 
 CW handled by the firmware (QSK) is not yet implemented, but CW handled by the application,
 Thetis / PiHPSDR, does work.
