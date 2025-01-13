@@ -3,6 +3,9 @@ Pure Signal is working with Penny providing the 10MHz and 122.88MHz clocks and w
 
 In order for PureSignal to work, the 10MHz and 122.88MHz clocks from PennyLane should be chosen as the source. Excalibur or Atlas 10MHz also works as the source.
 
+Ideally the LVDS should be connected with Penelope (PennyLane) as sender and Mercury as receiver.
+Don't forget to set the 122.88MHz clock to 'E'xternal on Mercury.
+
 CW handled by the firmware (QSK) is not yet implemented, but CW handled by the application,
 Thetis / PiHPSDR, does work.
 
