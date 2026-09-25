@@ -1,0 +1,6 @@
+2026    Sep 20 - (N1GP) Added a 3 stage CDC multi-clock transfer per AI recommendations to improve
+                        clock separation and per build robustness (cdc_mcp_3stage).
+
+2026    Sep 25 - (N1GP) Fix for 'Discovery/Erase/Program replies with UDP source port 0' bug.
+                        https://github.com/TAPR/OpenHPSDR-Firmware/issues/2
+

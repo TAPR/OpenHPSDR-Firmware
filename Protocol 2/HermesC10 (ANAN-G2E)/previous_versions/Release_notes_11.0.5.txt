@@ -1,0 +1,18 @@
+2024    Jan 7 - (N1GP) Added use of Alex1's upper 16 bits for TX relay control. Namely the ANT1-3 bits.
+                       This is to avoid RF appearing on an RX only ANT due to a later arrival of a HP
+                       message telling us to switch the ANT when we are already in TX mode sending RF.
+                       The client program should send this before going to TX.
+
+2024    Oct 18 - (N1GP) Removed debounce_PTT from input conditions of FPGA_PTT assignment, to prevent possible
+                        pops/clicks of audio on Rx-to-Tx transitions
+
+2025    Feb 15 - (N1GP) Added keyout to bit 7 of CC_encoder data byte 0. This can be used to
+                        generate a sidetone on the client software. Also now latching ADC0 & ADC1 overload
+                        so if it happens only once it gets sent in CC_encoder. CC_encoder was sending
+                        every 50ms, now every 200ms unless PTT or realtime events.
+
+2026    Jan 31 - (N1GP) Added ability to send discovery reply while in 'run' mode. Also added code to respect
+                        the new ports sent to General_CC so applications don't have to use default ports.
+
+2026    Mar 17 - (N1GP) Added ADC maximum magnitude to CC_encoder output, used when overload bit is set
+                        so client can use an auto attenuate algorythm.
