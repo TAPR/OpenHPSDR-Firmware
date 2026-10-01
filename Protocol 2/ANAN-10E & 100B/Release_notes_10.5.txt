@@ -1,0 +1,7 @@
+2024    Jan 7 - (N1GP) Added use of Alex1's upper 16 bits for TX relay control. Namely the ANT1-3 bits.
+                       This is to avoid RF appearing on an RX only ANT due to a later arrival of a HP 
+                       message telling us to switch the ANT when we are already in TX mode sending RF.
+                       The client program should send this before going to TX.
+
+2024    Oct 18 - (N1GP) Removed debounce_PTT from input conditions of FPGA_PTT assignment, to prevent possible
+                        pops/clicks of audio on Rx-to-Tx transitions

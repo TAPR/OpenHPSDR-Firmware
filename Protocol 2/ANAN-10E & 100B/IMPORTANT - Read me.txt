@@ -10,3 +10,8 @@ Ethernet runs at a Gigabit.  Due to the fact that the FPGA is 99% full a number 
 2. ICMP (ping) is not supported.
 3. You must use the Bootloader to load new FPGA code. 
 
+Oct 1 2026 Update:
+There has only been minor updates to this 10.5 verion (also known as 10.5A)
+
+There is practically no space left on this FPGA for adding anything else.
+Perhaps someone can come in and optimize this to free up some LE's.

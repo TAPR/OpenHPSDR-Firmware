@@ -1,0 +1,64 @@
+2026    May 05 -(eu2av) Firmware Update: PureSignal Feedback Path Optimization
+                        Implemented adaptive scaling in the PureSignal feedback loop (temp_DACD). By dynamically shifting the bit-window
+                        extraction, the feedback signal maintains full 16-bit resolution even at low output power (1–5 W). Result:
+                        faster convergence, stable predistortion correction across all power levels, improved IMD3 suppression on weak signals.
+                        DSP Chain Optimization:
+                        RX: Implemented TPDF Dither before CIC decimation. Result: Elimination of quantization noise structure ("grid" on panadapter), improved Dynamic Range (+6-9 dB).
+                        TX/NCO: Added Phase Dither to CORDIC phase accumulator. Result: Significant reduction of spurious harmonics (spurs), improved SFDR (+10-15 dB). 
+                        Filters: Changed FIR truncation to "round-to-nearest" logic. Result: Eliminated DC offset peak at center frequency, improved calculation accuracy.
+                        PureSignal: Added adaptive scaling for the feedback path to ensure stable convergence at low output power levels. 
+
+2026    May 09 -(eu2av) Updated ASMI IP device family from Cyclone IV GX to Cyclone IV E 
+                          (fixes Warning 169180 clamping diode on internal DATA0 pin) 
+                        Added pipeline register C122_cordic_i_out_pipe on _122_90 clock to break
+                          critical cross-clock path from CORDIC (C122_clk) to temp_DACD.
+                          Improves setup slack for PLL_IF.c0 (122.88 MHz DAC) domain.
+                        PSA switching stability fixes:
+                        * Added cold-boot qualification: ps = C122_run ? (C122_RxADC[1]==2) : 0
+                          to prevent random PSA state at power-up before system sync.
+                        * Added 2-tap debounce (ps_d1/ps_d2) and sample-boundary switch in
+                          Rx_fifo_ctrl.v to prevent mid-sample phase jumps (later simplified
+                          to direct ps after confirming clean switching).
+                        * Restored sequence_errors counting in rx_clock domain with pipeline
+                          register expected_sequence_number in High_Priority_CC.v and
+                          Rx_specific_C&C.v; removed broken CDC to CBCLK (cdc_sync for 32-bit
+                          counters caused random glitches).
+                        * Replaced cdc_sync_ALL for sequence_errors sum with cdc_mcp handshake.
+                        SDC audit fixes: LTC2208_122MHz_2 merged into same clock group (both ADCs 
+                          share same source via dual-channel driver). Removed false_path between them.
+                        Updated ASMI constraint names (sd2~ -> cycloneii_asmiblock2~) and restored.
+                        Relaxed set_max_delay CMCLK->_122_90 from 4ns to 8ns. 
+                        Added temp_Tx0_frequency pipeline register in High_Priority_CC.v to break
+                          critical path udp_recv|to_port -> Tx0_frequency.
+                        Restored != 16'd0 check in Rx_specific_C&C.v for RxSampleRate with 
+                          pipeline register expected_sequence_number to keep timing clean.
+                        Added to_port_pipe pipeline register in High_Priority_CC.v to break
+                          critical path from udp_recv|to_port to temp_Rx_frequency/temp_Tx0_frequency.
+
+2026    Jun 14 -(eu2av) Receiver DSP path fixes (see receiver2.v / cic.v / firx2r2.v / cic_comb.v):
+                        * CIC outputs now use round-half-up + saturation.
+                        * Polyphase FIR accumulator widened to 26 bits with output saturation.
+                        * Dead cic_comp module removed.
+                        * sample_rate (rate0/rate1) registered in receiver2.v to close timing.
+
+2026    Jun 26 -(eu2av)
+                        Fixed false sequence-error counting in High_Priority_CC.v and
+                          Rx_specific_C&C.v. Three-layer fix (Solutions A+B+C):
+                          A) Poison last_sequence_number (0xFFFFFFFF) on every (re)start so the first
+                            comparison never matches a stale value from the previous session.
+                          B) seq_locked decouples sequence validity from run. A backward seq jump 
+                            (Thetis restarts seq at 0 on a fast reconnect, while run stays 1 inside
+                            the ~2s HW_timeout window) re-arms the grace window instead of counting
+                            a false error.
+                          C) seq_grace absorbs the first GRACE_LIMIT (3) packets of every (re)start,
+                            hiding connect/reconnect transients. After the window closes, normal
+                            monotonicity checking resumes. Original root cause: the 2026-06-09
+                            expected_sequence_number pipeline register lagged the comparison by one
+                            packet and counted every good packet as an error.
+
+2026    Sep 20 - (N1GP) Added a 3 stage CDC multi-clock transfer per AI recommendations to improve
+                        clock separation and per build robustness (cdc_mcp_3stage).
+
+2026    Sep 30 - (N1GP) Cleared the DF bit in ip_send.v and added back the incrementing ip_id
+                        for better debugging capability.
+

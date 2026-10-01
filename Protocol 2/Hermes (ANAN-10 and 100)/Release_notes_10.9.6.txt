@@ -1,0 +1,6 @@
+2026    Sep 25 - (N1GP) Fix for 'Discovery/Erase/Program replies with UDP source port 0' bug.
+                        See: https://github.com/TAPR/OpenHPSDR-Firmware/issues/2
+
+2026    Sep 30 - (N1GP) Cleared the DF bit in ip_send.v and added back the incrementing ip_id
+                        for better debugging capability.
+
