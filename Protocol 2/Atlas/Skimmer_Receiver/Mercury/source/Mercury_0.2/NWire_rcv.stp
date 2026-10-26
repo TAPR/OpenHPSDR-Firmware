@@ -1,0 +1,1472 @@
+<session jtag_chain="ByteBlasterMV [LPT1]" jtag_device="@1: EP3C25 (0x020F30DD)" sof_file="" top_level_entity="Mercury">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2009/07/24 11:15:24  #0">
+      <clock name="C122_clk" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_BIT" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_CALC" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_DB" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_NEXT" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_SYNC" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|d0" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|d1" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|d2" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|d3" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|din" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|iclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|idata[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[25]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[26]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[27]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[28]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[29]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[30]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[31]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|irdy" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|irst" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|pass[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|pass[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|pass[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|pass[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rcv_flag" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[25]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[26]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[27]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[28]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[29]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[30]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[31]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|resync" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|xclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_ack" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_rdy" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrst" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|rdy" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|tmc_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|tmc_state.TMC_GO" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|tmc_state.TMC_IDLE" tap_mode="classic" type="combinatorial"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_BIT" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_CALC" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_DB" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_NEXT" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_SYNC" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|d0" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|d1" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|d2" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|d3" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|din" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|iclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|idata[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[25]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[26]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[27]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[28]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[29]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[30]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[31]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|irdy" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|irst" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|pass[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|pass[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|pass[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|pass[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rcv_flag" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[25]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[26]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[27]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[28]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[29]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[30]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[31]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|resync" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|xclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_ack" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_rdy" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrst" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|rdy" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|tmc_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|tmc_state.TMC_GO" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|tmc_state.TMC_IDLE" tap_mode="classic" type="combinatorial"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[0][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[1][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[2][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DB_LEN[3][9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|DBrise_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_BIT" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_CALC" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_DB" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_IDLE" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_NEXT" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|TB_state.TB_SYNC" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|d0" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|d1" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|d2" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|d3" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|data_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|din" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|iclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|idata[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[25]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[26]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[27]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[28]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[29]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[30]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[31]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|idata[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|irdy" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|irst" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|pass[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|pass[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|pass[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|pass[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rcv_flag" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[15]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[16]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[17]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[18]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[19]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[20]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[21]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[22]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[23]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[24]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[25]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[26]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[27]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[28]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[29]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[30]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[31]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|rdata[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|resync" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[0]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[10]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[11]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[12]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[13]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[14]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[1]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[2]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[3]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[4]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[5]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[6]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[7]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[8]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|tb_width[9]" tap_mode="classic" type="register"/>
+          <wire name="NWire_rcv:LRAudio|xclk" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_ack" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_data[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrcv_rdy" tap_mode="classic" type="combinatorial"/>
+          <wire name="NWire_rcv:LRAudio|xrst" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|data[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|rdy" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="TestModeChecker:tmc|seq_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|tmc_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|tmc_state.TMC_GO" tap_mode="classic" type="combinatorial"/>
+          <wire name="TestModeChecker:tmc|tmc_state.TMC_IDLE" tap_mode="classic" type="combinatorial"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|DB_LEN[0]" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][14]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|DB_LEN[1]" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][14]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|DB_LEN[2]" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][14]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|DB_LEN[3]" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][14]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|DBrise_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[5]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_BIT"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_CALC"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_DB"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_IDLE"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_NEXT"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_SYNC"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|d0"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|d1"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|d2"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|d3"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|data_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|data_cnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|data_cnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|data_cnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|data_cnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|data_cnt[4]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|din"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|iclk"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|idata" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[14]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[15]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[16]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[17]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[18]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[19]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[20]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[21]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[22]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[23]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[24]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[25]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[26]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[27]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[28]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[29]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[30]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|irdy"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|irst"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|pass" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|pass[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|pass[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|pass[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|pass[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rcv_flag"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|rdata" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[14]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[15]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[16]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[17]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[18]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[19]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[20]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[21]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[22]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[23]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[24]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[25]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[26]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[27]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[28]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[29]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[30]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|resync"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|tb_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[14]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|tb_width" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[14]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrst"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xclk"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_rdy"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_ack"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|xrcv_data" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[14]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[15]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[16]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[17]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[18]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[19]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[20]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[21]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[22]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[23]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[24]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[25]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[26]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[27]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[28]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[29]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[30]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[31]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="TestModeChecker:tmc|data" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[0]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[1]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[2]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[3]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[4]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[5]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[6]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[7]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[8]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[9]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[10]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[11]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[12]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[13]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[14]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[15]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[16]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[17]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[18]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[19]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[20]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[21]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[22]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[23]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[24]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[25]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[26]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[27]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[28]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[29]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[30]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="TestModeChecker:tmc|rdy"/>
+          <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_err"/>
+          <net is_signal_inverted="no" name="TestModeChecker:tmc|tmc_err"/>
+          <net is_signal_inverted="no" name="TestModeChecker:tmc|tmc_state.TMC_IDLE"/>
+          <net is_signal_inverted="no" name="TestModeChecker:tmc|tmc_state.TMC_GO"/>
+          <bus is_signal_inverted="no" link="all" name="TestModeChecker:tmc|seq_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[0]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[1]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[2]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[3]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[4]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[5]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[6]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[7]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|DB_LEN[0]" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[0][14]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|DB_LEN[1]" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[1][14]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|DB_LEN[2]" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[2][14]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|DB_LEN[3]" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DB_LEN[3][14]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|DBrise_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|DBrise_cnt[5]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_BIT"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_CALC"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_DB"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_IDLE"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_NEXT"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|TB_state.TB_SYNC"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|d0"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|d1"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|d2"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|d3"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|data_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|data_cnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|data_cnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|data_cnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|data_cnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|data_cnt[4]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|din"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|iclk"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|idata" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[14]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[15]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[16]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[17]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[18]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[19]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[20]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[21]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[22]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[23]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[24]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[25]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[26]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[27]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[28]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[29]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[30]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|idata[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|irdy"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|irst"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|pass" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|pass[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|pass[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|pass[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|pass[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rcv_flag"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|rdata" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[14]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[15]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[16]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[17]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[18]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[19]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[20]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[21]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[22]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[23]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[24]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[25]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[26]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[27]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[28]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[29]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[30]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|rdata[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|resync"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|tb_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_cnt[14]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|tb_width" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|tb_width[14]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xclk"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_ack"/>
+          <bus is_signal_inverted="no" link="all" name="NWire_rcv:LRAudio|xrcv_data" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[0]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[1]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[2]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[3]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[4]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[5]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[6]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[7]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[8]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[9]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[10]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[11]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[12]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[13]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[14]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[15]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[16]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[17]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[18]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[19]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[20]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[21]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[22]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[23]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[24]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[25]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[26]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[27]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[28]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[29]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[30]"/>
+            <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_data[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrcv_rdy"/>
+          <net is_signal_inverted="no" name="NWire_rcv:LRAudio|xrst"/>
+          <bus is_signal_inverted="no" link="all" name="TestModeChecker:tmc|data" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[0]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[1]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[2]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[3]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[4]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[5]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[6]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[7]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[8]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[9]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[10]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[11]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[12]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[13]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[14]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[15]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[16]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[17]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[18]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[19]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[20]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[21]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[22]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[23]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[24]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[25]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[26]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[27]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[28]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[29]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[30]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|data[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="TestModeChecker:tmc|rdy"/>
+          <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_err"/>
+          <net is_signal_inverted="no" name="TestModeChecker:tmc|tmc_err"/>
+          <net is_signal_inverted="no" name="TestModeChecker:tmc|tmc_state.TMC_IDLE"/>
+          <net is_signal_inverted="no" name="TestModeChecker:tmc|tmc_state.TMC_GO"/>
+          <bus is_signal_inverted="no" link="all" name="TestModeChecker:tmc|seq_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[0]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[1]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[2]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[3]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[4]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[5]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[6]"/>
+            <net is_signal_inverted="no" name="TestModeChecker:tmc|seq_cnt[7]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger CRC="610896D" attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2009/07/26 18:49:31  #0" position="center" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'TestModeChecker:tmc|seq_err' == rising edge
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            <pwr_up_transitional>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2009/07/27 18:04:52  #0"/>
+          <extradata/>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="21"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="22"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="130944"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="column width" size="23" value="34,34,219,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,78"/>
+    <multi attribute="window position" size="9" value="1221,799,398,124,0,50,124,0,0"/>
+  </global_info>
+</session>
