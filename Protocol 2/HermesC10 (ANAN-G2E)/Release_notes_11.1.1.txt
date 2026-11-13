@@ -1,0 +1,2 @@
+Version 11.1.1 is the same as 11.1.0 but has a different SEED value in
+hermes.qsf. This was to address this issue: https://github.com/TAPR/OpenHPSDR-Firmware/issues/4
