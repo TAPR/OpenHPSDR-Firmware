@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags="INTERNAL_COMPONENT=true"
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element asmi_parallel_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="5CEFA7F31C8" />
+ <parameter name="deviceFamily" value="Cyclone V" />
+ <parameter name="deviceSpeedGrade" value="8" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="true" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="Bootloader.qpf" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="addr" internal="asmi_parallel_0.addr" type="conduit" dir="end">
+  <port name="addr" internal="addr" />
+ </interface>
+ <interface
+   name="bulk_erase"
+   internal="asmi_parallel_0.bulk_erase"
+   type="conduit"
+   dir="end">
+  <port name="bulk_erase" internal="bulk_erase" />
+ </interface>
+ <interface name="busy" internal="asmi_parallel_0.busy" type="conduit" dir="end">
+  <port name="busy" internal="busy" />
+ </interface>
+ <interface name="clkin" internal="asmi_parallel_0.clkin" type="clock" dir="end">
+  <port name="clkin" internal="clkin" />
+ </interface>
+ <interface
+   name="data_valid"
+   internal="asmi_parallel_0.data_valid"
+   type="conduit"
+   dir="end">
+  <port name="data_valid" internal="data_valid" />
+ </interface>
+ <interface
+   name="datain"
+   internal="asmi_parallel_0.datain"
+   type="conduit"
+   dir="end">
+  <port name="datain" internal="datain" />
+ </interface>
+ <interface
+   name="dataout"
+   internal="asmi_parallel_0.dataout"
+   type="conduit"
+   dir="end">
+  <port name="dataout" internal="dataout" />
+ </interface>
+ <interface
+   name="fast_read"
+   internal="asmi_parallel_0.fast_read"
+   type="conduit"
+   dir="end">
+  <port name="fast_read" internal="fast_read" />
+ </interface>
+ <interface
+   name="illegal_erase"
+   internal="asmi_parallel_0.illegal_erase"
+   type="conduit"
+   dir="end">
+  <port name="illegal_erase" internal="illegal_erase" />
+ </interface>
+ <interface
+   name="illegal_write"
+   internal="asmi_parallel_0.illegal_write"
+   type="conduit"
+   dir="end">
+  <port name="illegal_write" internal="illegal_write" />
+ </interface>
+ <interface name="rden" internal="asmi_parallel_0.rden" type="conduit" dir="end">
+  <port name="rden" internal="rden" />
+ </interface>
+ <interface name="read" internal="asmi_parallel_0.read" />
+ <interface name="reset" internal="asmi_parallel_0.reset" type="reset" dir="end">
+  <port name="reset" internal="reset" />
+ </interface>
+ <interface
+   name="sector_erase"
+   internal="asmi_parallel_0.sector_erase"
+   type="conduit"
+   dir="end">
+  <port name="sector_erase" internal="sector_erase" />
+ </interface>
+ <interface
+   name="sector_protect"
+   internal="asmi_parallel_0.sector_protect"
+   type="conduit"
+   dir="end">
+  <port name="sector_protect" internal="sector_protect" />
+ </interface>
+ <interface
+   name="shift_bytes"
+   internal="asmi_parallel_0.shift_bytes"
+   type="conduit"
+   dir="end">
+  <port name="shift_bytes" internal="shift_bytes" />
+ </interface>
+ <interface name="wren" internal="asmi_parallel_0.wren" type="conduit" dir="end">
+  <port name="wren" internal="wren" />
+ </interface>
+ <interface
+   name="write"
+   internal="asmi_parallel_0.write"
+   type="conduit"
+   dir="end">
+  <port name="write" internal="write" />
+ </interface>
+ <module
+   name="asmi_parallel_0"
+   kind="altera_asmi_parallel"
+   version="20.1"
+   enabled="1"
+   autoexport="1">
+  <parameter name="CBX_AUTO_BLACKBOX" value="ALL" />
+  <parameter name="DATA_WIDTH" value="QUAD" />
+  <parameter name="DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="ENABLE_SIM" value="false" />
+  <parameter name="EPCS_TYPE" value="EPCQ128A" />
+  <parameter name="FLASH_RSTPIN" value="FALSE" />
+  <parameter name="INTENDED_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="PAGE_SIZE" value="256" />
+  <parameter name="WRITE_DUMMY_CLK" value="0" />
+  <parameter name="gui_bulk_erase" value="true" />
+  <parameter name="gui_die_erase" value="false" />
+  <parameter name="gui_ex4b_addr" value="false" />
+  <parameter name="gui_fast_read" value="true" />
+  <parameter name="gui_page_write" value="true" />
+  <parameter name="gui_read_address" value="false" />
+  <parameter name="gui_read_dummyclk" value="false" />
+  <parameter name="gui_read_rdid" value="false" />
+  <parameter name="gui_read_sid" value="false" />
+  <parameter name="gui_read_status" value="false" />
+  <parameter name="gui_sector_erase" value="true" />
+  <parameter name="gui_sector_protect" value="true" />
+  <parameter name="gui_single_write" value="false" />
+  <parameter name="gui_use_asmiblock" value="false" />
+  <parameter name="gui_use_eab" value="false" />
+  <parameter name="gui_wren" value="true" />
+  <parameter name="gui_write" value="true" />
+ </module>
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>
